@@ -1,0 +1,225 @@
+/* ---------------------------------------------------------
+   Vincent Coach Poker — feuille de style unique
+   Modifie les couleurs ici, elles s'appliquent partout.
+--------------------------------------------------------- */
+
+:root {
+  --ink:        #0d1310;   /* fond principal, vert-noir */
+  --felt:       #142019;   /* fond des blocs, tapis */
+  --felt-soft:  #1a2a21;
+  --ivory:      #ece6d9;   /* texte principal */
+  --muted:      #9aa79e;   /* texte secondaire */
+  --brass:      #c2a24a;   /* filets, accents discrets */
+  --heart:      #9e2b2b;   /* rouge carte, boutons */
+  --heart-lit:  #b83636;
+  --line:       rgba(194, 162, 74, .22);
+
+  --wrap: 1080px;
+  --gap: clamp(3.5rem, 8vw, 7rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--ivory);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--ivory); }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  margin: 0 0 .6em;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2.1rem, 5.4vw, 3.6rem); }
+h2 { font-size: clamp(1.65rem, 3.6vw, 2.5rem); }
+h3 { font-size: 1.2rem; }
+
+p { margin: 0 0 1.1em; max-width: 68ch; }
+
+.wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+.section { padding-block: var(--gap); }
+.section + .section { border-top: 1px solid var(--line); }
+.lead { font-size: 1.15rem; color: var(--muted); }
+
+/* ---------- Navigation ---------- */
+.nav {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(13, 19, 16, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1.5rem; padding-block: 1rem;
+  flex-wrap: wrap;
+}
+.brand {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.05rem; text-decoration: none;
+}
+.brand span { color: var(--brass); }
+.nav ul { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.nav a { text-decoration: none; color: var(--muted); font-size: .95rem; }
+.nav a:hover, .nav a[aria-current="page"] { color: var(--ivory); }
+
+/* ---------- Boutons ---------- */
+.btn {
+  display: inline-block;
+  background: var(--heart);
+  color: #fff;
+  text-decoration: none;
+  padding: .85rem 1.7rem;
+  border: none;
+  border-radius: 2px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .18s ease;
+}
+.btn:hover { background: var(--heart-lit); }
+.btn-ghost {
+  background: transparent;
+  color: var(--ivory);
+  border: 1px solid var(--brass);
+}
+.btn-ghost:hover { background: rgba(194, 162, 74, .12); }
+
+/* ---------- Hero ---------- */
+.hero { padding-block: clamp(3.5rem, 9vw, 6.5rem) var(--gap); }
+.hero-grid {
+  display: grid; gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1.05fr .95fr; align-items: center;
+}
+.hero-img { border: 1px solid var(--line); border-radius: 2px; }
+.hero .lead { max-width: 46ch; }
+.disclaimer { font-size: .85rem; color: var(--muted); max-width: 52ch; margin-top: 1.6rem; }
+
+/* ---------- Grilles génériques ---------- */
+.split {
+  display: grid; gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1fr 1fr; align-items: center;
+}
+.cols-3 { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); }
+
+.pillar {
+  border-top: 2px solid var(--brass);
+  padding-top: 1.2rem;
+}
+.pillar p { color: var(--muted); margin-bottom: 0; }
+
+/* ---------- Listes à puces "jeton" ---------- */
+.checks { list-style: none; margin: 0 0 1.8rem; padding: 0; }
+.checks li {
+  position: relative; padding-left: 1.7rem; margin-bottom: .7rem;
+}
+.checks li::before {
+  content: ""; position: absolute; left: 0; top: .55em;
+  width: .7rem; height: .7rem; border-radius: 50%;
+  border: 2px solid var(--brass);
+}
+
+/* ---------- Vidéos ---------- */
+.video {
+  position: relative; aspect-ratio: 16 / 9;
+  border: 1px solid var(--line); background: var(--felt);
+}
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, 1fr); }
+.video-main { max-width: 760px; margin-inline: auto; }
+
+/* ---------- Portrait ---------- */
+.portrait {
+  border: 1px solid var(--line);
+  filter: saturate(.9);
+}
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 760px; }
+.faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 1.1rem 0;
+}
+.faq summary {
+  cursor: pointer; list-style: none;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.1rem;
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--brass); font-size: 1.3rem; line-height: 1; }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { margin: .9rem 0 0; color: var(--muted); }
+
+/* ---------- Newsletter ---------- */
+.optin {
+  background: var(--felt);
+  border: 1px solid var(--line);
+  padding: clamp(2rem, 5vw, 3.5rem);
+}
+.optin form { display: flex; gap: .75rem; flex-wrap: wrap; max-width: 520px; }
+.optin input {
+  flex: 1 1 240px;
+  background: var(--ink);
+  border: 1px solid var(--line);
+  color: var(--ivory);
+  padding: .85rem 1rem;
+  border-radius: 2px;
+  font: inherit;
+}
+.optin input::placeholder { color: var(--muted); }
+.optin small { display: block; margin-top: .9rem; color: var(--muted); }
+
+/* ---------- Pages de texte (CGV, mentions) ---------- */
+.prose h2 { margin-top: 2.5rem; }
+.prose ul { color: var(--muted); }
+
+/* ---------- Footer ---------- */
+.footer {
+  border-top: 1px solid var(--line);
+  background: var(--felt);
+  padding-block: 3rem 2rem;
+  font-size: .95rem;
+}
+.footer-grid { display: grid; gap: 2rem; grid-template-columns: 2fr 1fr 1fr; }
+.footer h3 { font-size: .95rem; font-family: inherit; color: var(--brass); margin-bottom: .8rem; }
+.footer ul { list-style: none; margin: 0; padding: 0; }
+.footer li { margin-bottom: .45rem; }
+.footer a { color: var(--muted); text-decoration: none; }
+.footer a:hover { color: var(--ivory); }
+.footer p { color: var(--muted); }
+.footer-bottom {
+  margin-top: 2.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  color: var(--muted); font-size: .85rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .hero-grid, .split, .cols-3, .video-grid, .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-grid > .hero-media { order: -1; }
+}
