@@ -7,21 +7,23 @@
 <meta name="description" content="De 2019 aux tables de Montréal, Vegas et Malte : mon parcours de joueur de poker.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
-<header class="nav">
+<header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="../">Vincent <span>Coach Poker</span></a>
-    <nav>
-      <ul>
-        <li><a href="../">Accueil</a></li>
-        <li><a href="../mon-parcours/" aria-current="page">Mon parcours</a></li>
-        <li><a href="../la-salle-du-temps/">La Salle du Temps</a></li>
-      </ul>
-    </nav>
+    <a class="brand" href="../">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="../">Accueil</a></li>
+      <li><a href="../mon-parcours/" aria-current="page">Mon parcours</a></li>
+      <li><a href="../la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a class="btn" href="../#formation-offerte">Découvrir la formation offerte</a></li>
+    </ul>
   </div>
 </header>
 
@@ -34,7 +36,7 @@
 
   <section class="section wrap prose">
     <h2>Les débuts</h2>
-    <p>À remplacer par le texte de ta page « Mon parcours ». Colle-moi le contenu et je le mets en forme.</p>
+    <p>À remplacer par le texte de ta page «&nbsp;Mon parcours&nbsp;». Colle-moi le contenu et je le mets en forme.</p>
 
     <h2>Montréal, Vegas, Malte</h2>
     <p>À compléter.</p>
@@ -50,8 +52,8 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <h3>Vincent Coach Poker</h3>
-        <p>Ma mission&nbsp;: aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+        <a class="footer-brand" href="../">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
       </div>
       <div>
         <h3>Réseaux</h3>
@@ -66,17 +68,28 @@
           <li><a href="../">Accueil</a></li>
           <li><a href="../mon-parcours/">Mon parcours</a></li>
           <li><a href="../la-salle-du-temps/">La Salle du Temps</a></li>
-          <li><a href="../cgv/">CGV</a></li>
-          <li><a href="../mentions-legales/">Mentions légales</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Vincent Coach Poker</span>
-      <span>Le poker comporte des risques financiers. Jouer de manière responsable — 18 ans et plus.</span>
+      <span class="footer-legal">
+        <a href="../cgv/">CGV</a> · <a href="../mentions-legales/">Mentions légales</a>
+      </span>
     </div>
   </div>
 </footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
 
 </body>
 </html>
