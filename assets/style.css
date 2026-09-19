@@ -316,6 +316,12 @@ p { margin: 0 0 1.15em; }
   padding: 1rem;
 }
 .img-placeholder--wide { aspect-ratio: 2 / 1; }
+.img-placeholder--32 { aspect-ratio: 3 / 2; }
+.img-placeholder--169 {
+  aspect-ratio: 16 / 9;
+  width: min(100%, 1140px);
+  margin-inline: auto;
+}
 
 /* ---------- Cartes piliers ---------- */
 .cards-3 {
@@ -331,7 +337,22 @@ p { margin: 0 0 1.15em; }
   padding: 2.1rem 1.9rem;
 }
 .card svg { margin-bottom: 1.2rem; }
+.card h3 { font-size: 1.45rem; margin: 0 0 .9rem; }
 .card p { margin: 0; color: var(--body); font-size: 1.05rem; line-height: 1.55; }
+
+/* ---------- Objectifs (icône + texte) ---------- */
+.goals {
+  display: grid; gap: 2.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+.goal { text-align: center; }
+.goal svg { margin-inline: auto; margin-bottom: 1.1rem; }
+.goal p {
+  margin: 0 auto; color: var(--body);
+  font-size: 1.05rem; line-height: 1.55;
+  max-width: 30ch;
+}
 
 /* ---------- FAQ ---------- */
 .faq { max-width: 680px; margin: 3rem auto 0; }
@@ -444,7 +465,7 @@ p { margin: 0 0 1.15em; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
-  .cards-3 { grid-template-columns: 1fr; }
+  .cards-3, .goals { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; }
   .split-media-last { order: 1; }
   .car-track .video { flex-basis: 88%; }
