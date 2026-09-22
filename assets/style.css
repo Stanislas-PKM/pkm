@@ -207,7 +207,7 @@ p { margin: 0 0 1.15em; }
 .car-track::-webkit-scrollbar { display: none; }
 .car-track .video {
   flex: 0 0 calc(50% - 1rem);
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 .car-btn {
   position: absolute; top: 50%; transform: translateY(-50%);
@@ -243,7 +243,10 @@ p { margin: 0 0 1.15em; }
 /* ---------- Page parcours ---------- */
 .page-top { padding-top: clamp(2.5rem, 6vw, 4.5rem); }
 .page-top img {
-  width: min(100%, 1140px);
+  width: min(100%, 880px);
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  object-position: 50% 30%;
   border-radius: 10px;
 }
 .page-top h1 {
@@ -255,6 +258,7 @@ p { margin: 0 0 1.15em; }
 .narrow { max-width: 800px; margin-inline: auto; }
 .narrow h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
 .narrow p { color: var(--muted); font-size: 1.1rem; }
+.narrow .intro-strong { color: var(--ivory); font-weight: 600; }
 
 .interlude {
   font-family: var(--serif);

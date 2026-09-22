@@ -255,12 +255,26 @@
     toggle.setAttribute('aria-expanded', open);
   });
 
-  // Carrousel témoignages
+  // Carrousel témoignages (en boucle : au bout, on revient au départ)
   document.querySelectorAll('.carousel').forEach((carousel) => {
     const track = carousel.querySelector('.car-track');
-    const step = () => track.querySelector('.video').getBoundingClientRect().width + 32;
-    carousel.querySelector('.car-prev').addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
-    carousel.querySelector('.car-next').addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+    const videos = [...track.querySelectorAll('.video')];
+    let idx = 0, syncTimer;
+    // Resynchronise l'index quand l'utilisateur fait défiler à la main
+    track.addEventListener('scroll', () => {
+      clearTimeout(syncTimer);
+      syncTimer = setTimeout(() => {
+        if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 10) idx = videos.length - 1;
+        else idx = Math.round(track.scrollLeft / (videos[0].getBoundingClientRect().width + 32));
+      }, 150);
+    });
+    const go = (d) => {
+      clearTimeout(syncTimer);
+      idx = (idx + d + videos.length) % videos.length;
+      track.scrollTo({ left: videos[idx].offsetLeft, behavior: 'smooth' });
+    };
+    carousel.querySelector('.car-prev').addEventListener('click', () => go(-1));
+    carousel.querySelector('.car-next').addEventListener('click', () => go(1));
   });
 </script>
 
