@@ -405,11 +405,16 @@ p { margin: 0 0 1.15em; }
 }
 .member img, .member .img-placeholder {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 0;
   border: 0;
   border-bottom: 1px solid var(--line);
+}
+.team--2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 720px;
+  margin-inline: auto;
 }
 .member-body { padding: 1.5rem 1.6rem 1.7rem; }
 .member-role {
