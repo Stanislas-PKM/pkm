@@ -425,6 +425,31 @@ p { margin: 0 0 1.15em; }
 .member h3 { margin: .5rem 0 .5rem; font-size: 1.3rem; }
 .member p { margin: 0; color: var(--muted); font-size: .95rem; }
 
+.steps {
+  display: grid; gap: 1.5rem;
+  max-width: 880px;
+  margin: clamp(3rem, 7vw, 4.5rem) auto 0;
+}
+.step {
+  display: flex; align-items: flex-start; gap: 1.9rem;
+  text-align: left;
+  background: linear-gradient(135deg, rgba(200, 165, 95, .13), rgba(200, 165, 95, .04));
+  border: 1px solid var(--gold-dim);
+  border-radius: 10px;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 0 32px rgba(200, 165, 95, .09);
+}
+.step svg { flex: 0 0 auto; margin-top: .25rem; }
+.step-label {
+  display: block;
+  font-size: .72rem; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .55rem;
+}
+.step h3 { font-family: var(--sans); font-size: 1.15rem; font-weight: 600; margin-bottom: .6rem; color: var(--ivory); }
+.step p { margin: 0; color: var(--body); font-size: .98rem; }
+
 .num-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -473,6 +498,18 @@ p { margin: 0 0 1.15em; }
   font-weight: 600;
   color: var(--ivory);
 }
+.proof-grid {
+  display: grid; gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 3rem;
+}
+.proof img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+.proof .vert-name { font-size: .9rem; margin-top: .7rem; }
 
 /* ---------- Objectifs (icône + texte) ---------- */
 .goals {
@@ -605,6 +642,7 @@ p { margin: 0 0 1.15em; }
   .stat:nth-child(even) { border-left: 1px solid var(--line); }
   .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
   .team, .team--2, .num-grid, .vert-grid { grid-template-columns: 1fr; }
+  .step { flex-direction: column; gap: 1.1rem; padding: 1.6rem 1.4rem; }
   .num-cell { border-right: 0 !important; }
   .num-cell:nth-child(2) { border-top: 1px solid var(--line); }
   .split { grid-template-columns: 1fr; }
