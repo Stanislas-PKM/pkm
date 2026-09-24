@@ -466,6 +466,13 @@ p { margin: 0 0 1.15em; }
 }
 .video-vert iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .img-placeholder--vert { aspect-ratio: 9 / 16; }
+.vert-grid--4 { grid-template-columns: repeat(4, 1fr); max-width: 1140px; }
+.vert-name {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-weight: 600;
+  color: var(--ivory);
+}
 
 /* ---------- Objectifs (icône + texte) ---------- */
 .goals {
@@ -593,6 +600,13 @@ p { margin: 0 0 1.15em; }
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
   .cards-3, .goals { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat + .stat { border-left: 0; }
+  .stat:nth-child(even) { border-left: 1px solid var(--line); }
+  .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .team, .team--2, .num-grid, .vert-grid { grid-template-columns: 1fr; }
+  .num-cell { border-right: 0 !important; }
+  .num-cell:nth-child(2) { border-top: 1px solid var(--line); }
   .split { grid-template-columns: 1fr; }
   .split-media-last { order: 1; }
   .car-track .video { flex-basis: 88%; }
