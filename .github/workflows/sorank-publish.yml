@@ -1,0 +1,48 @@
+name: Publication SoRank
+
+# Le worker Cloudflare (sorank-worker/) depose chaque article recu du
+# webhook SoRank dans blog/_queue/*.json. Ce workflow se declenche sur ce
+# commit, genere les pages du blog, puis pousse le resultat sur main :
+# GitHub Pages redeploie le site automatiquement.
+
+on:
+  push:
+    branches: [main]
+    paths: ["blog/_queue/**"]
+  workflow_dispatch:
+
+concurrency:
+  group: sorank-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Générer les pages du blog
+        run: python3 tools/sorank_publish.py
+
+      - name: Commit et push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Rien à publier."
+            exit 0
+          fi
+          git commit -m "Publie les articles SoRank en attente"
+          for i in 1 2 3; do
+            if git push origin main; then
+              exit 0
+            fi
+            git pull --rebase origin main
+          done
+          git push origin main
