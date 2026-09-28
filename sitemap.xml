@@ -20,4 +20,13 @@
     <loc>https://vincentcoachpoker.com/mentions-legales/</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://vincentcoachpoker.com/blog/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vincentcoachpoker.com/blog/quel-mentorat-poker-convient-le-mieux-a-un-joueur-break-even/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.6</priority>
+  </url>
 </urlset>
