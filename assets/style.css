@@ -327,6 +327,29 @@ p { margin: 0 0 1.15em; }
   margin-inline: auto;
 }
 
+/* ---------- Emblèmes (symboles temps & poker) ---------- */
+.emblem {
+  display: flex; align-items: center; justify-content: center;
+  background:
+    radial-gradient(ellipse 62% 58% at 50% 48%, rgba(200, 165, 95, .10), transparent 72%),
+    linear-gradient(160deg, #11170f, #0f1410 60%, #101710);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.emblem svg {
+  width: min(38%, 168px);
+  height: auto;
+  color: var(--gold);
+  filter: drop-shadow(0 0 20px rgba(200, 165, 95, .28));
+}
+.emblem--169 {
+  aspect-ratio: 16 / 9;
+  width: min(100%, 1140px);
+  margin-inline: auto;
+}
+.emblem--169 svg { width: min(27%, 230px); }
+.emblem--32 { aspect-ratio: 3 / 2; }
+
 /* ---------- Cartes piliers ---------- */
 .cards-3 {
   display: grid; gap: 1.75rem;
