@@ -70,5 +70,17 @@
     },
     "revision": "1790970212305288",
     "operation_id": "752b2021eb48d03db9494daf025d050ce8018e8aafad9a75b84debdd7e562233"
+  },
+  "97ee4cb1-ecc2-4626-a81d-94cbd0ea78bd": {
+    "slug": "cash-game-poker",
+    "published_at": "2026-10-04T06:08:43.638Z",
+    "title": "Cash game au poker : règles, stratégie et bankroll en pratique",
+    "meta_description": "Comprenez le cash game poker, choisissez vos limites et gérez la bankroll, la variance et vos décisions en ligne comme en direct.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Salle de poker intérieure animée, vue depuis le bord d’une table avec joueurs, jetons et cartes."
+    },
+    "revision": "1791057286230300",
+    "operation_id": "7398c0ceb2a8e876ba32dfc06ea0304a935aa29416bdb35ce161ea952442fb5d"
   }
 }
