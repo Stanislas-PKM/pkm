@@ -82,5 +82,17 @@
     },
     "revision": "1791057286230300",
     "operation_id": "7398c0ceb2a8e876ba32dfc06ea0304a935aa29416bdb35ce161ea952442fb5d"
+  },
+  "341670c2-8774-4da4-90d4-132a3b2c7df2": {
+    "slug": "comment-gagner-au-poker",
+    "published_at": "2026-10-06T06:01:45.187Z",
+    "title": "Comment gagner au poker : méthode, stratégie et discipline",
+    "meta_description": "Apprenez comment gagner au poker grâce aux probabilités, aux ranges, à une bankroll maîtrisée et à des décisions cohérentes sur le long terme.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne assise tient des jetons roses à une table de poker."
+    },
+    "revision": "1791226454117391",
+    "operation_id": "050c4771eb7abcc9c3b3f3f738e43637813d4f34aedc92d4d3a4694cb99a8a43"
   }
 }
