@@ -118,5 +118,17 @@
     },
     "revision": "1791562232042246",
     "operation_id": "4a3608999c7db9ba2086e2c779c47e41f36d66c25d326eaaf2343209a0d9071d"
+  },
+  "365f4514-ed41-4bcc-9f8a-609a048562a1": {
+    "slug": "coaching-poker-personnalise",
+    "published_at": "2026-10-09T18:05:45.588Z",
+    "title": "Coaching poker personnalisé : méthode et critères de choix",
+    "meta_description": "Le coaching poker personnalisé aide à corriger vos leaks, structurer vos décisions et choisir un suivi adapté à votre niveau et à votre format.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-365f4514-ed41-4bcc-9f8a-609a048562a1-img-0.webp",
+      "alt": "Cartes, jetons et fiche d’analyse évoquant l’étude d’une décision au poker."
+    },
+    "revision": "1791562216940834",
+    "operation_id": "11c45fe171e64481b195cc775a695eec5f1a6107b33643add0f5ef2a4a608742"
   }
 }
