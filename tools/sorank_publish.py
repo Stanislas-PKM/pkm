@@ -68,7 +68,7 @@ NAV = """<header class="nav" id="nav">
       <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
       <li><a href="/temoignages/">Témoignages</a></li>
       <li><a href="/blog/">Blog</a></li>
-      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Rejoindre la chaîne YouTube</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
     </ul>
   </div>
 </header>"""
@@ -271,7 +271,7 @@ def render_article(entry, content):
 {content}
   </article>
   <section class="section wrap center">
-    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Rejoindre la chaîne YouTube</a>
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
   </section>
 </main>
 
