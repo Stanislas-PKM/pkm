@@ -336,6 +336,7 @@ def render_index(reg):
         for e in entries:
             display, _ = date_fr(e.get("published_at"))
             cards.append(f"""      <a class="post-card" href="/blog/{esc(e["slug"])}/">
+        <span class="post-date">Écrit par Vincent Coach Poker</span>
         <h2>{fr(e["title"])}</h2>
         <p>{fr(e.get("meta_description", ""))}</p>
       </a>""")
