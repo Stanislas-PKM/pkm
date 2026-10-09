@@ -79,9 +79,9 @@ p { margin: 0 0 1.15em; }
   grid-template-columns: 1.1fr 1fr;
   gap: clamp(2.5rem, 5vw, 4.5rem);
   align-items: center;
-  padding-block: clamp(3.5rem, 8vw, 6.5rem) 0;
+  padding-block: clamp(2.5rem, 6vw, 4.5rem) 0;
 }
-.hero-split h1 { max-width: none; margin: 0; text-align: left; }
+.hero-split h1 { max-width: none; margin: 0; text-align: left; font-size: clamp(1.9rem, 3.4vw, 2.9rem); line-height: 1.2; }
 .hero-split .lead { margin: 1.6rem 0 2.4rem; max-width: 46ch; }
 .hero-split img {
   width: 100%;
