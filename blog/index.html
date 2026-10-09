@@ -70,6 +70,27 @@
     color: var(--muted);
     font-style: italic;
   }
+  .blog-hero {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding-block: clamp(3rem, 8vw, 5.5rem) 0;
+  }
+  .blog-hero h1 { margin: 0; }
+  .blog-hero .lead { margin: 1.4rem 0 0; max-width: 42ch; }
+  .blog-hero img {
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    justify-self: end;
+  }
+  @media (max-width: 760px) {
+    .blog-hero { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+    .blog-hero img { justify-self: center; max-width: 280px; }
+  }
   .prose table {
     width: 100%;
     border-collapse: collapse;
@@ -117,54 +138,50 @@
 </header>
 
 <main>
-  <section class="hero wrap">
-    <h1>Les articles</h1>
-    <p class="lead">Stratégie, mental, bankroll : tout pour progresser vers la rentabilité.</p>
+  <section class="wrap">
+    <div class="blog-hero">
+      <div>
+        <h1>Le blog</h1>
+        <p class="lead">Stratégie, mental, bankroll : tout pour progresser vers la rentabilité.</p>
+      </div>
+      <img src="/assets/img/vincent-duna.jpg" alt="Vincent Bellepaume, coach poker, à une table de poker">
+    </div>
   </section>
   <section class="section wrap">
     <div class="post-list">
       <a class="post-card" href="/blog/comment-arreter-de-perdre-au-poker/">
-        <span class="post-date">8 octobre 2026</span>
         <h2>Comment arrêter de perdre au poker avec une méthode claire</h2>
         <p>comment arreter de perdre au poker&nbsp;: analysez vos mains, corrigez vos erreurs, gérez vos limites et sachez quand faire une pause.</p>
       </a>
       <a class="post-card" href="/blog/comment-gagner-au-poker/">
-        <span class="post-date">6 octobre 2026</span>
         <h2>Comment gagner au poker&nbsp;: méthode, stratégie et discipline</h2>
         <p>Apprenez comment gagner au poker grâce aux probabilités, aux ranges, à une bankroll maîtrisée et à des décisions cohérentes sur le long terme.</p>
       </a>
       <a class="post-card" href="/blog/cash-game-poker/">
-        <span class="post-date">4 octobre 2026</span>
         <h2>Cash game au poker&nbsp;: règles, stratégie et bankroll en pratique</h2>
         <p>Comprenez le cash game poker, choisissez vos limites et gérez la bankroll, la variance et vos décisions en ligne comme en direct.</p>
       </a>
       <a class="post-card" href="/blog/quels-livres-lire-sur-la-thematique-du-poker/">
-        <span class="post-date">3 octobre 2026</span>
         <h2>Quels livres lire pour apprendre et progresser au poker&nbsp;?</h2>
         <p>Guide&nbsp;: quels livres lire sur la thematique du poker&nbsp;? Comparez six ouvrages selon votre niveau, votre format et votre objectif de progression.</p>
       </a>
       <a class="post-card" href="/blog/ranges-poker-pdf/">
-        <span class="post-date">1 octobre 2026</span>
         <h2>Ranges poker PDF&nbsp;: choisir un tableau fiable en 2026</h2>
         <p>Recherchez ranges poker pdf fiables, comparez les tableaux préflop et choisissez une ressource adaptée au cash game ou aux tournois.</p>
       </a>
       <a class="post-card" href="/blog/meilleur-coaching-poker/">
-        <span class="post-date">30 septembre 2026</span>
         <h2>Le meilleur coaching poker 2026&nbsp;: sélection et conseils</h2>
         <p>Trouvez le meilleur coaching poker 2026 selon votre format, votre niveau et vos objectifs, avec une sélection claire des approches les plus adaptées.</p>
       </a>
       <a class="post-card" href="/blog/vincent-coach-poker-ou-run-it-once/">
-        <span class="post-date">29 septembre 2026</span>
         <h2>Vincent Coach Poker ou Run It Once&nbsp;: quelle méthode choisir&nbsp;?</h2>
         <p>Vincent Coach Poker ou Run It Once&nbsp;: comparez coaching personnalisé, vidéos, méthode, communauté et accès pour choisir votre parcours.</p>
       </a>
       <a class="post-card" href="/blog/7-raisons-pour-lesquelles-le-coaching-de-poker-fonctionne/">
-        <span class="post-date">28 septembre 2026</span>
         <h2>7 raisons pour lesquelles le coaching de poker fonctionne</h2>
         <p>7 raisons pour lesquelles le coaching de poker fonctionne&nbsp;: structurez votre progression, corrigez vos leaks et jouez avec plus de méthode.</p>
       </a>
       <a class="post-card" href="/blog/quel-mentorat-poker-convient-le-mieux-a-un-joueur-break-even/">
-        <span class="post-date">28 septembre 2026</span>
         <h2>Quel mentorat poker choisir quand on est break-even&nbsp;?</h2>
         <p>Quel mentorat poker convient le mieux à un joueur break-even&nbsp;? Comparez les formats, les critères de choix et le suivi adapté à votre progression.</p>
       </a>
