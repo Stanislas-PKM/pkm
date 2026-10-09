@@ -73,6 +73,29 @@ p { margin: 0 0 1.15em; }
 .center { text-align: center; }
 .center p, .center .lead { margin-inline: auto; }
 
+/* ---------- Hero deux colonnes ---------- */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  padding-block: clamp(3.5rem, 8vw, 6.5rem) 0;
+}
+.hero-split h1 { max-width: none; margin: 0; text-align: left; }
+.hero-split .lead { margin: 1.6rem 0 2.4rem; max-width: 46ch; }
+.hero-split img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+@media (max-width: 860px) {
+  .hero-split { grid-template-columns: 1fr; text-align: center; }
+  .hero-split h1 { text-align: center; }
+  .hero-split .lead { margin-inline: auto; }
+  .hero-split img { margin-top: 1rem; }
+}
+
 /* ---------- Badge (pastille dorée) ---------- */
 .badge {
   display: inline-block;
