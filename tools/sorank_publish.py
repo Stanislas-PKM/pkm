@@ -67,7 +67,7 @@ NAV = """<header class="nav" id="nav">
       <li><a href="/mon-parcours/">Mon parcours</a></li>
       <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
       <li><a href="/temoignages/">Témoignages</a></li>
-      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/blog/">Articles</a></li>
       <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
     </ul>
   </div>
@@ -94,7 +94,7 @@ FOOTER = """<footer class="footer">
           <li><a href="/mon-parcours/">Mon parcours</a></li>
           <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
           <li><a href="/temoignages/">Témoignages</a></li>
-          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/blog/">Articles</a></li>
         </ul>
       </div>
     </div>
@@ -323,11 +323,11 @@ def render_index(reg):
     else:
         body = '<p class="post-empty">Les premiers articles arrivent bientôt.</p>'
 
-    return f"""{page_head("Blog", "Stratégie, mental et bankroll : les articles de Vincent Coach Poker pour devenir rentable au poker.", f"{SITE}/blog/")}
+    return f"""{page_head("Articles", "Stratégie, mental et bankroll : les articles de Vincent Coach Poker pour devenir rentable au poker.", f"{SITE}/blog/")}
 
 <main>
   <section class="hero wrap">
-    <h1>Le blog</h1>
+    <h1>Les articles</h1>
     <p class="lead">Stratégie, mental, bankroll : tout pour progresser vers la rentabilité.</p>
   </section>
   <section class="section wrap">
