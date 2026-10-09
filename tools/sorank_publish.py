@@ -169,6 +169,27 @@ BLOG_CSS = """<style>
     color: var(--muted);
     font-style: italic;
   }
+  .blog-hero {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding-block: clamp(3rem, 8vw, 5.5rem) 0;
+  }
+  .blog-hero h1 { margin: 0; }
+  .blog-hero .lead { margin: 1.4rem 0 0; max-width: 42ch; }
+  .blog-hero img {
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 12px;
+    justify-self: end;
+  }
+  @media (max-width: 760px) {
+    .blog-hero { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+    .blog-hero img { justify-self: center; max-width: 280px; }
+  }
   .prose table {
     width: 100%;
     border-collapse: collapse;
@@ -315,7 +336,6 @@ def render_index(reg):
         for e in entries:
             display, _ = date_fr(e.get("published_at"))
             cards.append(f"""      <a class="post-card" href="/blog/{esc(e["slug"])}/">
-        <span class="post-date">{esc(display)}</span>
         <h2>{fr(e["title"])}</h2>
         <p>{fr(e.get("meta_description", ""))}</p>
       </a>""")
@@ -326,9 +346,14 @@ def render_index(reg):
     return f"""{page_head("Articles", "Stratégie, mental et bankroll : les articles de Vincent Coach Poker pour devenir rentable au poker.", f"{SITE}/blog/")}
 
 <main>
-  <section class="hero wrap">
-    <h1>Les articles</h1>
-    <p class="lead">Stratégie, mental, bankroll : tout pour progresser vers la rentabilité.</p>
+  <section class="wrap">
+    <div class="blog-hero">
+      <div>
+        <h1>Le blog</h1>
+        <p class="lead">Stratégie, mental, bankroll : tout pour progresser vers la rentabilité.</p>
+      </div>
+      <img src="/assets/img/vincent-duna.jpg" alt="Vincent Bellepaume, coach poker, à une table de poker">
+    </div>
   </section>
   <section class="section wrap">
     {body}
