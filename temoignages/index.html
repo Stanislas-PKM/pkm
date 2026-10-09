@@ -30,10 +30,14 @@
     .t-cards { grid-template-columns: 1fr; }
   }
   .t-cards--vert {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    max-width: 1140px;
-    margin-inline: auto;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 1.5rem;
+  }
+  .t-cards--vert .t-card { text-align: center; }
+  .t-cards--vert .video-vert { max-width: 300px; margin-inline: auto; }
+  .proof-grid { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 700px) {
+    .t-cards--vert, .proof-grid { grid-template-columns: 1fr; }
   }
   .t-card {
     background: var(--card);
