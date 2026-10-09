@@ -144,6 +144,17 @@ BLOG_CSS = """<style>
     color: var(--gold);
   }
   .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head-img {
+    display: block;
+    width: min(100%, 520px);
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+    object-position: 50% 28%;
+    border-radius: 12px;
+    margin: 0 auto 2.4rem;
+    border: 1px solid var(--gold-dim);
+    box-shadow: 0 0 44px rgba(200, 165, 95, .16);
+  }
   .post-header { max-width: 760px; margin-inline: auto; }
   .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
   .post-cover {
@@ -327,11 +338,9 @@ def render_index(reg):
 
 <main>
   <section class="hero wrap">
+    <img class="blog-head-img" src="/assets/img/vincent-budapest.jpg" alt="Vincent Bellepaume, coach poker, aux tables du Duna Poker">
     <h1>Le blog</h1>
     <p class="lead">Stratégie, mental, bankroll : tout pour progresser vers la rentabilité.</p>
-    <div class="hero-media">
-      <img src="/assets/img/vincent-budapest.jpg" alt="Vincent Bellepaume, coach poker, aux tables du Duna Poker" style="aspect-ratio:auto">
-    </div>
   </section>
   <section class="section wrap">
     {body}
