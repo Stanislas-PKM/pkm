@@ -54,7 +54,7 @@ GA_SNIPPET = """<!-- Google tag (gtag.js) -->
 HEAD_COMMON = """<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css">"""
+<link rel="stylesheet" href="/assets/style.css?v=3">"""
 
 NAV = """<header class="nav" id="nav">
   <div class="wrap nav-inner">
