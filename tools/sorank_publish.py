@@ -66,7 +66,9 @@ NAV = """<header class="nav" id="nav">
       <li><a href="/">Accueil</a></li>
       <li><a href="/mon-parcours/">Mon parcours</a></li>
       <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
-      <li><a class="btn" href="/#formation-offerte">Découvrir la formation offerte</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Rejoindre la chaîne YouTube</a></li>
     </ul>
   </div>
 </header>"""
@@ -81,7 +83,7 @@ FOOTER = """<footer class="footer">
       <div>
         <h3>Réseaux</h3>
         <ul>
-          <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
           <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
         </ul>
       </div>
@@ -91,6 +93,7 @@ FOOTER = """<footer class="footer">
           <li><a href="/">Accueil</a></li>
           <li><a href="/mon-parcours/">Mon parcours</a></li>
           <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
           <li><a href="/blog/">Blog</a></li>
         </ul>
       </div>
@@ -268,7 +271,7 @@ def render_article(entry, content):
 {content}
   </article>
   <section class="section wrap center">
-    <a class="btn" href="/#formation-offerte">Découvrir la formation offerte</a>
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Rejoindre la chaîne YouTube</a>
   </section>
 </main>
 
@@ -319,6 +322,7 @@ def render_sitemap(reg):
         (f"{SITE}/", "1.0", None),
         (f"{SITE}/la-salle-du-temps/", "0.9", None),
         (f"{SITE}/mon-parcours/", "0.8", None),
+        (f"{SITE}/temoignages/", "0.7", None),
         (f"{SITE}/cgv/", "0.3", None),
         (f"{SITE}/mentions-legales/", "0.3", None),
     ]

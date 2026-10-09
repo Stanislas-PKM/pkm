@@ -350,6 +350,18 @@ p { margin: 0 0 1.15em; }
 .emblem--169 svg { width: min(27%, 230px); }
 .emblem--32 { aspect-ratio: 3 / 2; }
 
+/* ---------- Petits symboles (remplacent les grands panneaux) ---------- */
+.sigil { display: flex; justify-content: center; padding-block: .5rem; }
+.sigil svg {
+  width: clamp(64px, 9vw, 96px);
+  height: auto;
+  color: var(--gold);
+  opacity: .9;
+  filter: drop-shadow(0 0 14px rgba(200, 165, 95, .25));
+}
+.sigil--split { height: 100%; align-items: center; }
+.sigil--split svg { width: clamp(80px, 12vw, 120px); }
+
 /* ---------- Cartes piliers ---------- */
 .cards-3 {
   display: grid; gap: 1.75rem;
