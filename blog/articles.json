@@ -106,5 +106,17 @@
     },
     "revision": "1791401669038448",
     "operation_id": "86ccf829736c02f48f0d15bd2cbc0482fdaace9c79b36711aa41480e46ed6aaa"
+  },
+  "de99b9ba-fdb8-49a8-a190-1bf55cc201ac": {
+    "slug": "pourquoi-vous-ne-progressez-plus-au-poker-et-comment-y-remedier",
+    "published_at": "2026-10-09T16:12:58.126Z",
+    "title": "Pourquoi vous stagnez au poker et comment progresser durablement",
+    "meta_description": "pourquoi vous ne progressez plus au poker et comment y remedier : distinguez variance et erreurs, puis structurez un travail concret et régulier.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker fréquentée, avec un joueur assis au premier plan et plusieurs tables occupées autour de lui."
+    },
+    "revision": "1791562232042246",
+    "operation_id": "4a3608999c7db9ba2086e2c779c47e41f36d66c25d326eaaf2343209a0d9071d"
   }
 }
