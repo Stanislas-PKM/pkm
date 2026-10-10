@@ -142,5 +142,17 @@
     },
     "revision": "1791579893186969",
     "operation_id": "30fa9593281053e9e566cdbbbe03f16fe00897cdc1f6f2152730e5daa17ae98e"
+  },
+  "2928ba2b-1022-4b67-ad03-0824e06d84aa": {
+    "slug": "comment-fonctionne-un-coaching-poker-apres-la-candidature",
+    "published_at": "2026-10-10T14:02:25.245Z",
+    "title": "Comment se déroule un coaching poker après une candidature ?",
+    "meta_description": "Comment fonctionne un coaching poker après la candidature ? Comprenez l’entretien, l’admission, le démarrage du suivi et les questions à poser.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne assise à une table de poker tient des jetons roses, avec une salle de jeu en arrière-plan."
+    },
+    "revision": "1791598045616199",
+    "operation_id": "596a28fab06a2a36757ff756fc92555bffbc75aee8f1767caac635df0e57584f"
   }
 }
