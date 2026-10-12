@@ -190,5 +190,17 @@
     },
     "revision": "1791692018852271",
     "operation_id": "cc2dbb0062f6b4fcfd98f3d1552cbcbfca6e31aa780208b33a2a4b094e038330"
+  },
+  "8e10ed39-e884-4d2b-bd25-48f81f8b5cc1": {
+    "slug": "mentorat-poker",
+    "published_at": "2026-10-12T06:02:11.518Z",
+    "title": "Mentorat au poker : choisir un accompagnement adapté",
+    "meta_description": "Le mentorat poker aide à structurer votre progression : comparez suivi humain, méthode, formats et prix pour choisir un accompagnement adapté.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Une salle de poker animée, avec des joueurs autour des tables."
+    },
+    "revision": "1791746650883352",
+    "operation_id": "e1ff336b4bfdd33c646bd9d4cf48e6cb3acce0d1dafbdb64136a419ca443a2a1"
   }
 }
