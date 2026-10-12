@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Tableau de range au poker : lire et adapter vos mains · Vincent Coach Poker</title>
+<meta name="description" content="Le tableau de range poker vous aide à choisir vos mains préflop. Lisez la grille et adaptez-la à votre position et au format.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/tableau-de-range-poker/">
+<meta name="sorank-operation-id" content="1e758e9932cc185b1107028cb61b256708b612aeabd5d4d3616db9a3096f049e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 12 octobre 2026</span>
+      <h1>Tableau de range au poker&nbsp;: lire et adapter vos mains</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Une personne assise à une table de poker tient des jetons roses, dans une salle de jeu intérieure floue." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Un tableau de range au poker représente les mains à jouer selon une situation préflop précise. Pour l’utiliser correctement, vérifiez la position, l’action précédente, le format et la profondeur des tapis, puis considérez la grille comme une base de décision à adapter plutôt qu’une règle automatique.</div>
+<p>Une même main peut mériter une relance au bouton et un fold en début de parole. Pourquoi ? Parce qu’un <strong>tableau de range au poker</strong> n’a de sens qu’associé à une situation précise. Pour poser vos repères, vous pouvez <a href="https://vincentcoachpoker.com/blog/ranges-poker-pdf">Télécharger des ranges poker en PDF</a>, puis regarder ce que chaque case indique avant d’agir.</p>
+<p>Au Texas Hold’em, les cartes privées ne se jouent pas isolément : votre siège, l’action déjà engagée et la profondeur des tapis modifient la décision. Une grille préflop est donc un aide-mémoire conditionnel, pas une recette valable à toutes les tables. La lire suppose de vérifier ses hypothèses, puis d’apprendre à l’ajuster sans remplacer le raisonnement par la mémorisation. Cette distinction évite les comparaisons trompeuses entre tableaux.</p>
+
+<h2>Que représente un tableau de range au poker ?</h2>
+<p>Une grille de range résume les mains de départ associées à une action dans une situation donnée. Dans une grille classique, les paires occupent la diagonale, les mains assorties se trouvent d’un côté et les mains dépareillées de l’autre. La notation distingue, par exemple, AKs, assorti, de AKo, dépareillé.</p>
+<p>Une grille 13×13 regroupe les 169 catégories de mains de départ du Texas Hold’em. Chaque case indique une action, souvent relancer, suivre ou se coucher. Certaines grilles affichent aussi des fréquences mixtes, lorsqu’une main peut être jouée de plusieurs façons. Le guide de <a href="https://pokergtosolver.com/en/articles/preflop-gto-ranges" rel="noopener noreferrer" target="_blank">PokerGTO Solver</a> présente cette organisation en classes de mains.</p>
+<p>Les couleurs servent de légende, mais leur signification n’est pas universelle. Vérifiez toujours la légende du document avant d’interpréter une case. Une case colorée peut indiquer une relance, un suivi ou une fréquence partagée selon le tableau.</p>
+<!-- [IMAGE_PROMPT] Photographie éditoriale réaliste, lumière naturelle et rendu professionnel. Vue rapprochée en trois quarts d’une personne assise à une table de poker, concentrée sur une grille imprimée de mains de départ près de cartes et de quelques jetons. Moment naturel, sans pose publicitaire, sans écran ni interface numérique. Papier et matériel de jeu aux proportions réalistes. Palette neutre, avec un petit détail doré #C8A55F sur un accessoire de table. Aucun texte lisible, aucune marque, aucun logo. -->
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-dc394c1d-b2a7-41e7-9f27-2b1b090b280b-img-1.webp" alt="Une personne étudie une grille imprimée de mains de départ près de cartes et de jetons sur une table de poker." loading="lazy" />
+
+<h2>Comment choisir la bonne grille pour votre situation ?</h2>
+<p>Avant de consulter une case, vérifiez que le tableau correspond au coup que vous jouez. Une grille d’ouverture ne donne pas automatiquement la bonne réponse face à une relance adverse. Les tableaux publiés par <a href="https://www.preflopwizard.app/blog/preflop-charts" rel="noopener noreferrer" target="_blank">Preflop Wizard</a> distinguent notamment les formats, les positions et les profondeurs de tapis.</p>
+<ol>
+<li><strong>Le format</strong> : vérifiez le nombre de joueurs et si vous jouez en cash game ou en tournoi.</li>
+<li><strong>La position</strong> : repérez votre siège et ceux des joueurs qui parlent encore.</li>
+<li><strong>L’action précédente</strong> : distinguez une ouverture sans relance préalable d’une défense face à une relance ou à une surrelance.</li>
+<li><strong>Le tapis effectif</strong> : tenez compte du plus petit tapis engagé entre vous et votre adversaire, ainsi que des hypothèses du tableau.</li>
+</ol>
+<p>Ces éléments ne sont pas des détails de présentation : ils définissent la situation stratégique visée. Une grille conçue pour un tapis profond ou une table à six joueurs ne se transpose pas mécaniquement à un autre contexte. Si une hypothèse manque, considérez le tableau comme un repère général plutôt que comme une consigne exacte.</p>
+<!-- [IMAGE_PROMPT] Infographie éditoriale professionnelle, rendu final en illustration vectorielle nette sur fond blanc cassé neutre. Une checklist verticale simple en quatre étapes, avec une icône claire et un grand numéro pour chaque étape : « Format », « Position et action », « Tapis effectif », « Hypothèses ». Utiliser le doré #C8A55F comme accent principal sur les numéros, coches et cadres, avec du texte graphite très lisible. Texte exclusivement en français, aucun microtexte, aucune marque ni logo, généreux espaces blancs. -->
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-dc394c1d-b2a7-41e7-9f27-2b1b090b280b-img-2.webp" alt="Checklist illustrée des critères à vérifier : format, position et action, tapis effectif et hypothèses." loading="lazy" />
+
+<h2>Pourquoi la position et l’action changent-elles la range ?</h2>
+<p>Prenons une ouverture en début de parole, puis une ouverture au bouton. En début de parole, plusieurs adversaires peuvent encore relancer ou suivre : la sélection des mains est généralement plus prudente. Au bouton, moins de joueurs restent à parler et vous aurez souvent l’avantage de position après le flop. Cela peut justifier une sélection plus large, selon le tableau utilisé.</p>
+<p>La position ne suffit toutefois pas à elle seule. Une main assortie peut avoir davantage de potentiel postflop qu’une main dépareillée, tandis qu’une main apparemment forte peut être dominée si vous jouez face à une range serrée. Il faut distinguer <strong>range d’ouverture</strong> et <strong>range de défense</strong> : elles répondent à des actions différentes.</p>
+<p>Enfin, un tableau de départ ne connaît pas les tendances observées à votre table. Des notes sur les adversaires peuvent aider à contextualiser une décision, sans remplacer les hypothèses stratégiques de base.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/68aSOJE7Fhk?rel=0&amp;playsinline=1" title="L’importance des notes à table ! #cashgamepoker #poker #casino" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>L’importance des notes à table ! #cashgamepoker #poker #casino</figcaption></figure>
+
+<h2>Cash game, tournoi et profondeur de tapis</h2>
+<p>Imaginez que vous utilisiez le même tableau en cash game et en tournoi. En cash game, les blindes restent normalement stables. En tournoi, elles augmentent au fil des niveaux et la valeur stratégique des jetons dépend aussi de la phase et des enjeux de paiement. La <strong>profondeur de tapis</strong> et le format peuvent donc demander des adaptations différentes.</p>
+<p>Les exemples de grilles publiés par <a href="https://www.pokerskill.com/fr/charts/preflop/" rel="noopener noreferrer" target="_blank">Poker Skill</a> précisent des hypothèses comme le format, la profondeur et la taille de relance. C’est une bonne habitude de lecture : examinez ces paramètres avant de comparer deux ranges ou d’en mémoriser une.</p>
+<p>Pour approfondir les particularités de ce format, vous pouvez aussi <a href="https://vincentcoachpoker.com/blog/cash-game-poker">Comprendre les stratégies du cash game au poker</a>. Dans tous les cas, évitez de déplacer une grille d’un contexte à un autre sans vérifier les conditions auxquelles elle correspond.</p>
+
+<h2>Du tableau à une méthode de décision complète</h2>
+<p>Un document statique peut servir de référence rapide. Un outil de visualisation ou d’édition peut aider à organiser des ranges. Mais ni une grille ni une interface ne vous indiquent, à elles seules, pourquoi une décision est adaptée à votre situation ou comment la poursuivre après le flop.</p>
+<p>Lorsque vous souhaitez aller au-delà de la mémorisation, nous relions les <strong>ranges préflop</strong> à l’analyse des erreurs techniques et psychologiques, aux tendances des adversaires et aux décisions jusqu’à la river. Dans notre mentorat La Salle du Temps, cette approche s’appuie sur l’Équation 3D, une méthode structurée autour de ces trois axes. Pour revoir les bases, vous pouvez également <a href="https://vincentcoachpoker.com/blog/comment-gagner-au-poker">Apprendre à gagner au poker</a>.</p>
+<p>Le critère de choix dépend donc de votre besoin : consulter rapidement une base, organiser des scénarios de jeu ou obtenir un accompagnement adapté à vos difficultés. Un tableau générique peut être un bon point de départ. Pour progresser, il faut aussi comprendre ses hypothèses et savoir quand elles ne correspondent plus au coup joué.</p>
+
+<section class="article-conclusion"><h2>À retenir pour utiliser une range</h2><p>Un <strong>tableau de ranges au poker</strong> est utile lorsqu’il correspond à votre position, à l’action en cours, au format et à la profondeur des tapis. Lisez sa légende, vérifiez ses hypothèses et utilisez-le comme une base de travail. La décision reste à adapter au contexte et aux informations disponibles à la table.</p></section>
+
+<section class="brand-cta"><h2>Découvrir la Salle du Temps</h2><p>Si vous connaissez les cases d’un tableau mais hésitez dès que le contexte change, il peut être utile de relier les ranges, la lecture des adversaires et la prise de décision. L’objectif est de dépasser la mémorisation pour construire une méthode adaptée à votre jeu.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Dans notre mentorat La Salle du Temps, nous associons un suivi personnalisé, des contenus structurants et une communauté de joueurs. Nous appliquons l’Équation 3D pour travailler les leaks, les patterns adverses et les décisions du préflop à la river. L’accès se fait sur candidature, après un entretien, et l’accompagnement s’adapte au format et aux problématiques du joueur. <a href="https://vincentcoachpoker.com/la-salle-du-temps">Découvrir la Salle du Temps</a>.</p></section>
+
+<section class="article-faq"><h2>Questions fréquemment posées</h2>
+<h3>Quelle différence entre une range et un tableau de range ?</h3><p>Une range est un ensemble de mains associé à une situation et à une action. Le tableau la représente visuellement pour faciliter sa lecture.</p>
+<h3>Une grille préflop s’applique-t-elle à toutes les tables ?</h3><p>Non, elle dépend de ses hypothèses, comme la position, l’action précédente, le format et la profondeur des tapis. Vérifiez ces paramètres avant de l’utiliser.</p>
+<h3>Comment lire les couleurs d’un tableau de range ?</h3><p>Consultez d’abord la légende, car les couleurs ne signifient pas toujours la même chose d’une grille à l’autre. Elles peuvent représenter une action ou une fréquence de jeu.</p>
+<h3>Faut-il suivre le tableau à la lettre ?</h3><p>Non, une grille sert de repère et ne connaît pas les tendances particulières de vos adversaires. Utilisez-la pour structurer votre décision, puis tenez compte du contexte.</p>
+<h3>Un accompagnement peut-il aider à mieux utiliser les ranges ?</h3><p>Oui, si votre besoin dépasse la consultation d’une grille et concerne aussi l’analyse de vos décisions ou de vos adversaires. Dans notre mentorat La Salle du Temps, nous travaillons ces aspects dans une méthode personnalisée.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

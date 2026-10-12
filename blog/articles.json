@@ -214,5 +214,17 @@
     },
     "revision": "1791763729004058",
     "operation_id": "7e217d0a522a6eab9a46c4c415232fcd717a539cbeb25d833f7dfcd2cdd54a8e"
+  },
+  "dc394c1d-b2a7-41e7-9f27-2b1b090b280b": {
+    "slug": "tableau-de-range-poker",
+    "published_at": "2026-10-12T18:00:26.614Z",
+    "title": "Tableau de range au poker : lire et adapter vos mains",
+    "meta_description": "Le tableau de range poker vous aide à choisir vos mains préflop. Lisez la grille et adaptez-la à votre position et au format.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne assise à une table de poker tient des jetons roses, dans une salle de jeu intérieure floue."
+    },
+    "revision": "1791785562781268",
+    "operation_id": "1e758e9932cc185b1107028cb61b256708b612aeabd5d4d3616db9a3096f049e"
   }
 }
