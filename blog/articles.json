@@ -226,5 +226,17 @@
     },
     "revision": "1791785562781268",
     "operation_id": "1e758e9932cc185b1107028cb61b256708b612aeabd5d4d3616db9a3096f049e"
+  },
+  "1f54cf88-077a-452e-8189-7cc201c0833a": {
+    "slug": "gto-poker",
+    "published_at": "2026-10-13T08:00:27.640Z",
+    "title": "GTO au poker : comprendre l’équilibre et mieux décider",
+    "meta_description": "gto poker : comprenez l’équilibre de Nash, le rôle des solveurs et les situations où adapter votre stratégie pour prendre des décisions éclairées.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-1f54cf88-077a-452e-8189-7cc201c0833a-img-0.webp",
+      "alt": "Carte et jetons sur une table de poker, évoquant une décision stratégique équilibrée."
+    },
+    "revision": "1791837535255173",
+    "operation_id": "67d81a234b389789b345ea4ca4e90884d86f0d5f7a90669baf022f2a50a174b6"
   }
 }
