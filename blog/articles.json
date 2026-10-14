@@ -262,5 +262,17 @@
     },
     "revision": "1791878836641402",
     "operation_id": "72968a1d25504ce16a40935485926807fc7bdd740a90512d85ec35329d75c2a6"
+  },
+  "02af6fd3-c29c-4858-b561-174c9da87b7e": {
+    "slug": "sit-n-go-poker",
+    "published_at": "2026-10-14T10:02:06.462Z",
+    "title": "Le sit-and-go au poker : règles, formats et stratégie pratique",
+    "meta_description": "Comprenez le sit n go poker, ses formats, ses blindes et les repères stratégiques pour choisir une partie adaptée à votre rythme.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée, avec une personne au premier plan et plusieurs tables occupées en arrière-plan."
+    },
+    "revision": "1791929469117722",
+    "operation_id": "0bd2f2f81b1a92d541684bf67abd340f655122c898a9a43af7e996a30cda90cd"
   }
 }

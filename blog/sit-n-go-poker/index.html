@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Le sit-and-go au poker : règles, formats et stratégie pratique · Vincent Coach Poker</title>
+<meta name="description" content="Comprenez le sit n go poker, ses formats, ses blindes et les repères stratégiques pour choisir une partie adaptée à votre rythme.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/sit-n-go-poker/">
+<meta name="sorank-operation-id" content="0bd2f2f81b1a92d541684bf67abd340f655122c898a9a43af7e996a30cda90cd">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 14 octobre 2026</span>
+      <h1>Le sit-and-go au poker&nbsp;: règles, formats et stratégie pratique</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker animée, avec une personne au premier plan et plusieurs tables occupées en arrière-plan." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Un sit-and-go est un tournoi de poker sans heure de départ fixe : la partie commence lorsque le nombre requis de joueurs est réuni. Il peut se jouer sur une table ou plusieurs, avec des blindes standard ou accélérées. Avant de vous inscrire, vérifiez le format, les frais, la structure et la répartition des gains.</div>
+<p>Vous cherchez un tournoi qui ne dépend pas d’un horaire fixe ? Le sit-and-go commence lorsque les places prévues sont occupées, mais son rythme dépend des blindes, du nombre de joueurs et des règles de paiement. Pour préparer vos décisions, consultez aussi notre ressource sur la <a href="https://vincentcoachpoker.com/blog/strategie-pour-gagner-au-poker-en-ligne/">stratégie pour gagner au poker en ligne</a>.</p>
+<p>Le <strong>sit-and-go au poker</strong> peut désigner une table unique, un tournoi multi-tables ou une structure accélérée. Le buy-in, les frais, les tapis de départ et les gains varient selon chaque tournoi. Les vérifier avant l’inscription vous aide à choisir une partie adaptée à votre temps et à votre budget, sans confondre vitesse et avantage stratégique.</p>
+<h2>Qu’est-ce qu’un sit-and-go au poker ?</h2>
+<p>Contrairement à un tournoi programmé à une heure précise, un sit-and-go démarre quand le nombre requis de participants est atteint. Chaque joueur reçoit un tapis de départ défini par le règlement. Les joueurs sont éliminés lorsqu’ils n’ont plus de jetons, et le tournoi se termine selon ses modalités de paiement.</p>
+<p>Une <strong>table unique</strong>, parfois appelée STT, réunit les participants autour d’une seule table. Dans un <strong>sit-and-go multi-tables</strong>, plusieurs tables accueillent le groupe au départ, puis les joueurs restants sont réunis à mesure que le tournoi avance. Le nombre de participants et de places payées dépend de la structure choisie.</p>
+<p>La page de <a href="https://www.pokerstrategy.com/strategy/sit-and-go/texas-holdem-sng-rules/" rel="noopener noreferrer" target="_blank">règles SNG de PokerStrategy</a>, mise à jour le 23 juillet 2026, décrit notamment des formats réunissant généralement 6 à 10 joueurs. Elle rappelle aussi que le nombre de places payées peut varier. Vérifiez donc les règles affichées pour le tournoi précis, plutôt que de supposer que tous les SNG suivent le même modèle.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp" alt="Plusieurs joueurs autour d’une table de poker manipulent des cartes et des jetons dans une salle intérieure." loading="lazy" />
+<h2>Quelle structure choisir selon votre temps disponible ?</h2>
+<p>Si vous disposez d’une courte plage de jeu, comparez d’abord la durée des niveaux de blindes. Une structure standard laisse davantage de mains à chaque niveau. Une structure turbo accélère la progression des blindes et réduit le temps disponible pour attendre une main forte.</p>
+<p>Les intitulés « standard » et « turbo » ne suffisent pas à connaître le rythme exact. En 2026, un guide de Pokerology cite, à titre d’exemples, des niveaux d’environ 15 minutes en régulier et de 5 à 7 minutes en turbo. Les structures réelles peuvent différer : consultez le calendrier des blindes dans le lobby avant de vous inscrire.</p>
+<p>Le nombre de tables compte également. Une table unique concentre votre attention sur un petit groupe d’adversaires. Un format multi-tables ajoute des joueurs et des changements de table, ce qui modifie les situations rencontrées. Pour choisir, tenez compte à la fois du temps disponible et de votre capacité à suivre l’action sans précipiter vos décisions.</p>
+<!-- [IMAGE_PROMPT] Infographie éditoriale vectorielle professionnelle sur fond neutre clair, composition verticale simple avec quatre étapes numérotées alignées et beaucoup d’espace blanc. Présenter uniquement les critères de sélection d’un sit-and-go : « Places », « Blindes », « Droits et gains », « Temps ». Ajouter une icône simple et réaliste par ligne, respectivement des sièges, une horloge avec jetons, une pile de jetons, et un sablier. Utiliser #C8A55F comme couleur d’accent principale pour les numéros, icônes et repères, avec du gris foncé et des tons neutres pour le reste. Texte large, lisible, exclusivement en français. Aucun logo, aucune marque, aucun décor, aucune micro-inscription, aucun effet de tableau de bord. Rendu final : infographie vectorielle éditoriale nette. -->
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-02af6fd3-c29c-4858-b561-174c9da87b7e-img-2.webp" alt="Infographie en quatre critères pour choisir un sit-and-go : places, blindes, droits et gains, temps." loading="lazy" />
+<h2>Comment adapter votre stratégie aux différentes phases ?</h2>
+<p>Au début, les blindes sont souvent faibles par rapport aux tapis. Vous avez généralement plus de marge pour observer les adversaires et sélectionner vos mains. Évitez toutefois de jouer trop passivement : une main faible ne devient pas intéressante simplement parce que le tournoi vient de commencer.</p>
+<p>Quand les blindes montent, la valeur de votre <strong>tapis effectif</strong> change. La position, les mises déjà engagées et les tapis adverses pèsent davantage dans vos décisions. Une relance depuis une position tardive ne se traite pas comme une décision identique depuis une position précoce.</p>
+<p>À la <strong>bulle de paiement</strong>, les joueurs proches d’une place payée peuvent modifier leur comportement. Le risque d’élimination n’a alors pas la même conséquence pour tous les tapis. Un guide Pokerology publié en 2026 explique que la valeur des jetons dans un SNG ne correspond pas toujours directement à leur valeur dans les gains. Le <strong>modèle ICM</strong> sert à analyser cette différence, notamment quand le paiement dépend du classement.</p>
+<p>Pour approfondir les concepts de décision qui s’appliquent à plusieurs formats, vous pouvez lire notre ressource sur <a href="https://vincentcoachpoker.com/blog/gto-poker/">le GTO au poker</a>. Elle ne remplace pas l’adaptation aux tapis et aux places payées, mais permet de travailler des repères théoriques structurés.</p>
+<h2>Comment étudier vos décisions après une partie ?</h2>
+<p>Ne jugez pas une main uniquement par son résultat. Notez plutôt la position, les tapis, les blindes, l’action avant vous et les informations disponibles sur vos adversaires. Cette méthode aide à distinguer une décision raisonnable d’un résultat favorable ou défavorable lié aux cartes.</p>
+<p>Les <a href="https://vincentcoachpoker.com/blog/tableau-de-range-poker/">tableaux de ranges au poker</a> peuvent fournir des repères préflop à étudier. Comparez-les ensuite à la situation réelle : format, nombre de joueurs, profondeur des tapis et pression des gains. Un tableau ne remplace pas l’analyse du contexte, mais il peut rendre vos choix plus cohérents.</p>
+<p>Pour une revue utile, sélectionnez quelques mains marquantes et formulez une question précise pour chacune. Par exemple : « Quels tapis pouvaient payer mon tapis ici ? » ou « Ma position justifiait-elle cette relance ? » Cette routine transforme une session en matière de travail plutôt qu’en simple bilan de gains ou de pertes.</p>
+<p>Une vidéo de poker consacrée à un spot peut compléter cette réflexion générale, sans constituer pour autant un cours spécifique au sit-and-go.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/qN4hvTuhzLQ?rel=0&amp;playsinline=1" title="Spot du jour : t’en penses quoi ? #poker #cashgamepoker" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>Spot du jour : t’en penses quoi ? #poker #cashgamepoker</figcaption></figure>
+<h2>Quels repères garder pour jouer de façon maîtrisée ?</h2>
+<p>Avant l’inscription, vérifiez le buy-in, les frais, les gains prévus, les niveaux de blindes et le nombre de joueurs. Ces éléments vous indiquent le coût réel de participation, la durée probable et la pression stratégique. En cas d’information manquante, ne la déduisez pas du nom du tournoi : consultez son règlement.</p>
+<p>Fixez une limite de dépense compatible avec votre budget de loisir, ainsi qu’une durée de session. Ne poursuivez pas vos pertes en augmentant les mises, et faites une pause si votre concentration baisse. En France, consultez les informations officielles de l’ANJ pour vérifier le cadre applicable à la plateforme envisagée.</p>
+<p>La vitesse des blindes influe aussi sur la variance. Un guide TightPoker publié en septembre 2026 souligne que les SNG turbo à tapis courts peuvent entraîner davantage de variance que des formats plus lents. Ce repère invite à choisir une structure que vous pouvez jouer sereinement, sans confondre une série de résultats avec une mesure complète de votre niveau.</p>
+<p>Si vous souhaitez travailler la méthode au-delà des résultats d’une session, notre ressource explique aussi <a href="https://vincentcoachpoker.com/blog/comment-gagner-au-poker/">comment gagner au poker</a> grâce à des décisions plus structurées. Appliquez les principes à votre format et revoyez vos mains plutôt que de rechercher une recette valable dans toutes les situations.</p>
+<section class="article-conclusion"><h2>À retenir sur le sit-and-go</h2><p>Le choix d’un <strong>sit-and-go au poker</strong> repose sur le nombre de joueurs, la structure des blindes, les places payées et le temps dont vous disposez. Avant chaque inscription, lisez les règles du tournoi et fixez vos limites. Pendant la partie, adaptez vos décisions aux tapis et à la pression des gains, puis analysez quelques mains après la session.</p></section>
+<section class="brand-cta"><h2>Structurer votre progression au poker</h2><p>Les sit-and-go sollicitent la prise de décision, l’adaptation aux adversaires et la maîtrise des émotions. Si vous cherchez un cadre pour travailler ces compétences dans votre pratique du poker, un mentorat personnalisé peut vous aider à organiser vos priorités et votre travail.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>La Salle du Temps associe suivi personnel, contenu structuré, communauté et préparation mentale. L’accompagnement s’adapte au format et aux difficultés du joueur, notamment en tournoi, sans se limiter à une bibliothèque de vidéos. L’accès se fait sur candidature et après un entretien. <a href="https://vincentcoachpoker.com/la-salle-du-temps/">Découvrir La Salle du Temps</a> pour vérifier si cette démarche correspond à vos objectifs.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Qu’est-ce qu’un sit-and-go au poker ?</h3><p>C’est un tournoi sans heure de départ programmée, qui commence lorsque le nombre requis de joueurs est réuni. Il peut se jouer sur une table ou plusieurs.</p><h3>Quelle différence entre un SNG à table unique et multi-tables ?</h3><p>Le premier se déroule autour d’une seule table. Le second commence avec plusieurs tables, puis le nombre de tables diminue à mesure que les joueurs sont éliminés.</p><h3>Quelle différence entre un SNG standard et un turbo ?</h3><p>Le turbo fait augmenter les blindes plus rapidement. Il impose donc des décisions plus rapides et réduit le temps disponible pour attendre une situation favorable.</p><h3>Comment choisir un sit-and-go adapté à son niveau ?</h3><p>Vérifiez le buy-in, la structure des blindes, les règles de paiement et la durée probable. Choisissez une partie compatible avec votre expérience et votre budget de loisir.</p><h3>La Salle du Temps accompagne-t-elle les joueurs de tournoi ?</h3><p>Le mentorat s’adapte au format et aux difficultés de chaque joueur, y compris pour la pratique des tournois. L’accès se fait après une candidature et un entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
