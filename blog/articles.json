@@ -322,5 +322,17 @@
     },
     "revision": "1792023062510833",
     "operation_id": "fa0f9fe0eed52242f4c75975a855b76f56bf1c5d021f01b558bb05d63a4a6cb4"
+  },
+  "0a494a33-04d0-4d82-9769-61978dbf5aa1": {
+    "slug": "progresser-en-cash-game",
+    "published_at": "2026-10-15T18:03:48.588Z",
+    "title": "Progresser en cash game : méthode et conseils concrets",
+    "meta_description": "Pour progresser en cash game, travaillez vos ranges, analysez vos mains et corrigez vos erreurs avec une méthode régulière et mesurable.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs assis autour d’une table de poker, manipulant cartes et jetons."
+    },
+    "revision": "1792044450697491",
+    "operation_id": "9dea6bf6d9bd55b36b9ae6117e338ee8de84107334b2d7ca45a90f28650c22f7"
   }
 }
