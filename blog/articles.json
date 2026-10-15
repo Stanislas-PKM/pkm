@@ -286,5 +286,17 @@
     },
     "revision": "1791951970050851",
     "operation_id": "74892204c0540c8ae468549a495f8c309f008be55b2bb24ef8db6e634fc107b8"
+  },
+  "b08c8dfa-ecbd-48ca-a100-8d7a55f4ec2a": {
+    "slug": "range-poker-6-max",
+    "published_at": "2026-10-15T06:06:42.933Z",
+    "title": "Ranges de poker en 6-max : tableaux et stratégie préflop",
+    "meta_description": "Comprenez le range poker 6 max, les ouvertures par position et les ajustements selon le cash game, le tournoi et la profondeur de tapis.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-b08c8dfa-ecbd-48ca-a100-8d7a55f4ec2a-img-0.webp",
+      "alt": "Illustration vue du dessus d’une table de poker à six places, avec des cartes et quelques jetons."
+    },
+    "revision": "1792008655053640",
+    "operation_id": "65d090b868e1550347dfca424aa989750efd9c451efa9329cefafe6d1ac0c7c7"
   }
 }
