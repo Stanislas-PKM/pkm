@@ -298,5 +298,17 @@
     },
     "revision": "1792008655053640",
     "operation_id": "65d090b868e1550347dfca424aa989750efd9c451efa9329cefafe6d1ac0c7c7"
+  },
+  "18270c4c-2912-45bd-8159-949add8f6b50": {
+    "slug": "comment-devenir-joueur-pro",
+    "published_at": "2026-10-15T07:48:51.027Z",
+    "title": "Comment devenir joueur professionnel de poker : le parcours",
+    "meta_description": "Comment devenir joueur pro : évaluez votre niveau, travaillez votre stratégie et sécurisez votre bankroll avant d’en vivre.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Des joueurs assis à une table de poker dans une salle intérieure fréquentée."
+    },
+    "revision": "1791562379421712",
+    "operation_id": "bf9996251ecfd1ea84b56b2e4ed2c69023c7862da6bdd17ec61f8ae8a19cb60c"
   }
 }
