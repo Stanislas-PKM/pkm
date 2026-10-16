@@ -358,5 +358,17 @@
     },
     "revision": "1792116548231720",
     "operation_id": "fc7c8f87c55911c37f977b6f13c4bd77a04eaa39f18b4599132c6d1e191e727d"
+  },
+  "3f2ba256-836b-4a9f-8dca-2305180033f8": {
+    "slug": "vincent-coach-poker-ou-poker-academie",
+    "published_at": "2026-10-16T20:01:09.312Z",
+    "title": "Vincent Coach Poker ou Poker Académie : quel choix ?",
+    "meta_description": "Vincent Coach Poker ou Poker Académie : comparez les vidéos, le mentorat, la communauté et les modalités d’accès au coaching.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne assise à une table de poker tient des jetons roses, dans une salle de jeu floue."
+    },
+    "revision": "1792141008642915",
+    "operation_id": "3468c60497caf6fec12902d4a97acca477cb2ecd9feaa8687c4c4fa260320ac6"
   }
 }
