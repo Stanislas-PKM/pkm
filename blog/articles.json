@@ -346,5 +346,17 @@
     },
     "revision": "1792100266607904",
     "operation_id": "5a4ad5482fb8f784f9255c04bd7082c62381e5d832a1575c250eb7254a164da4"
+  },
+  "4f0ac8a5-aecc-413f-9994-ab45a4d7ec33": {
+    "slug": "strategies-de-poker-avancees",
+    "published_at": "2026-10-16T14:02:57.227Z",
+    "title": "Stratégies de poker avancées : méthodes pour mieux décider",
+    "meta_description": "Appliquez des strategies de poker avancees pour équilibrer GTO, ranges et adaptations exploitantes, et décider avec méthode.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Des joueurs assis autour d’une table de poker avec des jetons et des cartes."
+    },
+    "revision": "1792116548231720",
+    "operation_id": "fc7c8f87c55911c37f977b6f13c4bd77a04eaa39f18b4599132c6d1e191e727d"
   }
 }
