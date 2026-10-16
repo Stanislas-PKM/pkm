@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Élaborer un plan de jeu au poker : méthode et exemples · Vincent Coach Poker</title>
+<meta name="description" content="Apprenez à elaborer un plan de jeu au poker : structurez vos décisions selon la position, les profils adverses et le board, du préflop à la river.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/elaborer-un-plan-de-jeu-au-poker/">
+<meta name="sorank-operation-id" content="5a4ad5482fb8f784f9255c04bd7082c62381e5d832a1575c250eb7254a164da4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 16 octobre 2026</span>
+      <h1>Élaborer un plan de jeu au poker&nbsp;: méthode et exemples</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker fréquentée, avec un joueur assis au premier plan et d’autres personnes autour des tables." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Pour élaborer un plan de jeu au poker, partez d’une stratégie de base adaptée à votre format et à votre position, puis ajustez-la aux profils adverses et aux actions de chaque street. Anticipez vos réponses aux relances et aux cartes qui changent le board. Après la session, révisez les décisions clés à froid pour corriger votre méthode.</div>
+<p>Pourquoi une même main mérite-t-elle parfois un fold, parfois un call ou une relance ? La réponse dépend de votre position, de vos adversaires et de l’action précédente. Pour relier vos décisions de table à un travail stratégique plus large, consultez <a href="https://vincentcoachpoker.com/blog/strategie-pour-gagner-au-poker-en-ligne/">Construire une stratégie pour gagner au poker en ligne</a>.</p>
+<p>Pour <strong>élaborer un plan de jeu au poker</strong>, évitez les automatismes rigides : une ligne qui fonctionne contre un joueur passif peut perdre de sa valeur face à un adversaire agressif. Votre plan sert de cadre, pas de scénario immuable. Il vous aide à prendre des décisions cohérentes à partir des informations disponibles, puis à les réviser quand la main ou la dynamique de la table évolue.</p>
+<h2>Qu’est-ce qu’un plan de jeu au poker ?</h2>
+<p>Un plan de jeu est une stratégie générale pour les situations que vous rencontrez à la table. Il relie vos choix préflop à vos décisions après le flop, en tenant compte de la position, des tapis, des actions et du profil des adversaires. Il ne consiste pas à prévoir chaque carte, mais à définir comment vous réagirez à plusieurs scénarios plausibles.</p>
+<p>Commencez par un cadre adapté à votre format : cash game, tournoi ou partie à effectifs réduits. Précisez vos objectifs de session, les positions que vous jouez et les situations récurrentes que vous souhaitez mieux maîtriser. Par exemple, vous pouvez travailler les pots où vous relancez préflop depuis le bouton et êtes suivi par la grosse blinde.</p>
+<p>Construisez ensuite une stratégie de base avant d’ajouter des adaptations. Une <strong>range de départ</strong> structurée évite de choisir vos mains uniquement selon votre humeur. Elle doit tenir compte de votre position et de l’action devant vous. Un tableau peut servir de repère d’étude, mais il ne remplace pas l’analyse des tapis, des joueurs et du déroulement du coup.</p>
+<h2>Observer la table avant de choisir votre stratégie</h2>
+<p>À l’ouverture d’une table, deux joueurs limpent souvent, un autre relance rarement et un quatrième mise fréquemment après le flop. Ces comportements ne justifient pas encore des conclusions définitives, mais ils vous donnent des pistes à vérifier. Notez d’abord les actions observables, puis formulez une hypothèse sur les tendances de chaque <strong>profil adverse</strong>.</p>
+<p>Un joueur qui suit régulièrement peut vous inciter à miser plus souvent pour la valeur avec des mains solides, plutôt qu’à multiplier les bluffs. Face à un adversaire qui mise fréquemment, prévoyez quelles mains peuvent continuer contre cette pression. Gardez une distinction entre une observation répétée et une impression née d’une seule main.</p>
+<p>Votre <strong>position</strong> modifie aussi le plan. Agir après vos adversaires vous donne accès à leurs actions avant de décider. En début de parole, davantage de joueurs restent à parler derrière vous, ce qui rend plus coûteux l’engagement avec une main marginale. Pour construire une base en partie à six joueurs, vous pouvez <a href="https://vincentcoachpoker.com/blog/range-poker-6-max/">Choisir ses ranges au poker en 6-max</a>.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Personne assise à une table de poker tenant des jetons roses, avec une salle de jeu floue en arrière-plan." loading="lazy" />
+<h2>Construire un plan préflop adapté au contexte</h2>
+<p>Vous êtes au bouton après une relance en début de parole : quelles mains suivez-vous, lesquelles relancez-vous et lesquelles abandonnez-vous ? La réponse dépend d’abord de la stratégie de base retenue pour cette situation, puis des informations concrètes sur le relanceur et les joueurs encore à parler.</p>
+<p>Notez les situations récurrentes plutôt que chaque combinaison isolément. Par exemple, préparez un plan contre une relance d’un joueur serré en début de parole, puis un autre contre une ouverture plus large au bouton. Ainsi, votre sélection de mains reste liée à l’action, aux positions et au nombre d’adversaires. Pour structurer cette base, <a href="https://vincentcoachpoker.com/blog/tableau-de-range-poker/">Consulter un tableau de range poker</a>.</p>
+<p>Un tableau fournit un point de départ à étudier, et non une règle universelle. Avant d’appliquer une main prévue dans une situation standard, vérifiez la taille des tapis, les relances déjà engagées et les joueurs à parler. Si le contexte s’écarte nettement du scénario étudié, adaptez votre décision au lieu de suivre le tableau mécaniquement.</p>
+<h2>Planifier chaque street sans s’enfermer dans une ligne</h2>
+<p>Au flop, une paire moyenne peut sembler confortable, mais sa valeur dépend du tableau et de la range adverse. Demandez-vous quelles mains moins bonnes peuvent suivre, quelles mains meilleures sont plausibles et quelles cartes du turn changeraient votre décision. Cette comparaison entre votre main et les mains possibles chez l’adversaire est plus utile que la force absolue de vos cartes.</p>
+<p>Une manière pratique de préparer votre action consiste à examiner trois éléments : votre <strong>range</strong>, la <strong>texture du board</strong> et les réponses de l’adversaire. Avant de miser, précisez si vous cherchez de la valeur, un fold adverse avec un bluff, ou une protection contre certaines mains. Si aucune de ces raisons ne s’applique clairement, réfléchissez à l’intérêt d’un check.</p>
+<p>Le poker implique des informations incomplètes : vous ne connaissez pas les cartes de vos adversaires et leurs actions peuvent aussi représenter un bluff. Un rapport parlementaire de 2017 consacré à l’intelligence artificielle décrit cette difficulté dans les jeux de poker, où il faut raisonner sans connaître les ressources cachées des autres joueurs. Cette réalité rappelle pourquoi votre plan doit rester ajustable quand de nouvelles actions apportent des informations.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/DV4o2jeRlbc?rel=0&amp;playsinline=1" title="TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)</figcaption></figure>
+<p>Au turn, classez les cartes selon leur effet : certaines complètent des tirages, d’autres changent peu la situation, et d’autres favorisent davantage votre range. Reliez cette lecture au montant du pot et à la mise demandée. Les <strong>cotes du pot</strong> et l’<strong>équité</strong> vous aident à évaluer si continuer est cohérent, sans oublier les actions que vous pourriez rencontrer à la river.</p>
+<p>La théorie peut ensuite servir de référence pour comparer vos décisions à une stratégie plus équilibrée. Elle ne remplace pas l’adaptation aux adversaires ni la compréhension des situations concrètes. Pour approfondir ce cadre, <a href="https://vincentcoachpoker.com/blog/gto-poker/">Comprendre le GTO au poker</a> permet d’explorer les principes de la théorie des jeux appliqués aux décisions.</p>
+<h2>Réviser vos décisions après la session</h2>
+<p>Après une main difficile, notez les informations disponibles au moment de la décision, plutôt que le résultat final seul. Un call perdant peut être cohérent si les éléments connus le justifiaient ; un pot remporté ne prouve pas, à lui seul, que votre ligne était bonne. Cette distinction vous aide à travailler la qualité du raisonnement, pas seulement le résultat immédiat.</p>
+<p>Choisissez quelques mains à revoir et posez-vous les mêmes questions : quelle était ma range à cette position ? Quelles mains adverses correspondaient à ses actions ? Quelles cartes changeaient mon plan ? Cette <strong>review de mains</strong> transforme les hésitations récurrentes en thèmes de travail, comme les pots 3-bet, les décisions hors position ou les bluffs river.</p>
+<p>Si vous bloquez souvent au même moment, écrivez une règle de travail ciblée et testez-la lors de vos prochaines sessions. Par exemple, avant un deuxième barrel, évaluez la range adverse et les cartes qui renforcent votre histoire. Pour sortir d’un jeu au feeling, nous pouvons aussi vous accompagner avec une méthode de décision structurée, adaptée à votre format et à vos difficultés.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-721472e6-58a4-4ab0-af39-e794e572493e-img-2.webp" alt="Checklist illustrée en quatre étapes : observer, estimer la range, décider et réviser." loading="lazy" />
+<!-- [IMAGE_PROMPT] Infographie éditoriale en illustration vectorielle propre et professionnelle, fond clair neutre. Une checklist verticale en quatre étapes avec grands numéros, une icône simple par étape, beaucoup d’espace blanc et un seul accent doré #C8A55F, sans dominante globale. Texte visible court, parfaitement lisible et exclusivement en français : « Observer », « Estimer la range », « Décider », « Réviser ». Composition linéaire, contrastes nets, sans logo, marque, interface, écran, microtexte ni éléments décoratifs superflus. -->
+<section class="article-conclusion"><h2>Un plan utile reste adaptable</h2><p>Pour élaborer un plan de jeu au poker, partez d’une base claire, observez les tendances adverses et préparez des réponses pour les situations fréquentes. À chaque street, réévaluez la range adverse, le tableau et le prix à payer. Puis révisez vos mains à froid pour corriger une décision précise à la fois, sans confondre qualité du jeu et résultat d’une seule session.</p></section>
+<section class="brand-cta"><h2>Découvrir l’accompagnement poker</h2><p>Si vous avez du mal à transformer vos connaissances en décisions cohérentes, un regard extérieur peut vous aider à repérer les habitudes qui freinent votre progression. La Salle du Temps est un mentorat personnalisé qui adapte le travail au format de jeu et aux problématiques du joueur.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Notre méthode, l’Équation 3D, articule le diagnostic des leaks techniques et psychologiques, la lecture des adversaires et une matrice décisionnelle du préflop à la river. L’accompagnement comprend un suivi personnel, du contenu structurant et une communauté de joueurs. L’accès se fait sur candidature, après un entretien. <a href="https://vincentcoachpoker.com/la-salle-du-temps/">Découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Qu’est-ce qu’un plan de jeu au poker ?</h3><p>C’est une stratégie générale qui relie vos décisions aux positions, aux actions et aux profils des adversaires. Elle sert de cadre adaptable, pas de scénario fixe pour chaque main.</p><h3>Quand faut-il élaborer son plan de jeu ?</h3><p>Préparez votre stratégie de base avant la session, puis ajustez-la en observant la table. Pendant une main, révisez-la à chaque street lorsque l’action ou le board apporte une information nouvelle.</p><h3>Comment analyser le profil d’un adversaire ?</h3><p>Commencez par noter ses actions observables, comme sa fréquence de relance ou sa tendance à suivre après le flop. Vérifiez plusieurs fois cette tendance avant d’en faire une règle de jeu.</p><h3>Un tableau de range suffit-il pour décider ?</h3><p>Non, il donne un repère de départ pour des situations définies. Les positions, les tapis, les actions précédentes et les adversaires présents peuvent conduire à adapter la décision.</p><h3>Comment un accompagnement peut-il aider à progresser ?</h3><p>Un mentorat personnalisé peut structurer l’analyse des leaks, la lecture des adversaires et les décisions du préflop à la river. La Salle du Temps repose sur un suivi individuel et un accès après candidature et entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
