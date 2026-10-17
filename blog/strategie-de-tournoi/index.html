@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Stratégie de tournoi de poker : adapter son jeu à chaque phase · Vincent Coach Poker</title>
+<meta name="description" content="strategie de tournoi : adaptez votre jeu aux blindes, à la profondeur du tapis, aux profils adverses et à la pression des paliers de paiement.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/strategie-de-tournoi/">
+<meta name="sorank-operation-id" content="10167aed034b933b4f81e3e326d13062e937b6ebacdaf96cd0146c9807e4e0c7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 17 octobre 2026</span>
+      <h1>Stratégie de tournoi de poker&nbsp;: adapter son jeu à chaque phase</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker intérieure bondée, un joueur au premier plan lève la main tandis que d’autres personnes entourent les tables." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Une stratégie de tournoi solide s’ajuste à la profondeur du tapis, aux blindes et aux antes, puis à la position, aux profils adverses et aux paliers de paiement. L’objectif n’est pas de survivre à tout prix, mais de choisir des risques cohérents avec la structure et la valeur réelle des jetons à chaque phase.</div>
+<p>En tournoi, une main ne se joue jamais dans le vide : la même paire peut justifier une décision différente selon les blindes, votre tapis et les joueurs encore à parler. Une <strong>stratégie de tournoi</strong> consiste donc à réévaluer la situation au fil des niveaux, plutôt qu’à appliquer une règle unique du début à la fin. Pour approfondir les décisions techniques, vous pouvez consulter <a href="https://vincentcoachpoker.com/blog/strategies-de-poker-avancees/">nos stratégies de poker avancées</a>.</p>
+<p>Le repère le plus utile n’est pas seulement le nombre de jetons affiché, mais ce qu’il représente en blindes et le montant déjà engagé dans le pot. Ajoutez la position, les profils adverses et les paliers de paiement : vous obtenez les éléments qui orientent les décisions préflop et postflop. L’enjeu est de préserver votre capacité à agir sans laisser les blindes réduire votre marge de manœuvre.</p>
+<h2>Lire la structure avant de choisir vos mains</h2>
+<p>Imaginez deux joueurs avec le même tapis en jetons, mais à des niveaux de blindes différents. L’un dispose d’une marge confortable pour jouer plusieurs rues, l’autre ne peut plus se permettre d’attendre longtemps. Le nombre de jetons ne suffit donc pas à décrire votre situation : rapportez-le aux blindes et aux antes du niveau en cours.</p>
+<p>Consultez la structure du tournoi avant de vous inscrire ou de commencer à jouer. Repérez la durée des niveaux, le rythme de hausse des blindes et le moment où les antes entrent en jeu. Une ante augmente le pot initial et modifie l’intérêt de ramasser les blindes, mais elle augmente aussi le coût des tours où vous ne jouez pas de main.</p>
+<p>Une fiche de structure des World Series of Poker publiée pour une épreuve en 2018 illustre la façon dont les niveaux, les durées et les antes sont définis pour un tournoi particulier. Servez-vous du programme de votre propre épreuve, car cette fiche ancienne ne décrit pas les structures de tous les tournois. <a href="https://www.wsop.com/pdfs/structuresheets/structure_1487_16413.pdf" rel="noopener noreferrer" target="_blank">La structure WSOP de 2018</a> constitue un exemple de calendrier de niveaux.</p>
+<p>Ne classez pas les phases uniquement selon le temps écoulé. Un « début de tournoi » peut déjà devenir délicat si votre tapis a perdu de sa valeur en blindes. À l’inverse, un tapis encore profond permet de privilégier les décisions postflop, même lorsque plusieurs niveaux sont passés.</p>
+<h2>Mesurer votre tapis en blindes et choisir vos risques</h2>
+<p>Avant chaque décision importante, convertissez votre tapis en grosses blindes. Cette <strong>profondeur en blindes</strong> indique les options qui restent disponibles : plus elle est élevée, plus vous avez de marge pour miser sur plusieurs rues ; plus elle baisse, plus les décisions préflop prennent de l’importance.</p>
+<p>Regardez aussi le <strong>tapis effectif</strong>, c’est-à-dire le plus petit tapis parmi les joueurs engagés dans le coup. Si vous possédez beaucoup de jetons mais que votre adversaire en a nettement moins, c’est ce montant inférieur qui détermine le maximum que vous pouvez lui prendre ou lui perdre dans la main.</p>
+<p>Avec un tapis profond, évitez de construire un gros pot hors de position avec une main difficile à jouer. Les mains capables de faire des tirages forts gagnent de la valeur lorsqu’elles peuvent toucher des combinaisons très fortes, mais elles ne justifient pas automatiquement de payer une relance. Tenez compte du prix à payer, de la position et de la probabilité de réaliser votre équité.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Personne assise à une table de poker, tenant des jetons roses devant un arrière-plan intérieur flou." loading="lazy" />
+<p>Quand votre tapis se réduit, anticipez la prochaine hausse des blindes au lieu d’attendre d’être presque sans options. Une relance qui engage une part importante de vos jetons peut vous laisser dans une situation inconfortable si un adversaire surrelance. Pour organiser ces repères avant de jouer, nous expliquons comment <a href="https://vincentcoachpoker.com/blog/elaborer-un-plan-de-jeu-au-poker/">élaborer un plan de jeu au poker</a>.</p>
+<h2>Exploiter la position et les profils sans bluffer à l’aveugle</h2>
+<p>La <strong>position tardive</strong> vous permet d’observer les actions précédentes avant de décider. Lorsque tout le monde passe jusqu’à vous au bouton, vous pouvez envisager d’ouvrir plus souvent qu’en début de parole, surtout si les joueurs dans les blindes défendent peu. Ajustez toutefois votre sélection aux adversaires qui restent à parler et à leur tendance à suivre ou à surrelancer.</p>
+<p>Un vol de blindes est une relance visant à remporter les mises forcées avant le flop. Il est plus intéressant quand le pot initial représente une part notable de votre tapis, que les joueurs en blindes passent suffisamment et que votre relance reste cohérente avec votre stratégie. S’ils paient fréquemment, réduisez les bluffs et privilégiez les mains qui se jouent correctement après le flop.</p>
+<p>Ne misez pas uniquement pour « savoir où vous en êtes ». Avant d’agir, demandez-vous quelles mains moins bonnes peuvent suivre, quelles mains meilleures peuvent passer et ce que vous ferez si votre adversaire relance. Cette réflexion donne un objectif à votre mise et évite de transformer un coup moyen en gros engagement sans plan.</p>
+<p>Par exemple, dans un pot relancé puis surrelancé, définissez avant le flop les boards sur lesquels vous poursuivrez et ceux où vous abandonnerez. Une vidéo consacrée aux décisions dans les pots 3-bet peut compléter ce travail technique.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/DV4o2jeRlbc?rel=0&amp;playsinline=1" title="TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)</figcaption></figure>
+<h2>À l’approche des places payées, intégrer la pression ICM</h2>
+<p>Lorsque les places payées approchent, la valeur des jetons ne se résume plus à leur part du tapis total. L’<strong>ICM</strong>, ou modèle indépendant des jetons, estime comment les tapis se traduisent en parts des gains, selon la répartition des prix. Cela peut rendre un call risqué moins intéressant qu’une relance, surtout si votre élimination vous ferait perdre une part importante de cette valeur.</p>
+<p>L’Autorité nationale des jeux décrit la dotation d’un tournoi comme pouvant réunir un montant fixe ou garanti et les droits d’entrée des participants. La structure des gains compte donc dans l’analyse des décisions proches de la bulle ou d’une table finale. Consultez le <a href="https://anj.fr/sites/default/files/2025-01/ANJ_GLOSSAIRE_GUIDE_SUPERVISION_2025_0.pdf" rel="noopener noreferrer" target="_blank">glossaire de l’ANJ, publié en 2025</a>, pour cette définition de la dotation.</p>
+<p>Sur la bulle, le gros tapis peut mettre une pression ciblée sur les tapis moyens, qui risquent davantage en étant éliminés. Si vous avez vous-même un tapis moyen, évitez de confondre « passer devant » et « protéger votre place » : la décision dépend des tapis encore en jeu, des joueurs qui parlent après vous et de l’écart entre les gains.</p>
+<p>Un preprint publié en août 2026 souligne que l’ICM classique ne prend pas en compte certains éléments comme l’ordre d’action, les blindes à payer ou la rotation des sièges. Utilisez donc le modèle comme un repère pour réfléchir aux gains, pas comme une réponse automatique à chaque main. <a href="https://arxiv.org/abs/2608.09586" rel="noopener noreferrer" target="_blank">Cette étude sur les limites de l’ICM</a> examine ces facteurs absents du modèle.</p>
+<h2>Adapter votre plan au format et à la structure</h2>
+<p>Un tournoi turbo laisse moins de temps pour attendre une main forte qu’une structure lente. Dans un format rapide, suivez de près la baisse de votre tapis en blindes et réfléchissez plus tôt aux décisions préflop qui engagent une grande partie de vos jetons. Dans une structure plus lente, vous disposez généralement de davantage d’occasions de jouer des pots postflop, sans que cela justifie de multiplier les confrontations marginales.</p>
+<p>En re-entry, fixez votre budget avant de jouer et décidez à l’avance dans quelles conditions vous pourriez entrer de nouveau. La possibilité de se réinscrire n’est pas une raison stratégique pour prendre des risques sans avantage : chaque nouvelle entrée modifie le coût total et ne change pas la qualité d’une décision donnée.</p>
+<p>Dans un sit and go, la taille du tapis et les gains attribués aux places restantes deviennent particulièrement importants à mesure que le groupe se réduit. Pour comparer ces repères à ceux d’un tournoi à plusieurs tables, nous présentons aussi <a href="https://vincentcoachpoker.com/blog/sit-n-go-poker/">le poker sit and go</a>.</p>
+<h2>Faire de chaque tournoi une occasion de progresser</h2>
+<p>Une stratégie reproductible se construit en dehors des coups les plus spectaculaires. Après une session, notez les mains où vous avez hésité, puis reconstituez la situation : votre tapis en blindes, votre position, les actions avant vous, le profil adverse et la pression des gains. Vous pourrez alors distinguer une décision cohérente d’un résultat simplement favorable ou défavorable.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-c4576c25-ed2d-49c0-97f2-46118bd3ccac-img-2.webp" alt="Infographie checklist en quatre étapes pour analyser une décision de tournoi : tapis en blindes, position, profils adverses et paliers de paiement." loading="lazy" />
+<p>Conservez des notes courtes et utiles. Par exemple : « J’ai défendu trop large hors de position », « J’ai ignoré l’ante » ou « J’ai payé sans estimer la range adverse ». Choisissez ensuite un seul point à travailler lors de la prochaine session, afin de transformer l’analyse en habitude concrète.</p>
+<p>La révision des mains en ligne peut faciliter ce travail si vous gardez l’historique des coups et comparez les décisions prises avec les options disponibles. Nous avons également consacré un article à la <a href="https://vincentcoachpoker.com/blog/strategie-pour-gagner-au-poker-en-ligne/">stratégie pour gagner au poker en ligne</a>, pour examiner les principes propres à ce format.</p>
+<p>La Salle du Temps accompagne les joueurs de tournoi avec un suivi personnalisé, du contenu structurant et une méthode qui relie le diagnostic des erreurs, la lecture des adversaires et les décisions de jeu. Une progression utile repose sur des retours réguliers et l’application de repères adaptés à votre format, pas sur l’accumulation de conseils détachés de vos mains réelles.</p>
+<section class="article-conclusion"><h2>Construire une stratégie de tournoi cohérente</h2><p>À chaque niveau, réévaluez votre tapis en blindes, la structure, votre position et les profils encore à parler. À l’approche des gains, ajoutez la pression ICM à l’analyse sans la traiter comme une règle absolue. Une <strong>stratégie de tournoi cohérente</strong> ne consiste pas à éviter tous les risques, mais à engager vos jetons avec un objectif clair et un plan pour la suite.</p></section>
+<section class="brand-cta"><h2>Structurez vos décisions en tournoi</h2><p>Si vos résultats stagnent, l’analyse de vos propres mains peut révéler les erreurs que des conseils généraux ne montrent pas. Notre accompagnement s’adapte au format pratiqué et travaille les décisions, la lecture des adversaires et les habitudes qui influencent votre jeu.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>La Salle du Temps est un mentorat avec suivi personnel, contenu méthodologique et communauté. Vincent Bellepaume indique avoir réalisé plus de 100 000 € de profit aux tables en 2025 ; ce résultat personnel ne préjuge pas de celui des joueurs accompagnés. Le programme recommande en moyenne une heure de travail par jour et fixe comme objectif une progression vers la rentabilité en 90 jours, sans garantie de résultat. L’accès se fait sur candidature et après un entretien. Pour en savoir plus, <a href="https://vincentcoachpoker.com/la-salle-du-temps/">découvrez l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Faut-il jouer serré au début d’un tournoi ?</h3><p>Pas automatiquement. Avec un tapis profond, choisissez des mains qui se jouent bien après le flop et évitez les gros pots difficiles hors de position.</p><h3>Comment savoir si mon tapis est court ?</h3><p>Divisez votre tapis par le montant de la grosse blind pour obtenir sa profondeur en blindes. Considérez aussi les antes, les tapis adverses et les gains en jeu avant de choisir votre action.</p><h3>Quand tenter un vol de blindes ?</h3><p>La position tardive, des joueurs qui défendent peu et un pot intéressant rendent le vol plus pertinent. Si les blindes suivent trop souvent, resserrez vos bluffs et misez davantage sur des mains jouables.</p><h3>Comment adapter son jeu près de la bulle ?</h3><p>Regardez les gains, les tapis des autres joueurs et le risque d’élimination associé à votre décision. L’ICM apporte un repère, mais ne remplace pas l’analyse de l’action et des joueurs à la table.</p><h3>Un accompagnement peut-il aider à progresser en tournoi ?</h3><p>La Salle du Temps propose un mentorat adapté au format de jeu, avec un suivi personnel et une méthode de travail structurée. Les résultats dépendent de l’engagement et de l’application des principes par chaque joueur.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
