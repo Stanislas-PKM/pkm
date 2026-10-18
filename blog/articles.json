@@ -394,5 +394,17 @@
     },
     "revision": "1792210751268191",
     "operation_id": "10167aed034b933b4f81e3e326d13062e937b6ebacdaf96cd0146c9807e4e0c7"
+  },
+  "26b9f3be-3207-486c-8eab-5cfa8fcd6551": {
+    "slug": "comment-jouer-tres-lag-en-micro-efficacement",
+    "published_at": "2026-10-18T06:01:22.325Z",
+    "title": "Comment jouer un style LAG en micro-limites avec méthode",
+    "meta_description": "Comment jouer tres lag en micro efficacement : élargir en position, miser pour value, choisir ses bluffs et contrôler la variance aux tables.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs sont assis autour d’une table dans une salle de poker intérieure."
+    },
+    "revision": "1792264789062264",
+    "operation_id": "d646a4bece55c1fe5e650c6bac3962bd73ee19f7430eb15513b0d0f4c5bee624"
   }
 }
