@@ -406,5 +406,17 @@
     },
     "revision": "1792264789062264",
     "operation_id": "d646a4bece55c1fe5e650c6bac3962bd73ee19f7430eb15513b0d0f4c5bee624"
+  },
+  "3dcbd474-8c80-46b5-9123-70837795d1ec": {
+    "slug": "poker-variance-simulator",
+    "published_at": "2026-10-18T12:01:09.515Z",
+    "title": "Simulateur de variance au poker : 5 outils selon le format",
+    "meta_description": "Comparez 5 poker variance simulator selon le format : cash game, tournois ou poker live, les entrées utiles et les limites de chaque simulation.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-3dcbd474-8c80-46b5-9123-70837795d1ec-img-0.webp",
+      "alt": "Illustration de jetons, de cartes et d’une courbe évoquant les fluctuations au poker."
+    },
+    "revision": "1792282859158557",
+    "operation_id": "acd216597125c22e263bc823ca88bfbdbc9e85ef493e95339f4200dd94b21458"
   }
 }
