@@ -418,5 +418,17 @@
     },
     "revision": "1792282859158557",
     "operation_id": "acd216597125c22e263bc823ca88bfbdbc9e85ef493e95339f4200dd94b21458"
+  },
+  "55bc6880-b413-48f2-9112-c01b9e406ccc": {
+    "slug": "prix-coaching-poker",
+    "published_at": "2026-10-18T18:01:09.603Z",
+    "title": "Prix du coaching poker : tarifs, formules et repères pour choisir",
+    "meta_description": "Prix coaching poker : comparez tarifs horaires, packs et abonnements selon le contenu, le suivi et les conditions avant de choisir.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Une personne assise au premier plan dans une salle de poker bondée."
+    },
+    "revision": "1792304287756439",
+    "operation_id": "a0b640e8349e5b8d877973cd4815eae441a173b7449b83e582da8c4ee41e26f7"
   }
 }
