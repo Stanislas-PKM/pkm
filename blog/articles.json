@@ -430,5 +430,17 @@
     },
     "revision": "1792304287756439",
     "operation_id": "a0b640e8349e5b8d877973cd4815eae441a173b7449b83e582da8c4ee41e26f7"
+  },
+  "bf10d056-d7dc-4ace-9884-3cac6ff677f2": {
+    "slug": "formation-poker",
+    "published_at": "2026-10-19T08:03:54.432Z",
+    "title": "Choisir une formation de poker adaptée à votre progression",
+    "meta_description": "Choisir une formation poker adaptée à votre niveau, format de jeu et besoin de suivi, pour étudier avec méthode sans attendre de gains garantis.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée avec des joueurs assis autour de plusieurs tables."
+    },
+    "revision": "1792359781484963",
+    "operation_id": "f86e594e6c0c886b9792f7aec9c335ea91dfa5705b98bcbb74a33ad5e8678ba2"
   }
 }
