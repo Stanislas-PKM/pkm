@@ -442,5 +442,17 @@
     },
     "revision": "1792359781484963",
     "operation_id": "f86e594e6c0c886b9792f7aec9c335ea91dfa5705b98bcbb74a33ad5e8678ba2"
+  },
+  "823ca62d-865a-42c5-92b4-f162465a017c": {
+    "slug": "le-mentorat-poker-vaut-il-son-prix-pour-quelqu-un-qui-travaille-a-temps-plein",
+    "published_at": "2026-10-19T14:03:01.693Z",
+    "title": "Le mentorat poker vaut-il le coût avec un emploi à temps plein ?",
+    "meta_description": "Le mentorat poker vaut-il son prix pour quelqu’un qui travaille à temps plein ? Évaluez le temps demandé, le coût et les options d’apprentissage.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-823ca62d-865a-42c5-92b4-f162465a017c-img-0.webp",
+      "alt": "Montre, cartes et jeton illustrant le temps à consacrer au mentorat poker."
+    },
+    "revision": "1792375975901778",
+    "operation_id": "a55686817af60b5034aafa46b783919d497fad4ebe78f246005f1e9e3b9ee51a"
   }
 }
