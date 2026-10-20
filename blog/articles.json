@@ -474,5 +474,17 @@
     },
     "revision": "1792449079141463",
     "operation_id": "1ec4c01261c424fb10f4814572b7591a42afe33e36f6e04b5a26ec5a1fd96115"
+  },
+  "7056acd1-29f2-42aa-9fb6-9808f4389ab0": {
+    "slug": "coaching-poker",
+    "published_at": "2026-10-20T16:02:55.217Z",
+    "title": "Coaching poker : choisir un accompagnement adapté à vos objectifs",
+    "meta_description": "Le coaching poker se choisit selon votre format, votre niveau et le suivi recherché. Comparez les méthodes, le temps et les modalités d’accès.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker fréquentée, avec une personne au premier plan et des joueurs autour des tables."
+    },
+    "revision": "1792469866070784",
+    "operation_id": "69f2b01e19790ffd44f9330545b5119442ec158beb6e3645457e7c6d1cbd0e7d"
   }
 }
