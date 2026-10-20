@@ -462,5 +462,17 @@
     "meta_description": "Comment bluffer au poker : observez l’adversaire, le tableau et l’équité pour choisir une ligne cohérente et limiter les bluffs coûteux.",
     "revision": "1792397480178326",
     "operation_id": "166789defb348fabac4a5a4237dc5e12c94da099d2045aa1a330ba74c0293601"
+  },
+  "8de383bf-6be2-4088-a582-6a8af887d1b2": {
+    "slug": "jouer-la-gagne-dans-les-situations-impliquant-licm",
+    "published_at": "2026-10-20T10:03:52.870Z",
+    "title": "Comment jouer pour la gagne avec l’ICM en tournoi de poker",
+    "meta_description": "Apprenez à jouer la gagne dans les situations impliquant licm en tournoi, en intégrant les tapis, les paliers et le risque d’élimination.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Des joueurs assis à une table de poker manipulent des jetons et des cartes dans une salle animée."
+    },
+    "revision": "1792449079141463",
+    "operation_id": "1ec4c01261c424fb10f4814572b7591a42afe33e36f6e04b5a26ec5a1fd96115"
   }
 }
