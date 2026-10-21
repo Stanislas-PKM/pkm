@@ -498,5 +498,17 @@
     },
     "revision": "1792521513711531",
     "operation_id": "7ea34fe8ea917ca0a5f8bcb7a573b854c7d5e48d2e5742f07c48ab5bcc184632"
+  },
+  "7e374d1d-6515-4977-a838-4c32b00e34aa": {
+    "slug": "cours-de-poker",
+    "published_at": "2026-10-21T12:04:14.638Z",
+    "title": "Cours de poker : choisir une méthode pour progresser",
+    "meta_description": "Choisissez un cours de poker adapté à votre niveau : comparez vidéos, parcours guidés et coaching pour progresser avec une méthode claire.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs assis à une table de poker manipulent des jetons et des cartes dans une salle intérieure."
+    },
+    "revision": "1792542151194830",
+    "operation_id": "185f4f223c7cbf5ac7c94e64d8973cb00c3dd710d75d3a9d9aabc3b2ecf5ce19"
   }
 }
