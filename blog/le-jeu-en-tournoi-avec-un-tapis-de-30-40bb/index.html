@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Comment jouer en tournoi avec 30 à 40 BB de tapis effectif · Vincent Coach Poker</title>
+<meta name="description" content="Pour le jeu en tournoi avec un tapis de 30 40bb, adaptez vos décisions à la position, aux tapis adverses et à l’ICM, sans plan automatique.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/le-jeu-en-tournoi-avec-un-tapis-de-30-40bb/">
+<meta name="sorank-operation-id" content="bf9888d0d8a773faa5d3973630e6d7fbefed52dff8dffc4259a3b6f8ee1fa84d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 22 octobre 2026</span>
+      <h1>Comment jouer en tournoi avec 30 à 40 BB de tapis effectif</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-c9cd0df7-7e9a-44be-923f-470d6bea2944-img-0.webp" alt="Une pile de jetons et deux cartes fermées sur une table de poker de tournoi." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Avec 30 à 40 grosses blindes, vous gardez des options postflop, mais le tapis effectif, la position, les antes et la structure du tournoi déterminent le risque à prendre. Choisissez entre relance, call, 3-bet ou tapis selon la situation, puis ajustez votre stratégie lorsque l’ICM modifie la valeur des jetons.</div>
+<p>Avec 30 à 40 BB, pouvez-vous encore jouer un coup postflop sans engager presque tout votre tapis ? Oui, mais l’écart entre ces profondeurs change les options préflop et les décisions après un 3-bet. Pour construire une <a href="https://vincentcoachpoker.com/blog/strategie-de-tournoi/">stratégie de tournoi au poker</a> utile, partez du tapis effectif, de la position et de votre plan pour les streets suivantes.</p>
+<p>Le <strong>jeu en tournoi avec un tapis de 30 à 40 BB</strong> ne correspond pas à un plan unique. Une relance en position, un pot à plusieurs joueurs ou la proximité de la bulle peuvent modifier le coût d’une erreur. Considérez les repères suivants comme un cadre de décision, et non comme des ranges universelles à appliquer sans tenir compte de la table.</p>
+<h2>À 30 à 40 BB, commencez par le tapis effectif</h2>
+<p>Supposons que vous ayez 38 BB devant vous, mais que l’adversaire concerné en possède 27. Pour cette main, le tapis effectif est de 27 BB, car c’est le montant maximal que chacun peut engager face à l’autre. Dans un pot à plusieurs joueurs, vérifiez les tapis des joueurs susceptibles de continuer : le plus court peut modifier les mises possibles.</p>
+<p>Comptez aussi les antes et les blindes déjà investies. Elles augmentent le pot à gagner avant même le flop et influencent l’intérêt d’une relance ou d’un resteal. Un guide mis à jour en septembre 2026 classe les tapis de 40 BB et plus dans la catégorie profonde. Ce seuil est un repère de ce guide, pas une frontière stratégique universelle.</p>
+<p>À 30 BB, votre marge de manœuvre se réduit par rapport à 40 BB, surtout après une relance puis une sur-relance. Vous ne devez donc pas traiter toute cette fourchette comme un seul bloc. Avant d’agir, notez le tapis effectif, la position de l’ouvreur et les joueurs qui parleront encore.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Une personne assise à une table de poker tient des jetons roses dans une salle intérieure assombrie." loading="lazy" />
+<h2>Préflop, choisissez une ligne avant de choisir une main</h2>
+<p>Quand l’action arrive à vous, comparez d’abord les options : relancer, suivre, sur-relancer ou passer. Le tapis n’impose pas automatiquement un shove à 30 ou 40 BB. Une relance à tapis risque beaucoup de jetons pour gagner les blindes et les antes ; elle demande donc une raison solide, liée aux ranges adverses, à la fold equity et à la dynamique de la table.</p>
+<p>En position, suivre une ouverture peut préserver des mains jouables postflop et éviter de gonfler inutilement le pot. Hors de position, le call expose à des décisions plus difficiles après le flop. Un 3-bet non all-in peut mettre la pression tout en laissant une possibilité de passer face à une nouvelle sur-relance. Son montant doit rester cohérent avec le tapis effectif et la taille de l’ouverture.</p>
+<p>Un exemple de Card Player analyse un scénario à 40 BB effectifs, avec ante complète et sans ICM. Il distingue les tailles de 3-bet selon la position, ce qui illustre pourquoi un sizing ne se transpose pas mécaniquement à toutes les configurations. <a href="https://media.cardplayer.com/assets/magazines/000/066/527/pdf/36_23_web.pdf" rel="noopener noreferrer" target="_blank">L’exemple de Card Player</a> sert ici de cas d’étude, non de tableau de ranges applicable à chaque tournoi.</p>
+<p>À mesure que vous approchez de 30 BB, vérifiez si une relance suivie d’un call vous laisserait un tapis difficile à jouer. Examinez aussi la réponse probable de l’adversaire : certains abandonnent face à un 3-bet, d’autres défendent largement ou sur-relancent. Votre choix dépend de ce que vous ferez face à chacune de ces réactions, pas seulement de la force apparente de votre main.</p>
+<h2>Après le flop, gardez un plan pour les mises restantes</h2>
+<p>Imaginez que vous ayez relancé préflop et qu’un seul joueur vous ait suivi. Au flop, demandez-vous quelles mains sont favorisées par le tableau et quelle partie de la range adverse peut continuer. Une petite mise peut suffire sur certains tableaux secs. Sur un tableau coordonné, miser sans plan face à une relance peut vous placer dans un pot coûteux avec une main moyenne.</p>
+<p>Le <strong>SPR</strong>, c’est-à-dire le rapport entre le tapis restant et le pot, aide à anticiper cet engagement. Plus le pot est gros par rapport au tapis restant, plus une paire forte peut prendre de la valeur pour jouer le coup jusqu’au bout. Si le SPR reste élevé, vous disposez généralement de davantage de possibilités pour contrôler le pot ou abandonner une main devenue fragile.</p>
+<p>Évitez de miser automatiquement parce que vous étiez l’agresseur préflop. Avec une main moyenne, vérifier peut garder le pot gérable et vous permettre de réévaluer à la turn. Avec un tirage fort, une mise peut faire passer des mains et conserver une bonne équité si elle est suivie. Pour approfondir ces arbres de décision, vous pouvez consulter <a href="https://vincentcoachpoker.com/blog/strategies-de-poker-avancees/">nos stratégies de poker avancées</a>.</p>
+<p>À chaque street, reliez votre action à la mise suivante. Demandez-vous quelles cartes changent la force relative des ranges, et quelles mises vous pourriez payer sans vous retrouver engagé par défaut. Une main forte ne justifie pas toujours de jouer tout le tapis ; le tableau, le profil adverse et le montant restant comptent ensemble.</p>
+<h2>À la bulle, distinguez la valeur des jetons et celle du tournoi</h2>
+<p>À la bulle ou près d’un palier de gains, gagner des jetons et préserver votre équité de tournoi ne sont pas toujours le même objectif. L’<strong>ICM</strong> estime la valeur monétaire des tapis selon la structure des gains. Il peut donc rendre un call risqué moins intéressant, même si ce call paraît rentable en jetons.</p>
+<p>Un travail de recherche publié en août 2026 souligne aussi une limite de l’ICM classique : le modèle ne représente pas directement l’ordre d’action, les obligations de blindes ou la rotation des sièges. Ces éléments comptent pour comprendre la situation concrète. <a href="https://arxiv.org/abs/2608.09586" rel="noopener noreferrer" target="_blank">Le travail publié en 2026</a> examine ces limites dans la construction de stratégies de tournoi.</p>
+<p>Si plusieurs tapis similaires restent à la table et qu’un short stack risque l’élimination, évitez de considérer un gros pot comme une simple occasion de gagner des jetons. À l’inverse, un tapis qui couvre les adversaires peut exercer une pression que ceux-ci ne peuvent pas toujours accepter. L’importance de cet ajustement dépend des gains, des tapis restants et de la position ; à la bulle, ne confondez pas prudence et abandon systématique des spots rentables.</p>
+<p>Pour travailler ces situations, notre guide sur <a href="https://vincentcoachpoker.com/blog/jouer-la-gagne-dans-les-situations-impliquant-licm/">les situations d’ICM</a> complète ces repères. Servez-vous-en pour analyser ce qui change lorsque le tournoi approche des places payées ou d’un palier important.</p>
+<h2>Avant chaque décision, passez en revue ces quatre repères</h2>
+<p>Avant d’investir une part importante de votre tapis, vérifiez quatre éléments : le tapis effectif, votre position, l’action et le profil des adversaires, puis la pression de la structure du tournoi. Cette courte routine aide à éviter une erreur fréquente : choisir une main ou un sizing sans savoir quoi faire face à une relance, un call ou un tapis adverse.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-c9cd0df7-7e9a-44be-923f-470d6bea2944-img-2.webp" alt="Infographie en quatre étapes : tapis effectif, position, action adverse et pression ICM." loading="lazy" />
+<p>Après le tournoi, notez la main et les options que vous aviez envisagées. Comparez votre raisonnement au déroulement du coup, sans juger la décision uniquement à partir du résultat. Pour travailler des situations MTT, nous proposons aussi une <a href="https://vincentcoachpoker.com/blog/offre-decouverte-poker-mtt-gratuite/">offre découverte poker MTT gratuite</a>.</p>
+<p>Une vidéo au titre spectaculaire ne constitue pas, à elle seule, un modèle de décision ou une preuve de rentabilité. Gardez votre attention sur les choix de jeu et leur contexte, plutôt que sur le résultat mis en avant.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/xPkjrXZpBGQ?rel=0&amp;playsinline=1" title="ENDETTÉ à +20K€ EN 30 JOURS (grâce au Poker)" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>ENDETTÉ à +20K€ EN 30 JOURS (grâce au Poker)</figcaption></figure>
+<section class="article-conclusion"><h2>La bonne décision dépend du spot, pas seulement des BB</h2><p>Avec 30 à 40 BB, conservez des options préflop et postflop, puis raisonnez sur le tapis effectif, la position et les réactions probables. Quand l’ICM entre en jeu, intégrez la structure des gains sans abandonner les occasions favorables. Une routine de vérification et l’analyse des mains après la session rendent vos décisions plus cohérentes dans cette zone de tapis.</p></section>
+<section class="brand-cta"><h2>Approfondir vos décisions en tournoi</h2><p>Entre 30 et 40 BB, les écarts de position, de tapis et de structure transforment rapidement une main jouable en décision difficile. Nous proposons un mentorat poker avec suivi personnel, contenu structurant et communauté de joueurs. L’accompagnement peut être adapté au format tournoi et aux problématiques de chaque joueur.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>La Salle du Temps relie le travail technique, la lecture des adversaires et la préparation mentale dans un suivi personnalisé. Le temps recommandé est en moyenne d’une heure par jour, soit 7 à 10 heures par semaine. L’accès se fait sur candidature et après un entretien ; les résultats dépendent de l’engagement et de l’application de la méthode. Pour en savoir plus, vous pouvez <a href="https://vincentcoachpoker.com/la-salle-du-temps/">découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>30 à 40 BB, est-ce déjà un short stack ?</h3><p>Cette profondeur conserve plusieurs options préflop et des possibilités postflop, mais elle laisse moins de marge qu’un tapis profond. Le terme dépend aussi du tournoi, des antes et des tapis adverses.</p><h3>Faut-il faire tapis avec 30 à 40 BB ?</h3><p>Pas automatiquement. Un tapis préflop engage beaucoup de jetons ; considérez-le seulement lorsque la situation, les ranges adverses et la fold equity le justifient.</p><h3>Le tapis effectif est-il le même que mon tapis affiché ?</h3><p>Non, il correspond au montant que les joueurs concernés peuvent effectivement engager dans le coup. Si vous avez 38 BB et votre adversaire 27 BB, le tapis effectif entre vous est de 27 BB.</p><h3>Comment l’ICM change-t-il mes décisions ?</h3><p>L’ICM met en relation les tapis restants et la structure des gains. Près de la bulle ou d’un palier, il peut rendre certains risques moins intéressants en valeur de tournoi qu’en valeur de jetons.</p><h3>La Salle du Temps peut-elle accompagner un joueur de tournoi ?</h3><p>Oui, notre mentorat peut concerner les joueurs de tournoi et adapter le suivi au format et à leurs problématiques. Pour travailler un spot précis, préparez la main avec les tapis, les positions, l’action et le stade du tournoi.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

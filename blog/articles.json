@@ -522,5 +522,17 @@
     },
     "revision": "1792563064755010",
     "operation_id": "ce49c1d3403f3fa3eb5c44d93fa8bbee2a8e15caccb0474f8d48dd53f2a89165"
+  },
+  "c9cd0df7-7e9a-44be-923f-470d6bea2944": {
+    "slug": "le-jeu-en-tournoi-avec-un-tapis-de-30-40bb",
+    "published_at": "2026-10-22T08:02:28.317Z",
+    "title": "Comment jouer en tournoi avec 30 à 40 BB de tapis effectif",
+    "meta_description": "Pour le jeu en tournoi avec un tapis de 30 40bb, adaptez vos décisions à la position, aux tapis adverses et à l’ICM, sans plan automatique.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-c9cd0df7-7e9a-44be-923f-470d6bea2944-img-0.webp",
+      "alt": "Une pile de jetons et deux cartes fermées sur une table de poker de tournoi."
+    },
+    "revision": "1792616134321226",
+    "operation_id": "bf9888d0d8a773faa5d3973630e6d7fbefed52dff8dffc4259a3b6f8ee1fa84d"
   }
 }
