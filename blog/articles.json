@@ -570,5 +570,17 @@
     },
     "revision": "1792707361311325",
     "operation_id": "8267f9e059bf11d00b53d826720c9009ed51d44503aadabc4e5d21217b0b56da"
+  },
+  "a9b6ac1d-8c38-4173-adfe-a50e3f492fcd": {
+    "slug": "comment-gerer-la-variance",
+    "published_at": "2026-10-23T16:01:00.665Z",
+    "title": "Comment gérer la variance au poker et protéger sa bankroll",
+    "meta_description": "Apprenez comment gerer la variance au poker : protégez votre bankroll, analysez vos décisions et gardez le cap pendant les périodes difficiles.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure bondée, avec une personne au premier plan assise à une table."
+    },
+    "revision": "1792728987945733",
+    "operation_id": "9a77fa3e4df0d3d4e721657371606f5bfc5a4afa6fe69e81ba53515330166bd8"
   }
 }
