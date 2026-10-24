@@ -584,5 +584,17 @@
     },
     "revision": "1792728987945733",
     "operation_id": "9a77fa3e4df0d3d4e721657371606f5bfc5a4afa6fe69e81ba53515330166bd8"
+  },
+  "2ac885c4-95c4-49e6-a4e8-cb5db12e90b4": {
+    "slug": "quizz-1-selection-des-mains-preflop",
+    "published_at": "2026-10-24T06:02:14.866Z",
+    "title": "Quiz 1 : sélectionner ses mains préflop selon le contexte",
+    "meta_description": "Entraînez-vous avec le quizz 1 selection des mains preflop et adaptez votre choix à la position, à l’action et à la profondeur des tapis.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure animée, avec une personne au premier plan et plusieurs joueurs aux tables."
+    },
+    "revision": "1792781084097821",
+    "operation_id": "068b065a4fd81993e03b1506f851e524026136c160eb950e1fbc1844c68f1b2e"
   }
 }

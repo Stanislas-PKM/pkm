@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Quiz 1 : sélectionner ses mains préflop selon le contexte · Vincent Coach Poker</title>
+<meta name="description" content="Entraînez-vous avec le quizz 1 selection des mains preflop et adaptez votre choix à la position, à l’action et à la profondeur des tapis.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/quizz-1-selection-des-mains-preflop/">
+<meta name="sorank-operation-id" content="068b065a4fd81993e03b1506f851e524026136c160eb950e1fbc1844c68f1b2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 24 octobre 2026</span>
+      <h1>Quiz 1&nbsp;: sélectionner ses mains préflop selon le contexte</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker intérieure animée, avec une personne au premier plan et plusieurs joueurs aux tables." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Pour sélectionner une main préflop, tenez compte de votre position, de l’action déjà engagée et des tapis effectifs. Une main jouable au bouton ne l’est pas forcément depuis le début de parole, et une main d’ouverture ne se défend pas automatiquement face à une relance. Un quiz est utile lorsqu’il explique ces différences.</div>
+<p>Une même main peut-elle être jouée ou passée selon le siège occupé ? Oui : la <strong>sélection des mains préflop</strong> dépend du contexte, pas seulement de la valeur des cartes. En six-max, le bouton parle tard après le flop, contrairement aux premières positions, où plusieurs joueurs restent à parler. Pour comparer des situations d’ouverture, <a href="https://vincentcoachpoker.com/blog/range-poker-6-max/">Range poker en 6-max</a> fournit un repère adapté à ce format.</p>
+<p>Un quiz sur le choix des mains préflop permet de vérifier si vous distinguez une ouverture, une défense face à une relance et une décision influencée par la profondeur des tapis. Il ne s’agit pas de réciter une liste universelle : les réponses dépendent du format et des paramètres retenus. Pour apprendre, demandez-vous d’abord ce qui a changé entre deux situations, puis justifiez votre choix.</p>
+<h2>Quels facteurs déterminent votre sélection préflop ?</h2>
+<p>Imaginez que vous recevez la même main au début de parole, puis au bouton. Au bouton, moins de joueurs restent à agir avant le flop et vous aurez généralement la position après celui-ci. Une <strong>range d’ouverture</strong> peut donc s’élargir à mesure que vous vous rapprochez du bouton. Cela ne signifie pas que toutes les mains deviennent jouables : il faut aussi considérer les joueurs et les tapis derrière vous.</p>
+<p>L’<strong>action préalable</strong> change également la question. Si tout le monde a passé, vous évaluez une ouverture. Si un adversaire a relancé, vous choisissez entre passer, payer ou surrelancer face à une range déjà engagée. Ne réutilisez pas automatiquement la réponse prévue pour une ouverture sans action préalable.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-2ac885c4-95c4-49e6-a4e8-cb5db12e90b4-img-1.webp" alt="Illustration de cartes fermées et de jetons sur une table de poker avant le flop." loading="lazy" /> 
+<p>Pour visualiser les facteurs d’un <strong>choix préflop</strong>, retenez ce trio : votre position, l’action avant vous et les tapis effectifs. Le même raisonnement sert de base pour consulter un <a href="https://vincentcoachpoker.com/blog/tableau-de-range-poker/">Tableau de range poker</a>, sans confondre une grille de départ avec une réponse valable dans chaque configuration.</p>
+<h2>Quiz 1 : entraînez-vous sur quatre décisions</h2>
+<p>Dans chaque situation, repérez d’abord l’information décisive. Les réponses ci-dessous servent à tester votre raisonnement, et non à fixer une range universelle applicable à toutes les tables.</p>
+<h3>1. Vous êtes au bouton et tout le monde a passé : quelle position occupez-vous ?</h3>
+<p>Vous êtes le dernier joueur à parler avant le flop, hors blindes. Cette position tardive permet généralement d’envisager une range d’ouverture plus large qu’en début de parole, car moins d’adversaires peuvent encore entrer dans le coup.</p>
+<h3>2. Un joueur relance avant vous : s’agit-il encore d’une ouverture ?</h3>
+<p>Non. Vous faites face à une relance et devez examiner sa position, la vôtre, les mises et les tapis. Une main adaptée à une ouverture peut devenir un mauvais paiement ou une surrelance risquée face à cette action.</p>
+<h3>3. Une main assortie devient-elle automatiquement jouable parce qu’elle est assortie ?</h3>
+<p>Non. Le fait que les cartes soient de la même couleur peut compter dans votre évaluation, mais ne remplace ni la position ni l’analyse de l’action. Évitez de sélectionner une main à partir d’une seule caractéristique isolée.</p>
+<h3>4. Pouvez-vous appliquer la même grille avec des tapis très différents ?</h3>
+<p>Pas sans vérifier ses hypothèses. Les tapis effectifs influencent les actions disponibles et la stratégie, notamment en tournoi. Un guide de stratégie publié en 2023 par <a href="https://media.cardplayer.com/assets/magazines/000/066/527/pdf/36_23_web.pdf" rel="noopener noreferrer" target="_blank">Card Player</a> relève notamment la profondeur des tapis, les positions et les facteurs ICM parmi les éléments qui entrent dans la construction des ranges.</p>
+<p>Pour vérifier vos bases, comparez des situations identiques où un seul paramètre change. Les <a href="https://vincentcoachpoker.com/blog/ranges-poker-pdf/">Ranges poker en PDF</a> peuvent servir de support de révision, à condition de vérifier le format et la profondeur auxquels chaque range correspond.</p>
+<h2>Comment utiliser les réponses pour progresser ?</h2>
+<p>Après chaque réponse, formulez une justification courte : « j’ouvre parce que… » ou « je passe parce que… ». N’évaluez pas seulement le résultat final. Cherchez plutôt à savoir si votre raisonnement prenait en compte la position, l’action et les tapis.</p>
+<p>La recherche publiée en 2023 sur les décisions préflop de ChatGPT et GPT-4 examine notamment la valeur des mains de départ et la position. Ses auteurs concluent que ces modèles ne jouent pas selon une stratégie parfaitement optimale. Un quiz ou une réponse générée automatiquement ne dispense donc pas de comprendre les hypothèses derrière chaque conseil, comme le montre <a href="https://arxiv.org/abs/2308.12466" rel="noopener noreferrer" target="_blank">cette étude sur le poker</a>.</p>
+<p>Vous pouvez aussi annoter les erreurs récurrentes : ouvrir trop de mains en début de parole, payer une relance sans réexaminer la situation, ou oublier la profondeur effective. Une fois ces erreurs identifiées, le <a href="https://vincentcoachpoker.com/blog/gto-poker/">Comprendre le GTO au poker</a> peut compléter l’étude des décisions préflop et de leurs principes stratégiques.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-2ac885c4-95c4-49e6-a4e8-cb5db12e90b4-img-2.webp" alt="Checklist illustrée : position, action avant vous et tapis effectifs." loading="lazy" />
+<h2>Comment dépasser le simple score du quiz ?</h2>
+<p>Un bon score montre que vous reconnaissez des situations ; il ne prouve pas, à lui seul, que vous saurez ajuster votre jeu à une table réelle. Reprenez chaque erreur et expliquez quel élément aurait changé votre décision. Cette méthode transforme une réponse correcte en règle de réflexion réutilisable.</p>
+<p>Pour poursuivre l’étude avec une situation de jeu distincte du quiz, voici un extrait vidéo dont le titre porte sur un bluff au poker :</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/WXpinB8Em0o?rel=0&amp;playsinline=1" title="Bluff 2x pot qui passe ?! #poker #cashgame #stratégiepoker" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>Bluff 2x pot qui passe ?! #poker #cashgame #stratégiepoker</figcaption></figure>
+<section class="article-conclusion"><h2>À retenir sur la sélection préflop</h2><p>Pour choisir une main, commencez par la position, vérifiez l’action déjà engagée, puis tenez compte des tapis effectifs et du format. Un quiz est plus formateur lorsque vous justifiez chaque réponse et comparez les scénarios plutôt que de mémoriser une liste hors contexte. La <strong>sélection des mains préflop</strong> devient alors une décision structurée.</p></section>
+<section class="brand-cta"><h2>Découvrir l’accompagnement poker</h2><p>Un quiz aide à vérifier vos repères, mais les erreurs répétées sont souvent plus faciles à comprendre en examinant vos décisions dans leur contexte. Relier votre sélection préflop à la lecture de vos adversaires et à la suite du coup demande une méthode de travail régulière.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Dans notre mentorat La Salle du Temps, nous associons suivi personnel, contenu structurant et communauté. Notre méthode, l’Équation 3D, articule diagnostic des leaks, lecture des patterns adverses et matrice de décision du préflop à la river. L’accompagnement est adapté au format et aux difficultés du joueur, et l’accès se fait sur candidature après un entretien. <a href="https://vincentcoachpoker.com/la-salle-du-temps/">Découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Quelle est la meilleure main de départ au poker ?</h3><p>Les paires d’as sont la meilleure main de départ au Texas Hold’em. Toutefois, la décision de jouer une main dépend aussi de la position, de l’action et du format.</p><h3>Faut-il jouer plus de mains au bouton ?</h3><p>En général, la position tardive permet d’envisager une range plus large qu’en début de parole. La sélection exacte dépend des joueurs encore à parler et de la situation.</p><h3>Quelle différence entre une range d’ouverture et une range de défense ?</h3><p>Une range d’ouverture concerne les mains jouées lorsque personne n’a relancé avant vous. Une range de défense sert à décider comment répondre à une relance déjà engagée.</p><h3>Un quiz suffit-il pour apprendre les ranges préflop ?</h3><p>Un quiz permet de tester vos repères et de repérer des erreurs. Pour progresser, expliquez vos réponses et travaillez avec des ranges correspondant à votre format et à vos tapis.</p><h3>Comment approfondir mes décisions préflop avec un accompagnement ?</h3><p>Dans notre mentorat La Salle du Temps, nous relions les décisions préflop à la lecture des adversaires et au diagnostic des leaks. L’accès se fait sur candidature et après un entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
