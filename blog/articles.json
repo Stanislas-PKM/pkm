@@ -648,5 +648,17 @@
     },
     "revision": "1792921300288734",
     "operation_id": "bae42d85fc9c13bc61d22ef259eb0023410b32a60e39ba45c9080057c4570b9d"
+  },
+  "e841e6dc-1da5-4fb5-a561-fec2488a20ca": {
+    "slug": "le-coaching-poker-aide-t-il-vraiment-a-reduire-les-erreurs-liees-a-la-variance",
+    "published_at": "2026-10-26T11:00:51.897Z",
+    "title": "Le coaching poker réduit-il les erreurs face à la variance ?",
+    "meta_description": "Le coaching poker aide-t-il vraiment à réduire les erreurs liées à la variance ? Distinguez erreurs, tilt et hasard pour progresser.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure bondée, avec une personne assise au premier plan et d’autres personnes autour des tables."
+    },
+    "revision": "1792969646531167",
+    "operation_id": "09784c568963eca3fbe0d3d6e39ccbdb993d158ba38eb7b99470ce541c13bbea"
   }
 }
