@@ -693,5 +693,17 @@
     },
     "revision": "1793047611670895",
     "operation_id": "f24e08ec7a018b17e2673a206b8c83f7116fd19cc20b9c5f0e8866e1fd247b3e"
+  },
+  "3533f240-7cc8-4431-8003-ddbd94cc7c08": {
+    "slug": "les-avantages-de-la-late-registration-en-mtt",
+    "published_at": "2026-10-27T13:02:17.273Z",
+    "title": "Late registration en MTT : avantages, limites et stratégie",
+    "meta_description": "Comprenez les avantages de la late registration en mtt, ses risques selon votre tapis et la structure du tournoi, et choisissez votre moment.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker bondée, avec une personne assise au premier plan et des joueurs autour des tables"
+    },
+    "revision": "1793063720849900",
+    "operation_id": "2056b32c5688077b88b478ad86321d6a40cf576890d71050a370b071f36d6fdb"
   }
 }
