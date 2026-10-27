@@ -705,5 +705,17 @@
     },
     "revision": "1793063720849900",
     "operation_id": "2056b32c5688077b88b478ad86321d6a40cf576890d71050a370b071f36d6fdb"
+  },
+  "b3ba58d8-e7ce-453f-954b-12b4b4e301f1": {
+    "slug": "comment-savoir-si-un-coach-poker-adapte-vraiment-son-suivi-a-mon-niveau",
+    "published_at": "2026-10-27T19:03:17.070Z",
+    "title": "Comment vérifier si un coach poker adapte votre suivi",
+    "meta_description": "Comment savoir si un coach poker adapte vraiment son suivi à mon niveau ? Vérifiez diagnostic, retours sur les mains et progrès suivis.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-b3ba58d8-e7ce-453f-954b-12b4b4e301f1-img-0.webp",
+      "alt": "Feuille d’analyse de poker avec un spot entouré, cartes et jetons disposés à côté."
+    },
+    "revision": "1793085406127058",
+    "operation_id": "2c9c98c68cc5835d167112201c4c5ccfcb1457967b85427f7ef0cf6c81d6553f"
   }
 }
