@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Open shove au poker : quand envoyer son tapis préflop ? · Vincent Coach Poker</title>
+<meta name="description" content="Maîtrisez l’open shove poker en tournoi : évaluez le tapis, la position, la fold equity et l’ICM pour choisir entre tapis, relance ou fold.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/open-shove-poker/">
+<meta name="sorank-operation-id" content="0211b30bf1ecb498b2b78110953a04e0a566af098e9e93844d5e4a576b0a4598">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 28 octobre 2026</span>
+      <h1>Open shove au poker&nbsp;: quand envoyer son tapis préflop&nbsp;?</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp" alt="Plusieurs joueurs manipulent des cartes et des jetons autour de tables de poker dans une salle intérieure." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Un open shove au poker consiste à engager tout son tapis préflop après que l’action s’est couchée jusqu’à vous. Il devient pertinent quand la profondeur, la position, les joueurs encore à parler et la fold equity compensent le risque. À profondeur intermédiaire, le min-raise ou le fold restent des options à comparer, et la bulle peut modifier le calcul.</div>
+<p>Faut-il envoyer son tapis avant le flop ou ouvrir avec une petite relance ? La réponse dépend d’abord du contexte, pas seulement de vos deux cartes. Pour vérifier vos repères de départ, consultez notre <a href="https://vincentcoachpoker.com/blog/tableau-de-range-poker/">tableau de ranges poker</a> et observez les différences entre les positions.</p>
+<p>Un <strong>open shove au poker</strong> est une décision préflop qui met immédiatement votre tournoi en jeu si un adversaire paie. Elle peut gagner les blinds et les antes sans abattage, mais un joueur qui paie réduit votre marge de manœuvre. Pour choisir correctement, estimez le tapis effectif, le nombre de joueurs derrière vous et la probabilité d’être payé.</p>
+
+<h2>Que signifie open shove au poker ?</h2>
+<p>Vous êtes le premier joueur à entrer volontairement dans le coup et misez tout votre tapis : c’est un open shove. Il se distingue du resteal, qui consiste à surrelancer à tapis après une ouverture adverse.</p>
+<p>En tournoi, cette action risque vos jetons pour remporter les blinds, les antes et les éventuels jetons déjà engagés. Sa valeur repose sur deux possibilités : faire passer tout le monde ou conserver assez d’<strong>équité de showdown</strong> quand un adversaire paie.</p>
+
+<h2>Comment la profondeur du tapis modifie-t-elle le shove ?</h2>
+<p>Imaginez que vous soyez au bouton avec 12 blindes et que tout le monde ait passé. Vous n’avez que les deux blindes à affronter, mais votre main et leurs tendances restent déterminantes.</p>
+<p>Dans un guide de stratégie publié en 2026, 888poker situe souvent le tapis préflop parmi les options principales autour de 10 blindes ou moins. Ce repère décrit une tendance, pas un seuil universel : <a href="https://www.888poker.com/magazine/poker-tournament-beginner-strategy-tips" rel="noopener noreferrer" target="_blank">ce guide sur le jeu short stack</a> rappelle aussi qu’un tapis plus profond ne justifie pas de pousser n’importe quelles mains.</p>
+<p>À profondeur intermédiaire, comparez le shove au min-raise et au fold. Une relance plus petite risque moins de jetons pour gagner les blinds, mais laisse aux adversaires la possibilité de suivre ou de surrelancer. Plus votre tapis est profond, plus le shove doit justifier le risque supplémentaire.</p>
+<p>Comparez le <strong>tapis effectif</strong>, c’est-à-dire le montant que vous pouvez réellement perdre contre chaque joueur susceptible de payer. Si un adversaire possède moins de jetons que vous, il ne peut pas vous couvrir au-delà de son tapis. Cette différence compte, notamment quand l’élimination et les paliers de gains entrent dans l’équation.</p>
+
+<h2>Pourquoi la position et les joueurs derrière comptent-ils ?</h2>
+<p>Depuis le bouton, il reste généralement moins d’adversaires à convaincre de passer que depuis une position précoce. Chaque joueur encore à parler représente une possibilité de call, ce qui réduit vos chances de remporter le pot sans combat.</p>
+<p>La <strong>fold equity</strong> correspond à la valeur créée lorsque vos adversaires passent. Elle ne dépend pas uniquement de votre image : elle varie aussi avec leur position, leurs tendances et le prix qu’ils devront payer. Pour étudier les différences de départ selon la place à table, comparez nos <a href="https://vincentcoachpoker.com/blog/range-poker-6-max/">ranges préflop au poker</a>.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Une personne assise tient des jetons roses à une table de poker, dans une salle intérieure floue." loading="lazy" />
+<p>Adaptez aussi votre choix au profil des joueurs. Face à des adversaires qui passent souvent, une ouverture plus modeste peut parfois obtenir le même résultat en risquant moins. Face à des joueurs qui paient trop largement, privilégiez des mains qui se défendent mieux lorsqu’elles sont suivies.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/8XDqHPAH5bg?rel=0&amp;playsinline=1" title="Un spot de bluff facile ? #cashgamepoker #poker #pokerstrategy #pokerlife #cashgame #pokerlive" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>Un spot de bluff facile ? #cashgamepoker #poker #pokerstrategy #pokerlife #cashgame #pokerlive</figcaption></figure>
+
+<h2>Open shove, min-raise ou fold : comment choisir ?</h2>
+<p>Le shove peut convenir à une main qui préfère faire passer les mains adverses plutôt que jouer après le flop. Il peut aussi convenir quand votre tapis rend une relance modeste difficile à jouer face à une surrelance.</p>
+<p>Le <strong>min-raise</strong> conserve davantage de jetons lorsque les adversaires passent et laisse une marge pour jouer après le flop. Cette option convient mieux à des mains qui se jouent correctement après le flop, ou lorsque vous voulez obtenir des calls de mains moins fortes.</p>
+<p>Le fold s’impose quand les joueurs derrière risquent de payer trop souvent et que votre main ne se comporte pas assez bien face à leurs ranges de call. Une thèse universitaire de 2020 consacrée aux simulations de tournoi examine notamment l’effet de la taille des tapis et du niveau du tournoi sur les stratégies all-in ou fold. <a href="https://era.ed.ac.uk/server/api/core/bitstreams/35e1ec7d-9c56-4a60-9e13-9bedf977bbe1/content" rel="noopener noreferrer" target="_blank">Cette étude sur les simulations</a> rappelle l’intérêt d’évaluer le contexte plutôt que de suivre une règle isolée.</p>
+<p>Avant de décider, vérifiez quatre éléments : le tapis effectif, votre position, la probabilité d’un call et la pression des paliers. Pour travailler le choix des mains sans confondre force apparente et décision rentable, révisez aussi notre <a href="https://vincentcoachpoker.com/blog/quizz-1-selection-des-mains-preflop/">sélection des mains préflop</a>.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-302b1c57-b301-4324-b23b-9e24a9fb137f-img-2.webp" alt="Checklist en quatre points pour décider d’un shove préflop : tapis effectif, position, risque de call et ICM." loading="lazy" />
+
+<p>Cette checklist aide à structurer la décision, mais elle ne remplace pas l’analyse de la structure du tournoi ni des réactions probables des joueurs.</p>
+
+<h2>Comment intégrer l’ICM et travailler ses ranges ?</h2>
+<p>Près de la bulle ou d’un saut de gains, la valeur des jetons ne se résume plus à leur valeur en tournoi. Un shove risqué peut vous coûter davantage qu’il ne rapporte, surtout si votre élimination serait proche. Un guide de stratégie de tournoi publié en 2026 par 888poker rappelle que les tableaux push-fold sont un cadre de départ, pas la seule option, et que le raise-fold conserve sa place dans certains spots. <a href="https://www.888poker.com/magazine/strategy/late-stage-poker-tournament-strategy" rel="noopener noreferrer" target="_blank">Ce guide sur la fin de tournoi</a> souligne aussi l’importance des paliers et des tapis en présence.</p>
+<p>Après une session, notez la position, les blindes, les antes, les tapis et les joueurs qui pouvaient vous payer. Une analyse publiée en février 2026 dans <a href="https://www.cardplayer.com/wp-content/uploads/2026/02/39_03_web.pdf" rel="noopener noreferrer" target="_blank">la rubrique stratégie de Card Player</a> illustre un principe utile : un bluff se juge aussi par son équité lorsqu’il est payé, pas seulement par sa capacité à faire passer.</p>
+<p>Pour relier les décisions préflop au contexte plus large du tournoi, vous pouvez approfondir notre <a href="https://vincentcoachpoker.com/blog/strategie-de-tournoi/">stratégie de tournoi au poker</a>. L’objectif est de comprendre pourquoi une main change de valeur selon la position, les tapis et les joueurs qui restent à parler, plutôt que de réciter un tableau sans l’adapter.</p>
+
+<section class="article-conclusion"><h2>À retenir sur l’open shove</h2><p>Un <strong>tapis préflop</strong> se décide à partir de la profondeur effective, de la position, des calls attendus et de l’ICM. Utilisez les ranges comme point de départ, puis comparez le shove au min-raise et au fold selon les joueurs encore à parler. À la bulle, vérifiez également ce que l’élimination vous ferait perdre.</p></section>
+<section class="brand-cta"><h2>Structurez vos décisions en tournoi</h2><p>Les ranges donnent des repères, mais les appliquer demande aussi d’évaluer les adversaires et de comprendre vos propres erreurs. Pour progresser sur les décisions préflop et leur lien avec le reste du coup, un accompagnement adapté à votre format peut compléter votre travail personnel.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>La Salle du Temps associe suivi personnel, contenu méthodologique, communauté et préparation mentale. L’Équation 3D relie le diagnostic des leaks, la lecture des patterns adverses et une matrice de décision du préflop à la river. L’accompagnement concerne les tournois, le cash game et d’autres formats. L’accès se fait sur candidature, après un entretien. Vous pouvez <a href="https://vincentcoachpoker.com/la-salle-du-temps/">découvrir l’accompagnement poker</a> et vérifier s’il correspond à votre façon de travailler.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Quelle est la différence entre un open shove et un resteal ?</h3><p>L’open shove intervient lorsque l’action s’est couchée jusqu’à vous et que vous êtes le premier à engager volontairement des jetons. Le resteal est une surrelance à tapis après une ouverture adverse.</p><h3>À partir de combien de blindes faut-il pousser ?</h3><p>Il n’existe pas de seuil valable pour toutes les positions et toutes les tables. La profondeur, les joueurs derrière et la structure du tournoi déterminent si le shove, le min-raise ou le fold est préférable.</p><h3>Un open shove est-il toujours préférable avec un tapis court ?</h3><p>Non. Le tapis court rend souvent l’approche push-fold plus importante, mais certaines situations gardent d’autres options, notamment selon votre position et les adversaires.</p><h3>Pourquoi la position change-t-elle la range de shove ?</h3><p>Plus vous parlez tard, moins il reste de joueurs à convaincre de passer. Depuis une position précoce, davantage d’adversaires peuvent encore payer, ce qui change le risque de l’action.</p><h3>Un coaching peut-il aider à mieux choisir ses shoves ?</h3><p>La Salle du Temps propose un suivi personnel et un travail adapté au format et aux difficultés du joueur. L’accès se fait sur candidature et après un entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

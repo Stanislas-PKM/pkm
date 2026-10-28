@@ -717,5 +717,17 @@
     },
     "revision": "1793085406127058",
     "operation_id": "2c9c98c68cc5835d167112201c4c5ccfcb1457967b85427f7ef0cf6c81d6553f"
+  },
+  "302b1c57-b301-4324-b23b-9e24a9fb137f": {
+    "slug": "open-shove-poker",
+    "published_at": "2026-10-28T11:00:29.991Z",
+    "title": "Open shove au poker : quand envoyer son tapis préflop ?",
+    "meta_description": "Maîtrisez l’open shove poker en tournoi : évaluez le tapis, la position, la fold equity et l’ICM pour choisir entre tapis, relance ou fold.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs manipulent des cartes et des jetons autour de tables de poker dans une salle intérieure."
+    },
+    "revision": "1793182358044109",
+    "operation_id": "0211b30bf1ecb498b2b78110953a04e0a566af098e9e93844d5e4a576b0a4598"
   }
 }
