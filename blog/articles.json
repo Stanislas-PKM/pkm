@@ -741,5 +741,17 @@
     },
     "revision": "1793230524606036",
     "operation_id": "4353dbc9de485a2b33c7164ce97e8cd3c1ee69469d9027d7b0bbfc83992411a6"
+  },
+  "2399ebf2-25ea-4a32-8ee9-77b61afa38ff": {
+    "slug": "temps-coaching-poker-par-semaine",
+    "published_at": "2026-10-29T19:04:51.232Z",
+    "title": "Combien de temps prévoir pour un coaching poker par semaine ?",
+    "meta_description": "Quel temps coaching poker par semaine prévoir ? Des repères pour répartir le jeu, l’étude et le coaching selon vos contraintes.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-2399ebf2-25ea-4a32-8ee9-77b61afa38ff-img-0.webp",
+      "alt": "Carnet de planning vierge posé près de cartes et d’un jeton de poker"
+    },
+    "revision": "1793258335948694",
+    "operation_id": "d76858faf5dd101d3b03201fc2e5497b52463a34fc570b767338e1f859e8a6c4"
   }
 }
