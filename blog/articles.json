@@ -753,5 +753,17 @@
     },
     "revision": "1793258335948694",
     "operation_id": "d76858faf5dd101d3b03201fc2e5497b52463a34fc570b767338e1f859e8a6c4"
+  },
+  "02268084-c433-406a-a6db-bf0b90bfc1c8": {
+    "slug": "comment-equilibrer-ses-cbets-au-plo",
+    "published_at": "2026-10-30T11:03:16.713Z",
+    "title": "Comment équilibrer ses c-bets au PLO selon le flop ?",
+    "meta_description": "Pour comment equilibrer ses cbets au plo, adaptez fréquence et sizing à la texture du flop, aux ranges adverses et à votre position.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker fréquentée, avec une personne assise au premier plan et d’autres joueurs autour des tables."
+    },
+    "revision": "1793315619695713",
+    "operation_id": "2077f16b8e19d6d4abdb552a586c2f22fa8cac674db2d6329b253bbc3eab776a"
   }
 }

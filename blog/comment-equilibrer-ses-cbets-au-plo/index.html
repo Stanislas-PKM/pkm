@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Comment équilibrer ses c-bets au PLO selon le flop ? · Vincent Coach Poker</title>
+<meta name="description" content="Pour comment equilibrer ses cbets au plo, adaptez fréquence et sizing à la texture du flop, aux ranges adverses et à votre position.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/comment-equilibrer-ses-cbets-au-plo/">
+<meta name="sorank-operation-id" content="2077f16b8e19d6d4abdb552a586c2f22fa8cac674db2d6329b253bbc3eab776a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 30 octobre 2026</span>
+      <h1>Comment équilibrer ses c-bets au PLO selon le flop&nbsp;?</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker fréquentée, avec une personne assise au premier plan et d’autres joueurs autour des tables." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Au PLO, équilibrez vos c-bets en reliant leur fréquence et leur taille à la position, aux ranges et à la texture du flop. Misez davantage sur les boards qui favorisent votre range, contrôlez le pot lorsque l’adversaire détient l’avantage de nuts et réduisez les bluffs en multiway. Votre main seule ne suffit pas à décider.</div>
+<p>Pourquoi miser sur un as sec, puis passer avec une main apparemment forte sur un flop 8-7-6 ? En PLO, la réponse tient aux quatre cartes privatives, aux tirages possibles et aux ranges. Pour replacer ces choix dans <a href="https://vincentcoachpoker.com/blog/strategies-de-poker-avancees/">les stratégies avancées au poker</a>, nous raisonnons à partir de l’avantage de range et de la capacité à continuer sur les turns.</p>
+<p>Pour <strong>équilibrer vos c-bets au PLO</strong>, évitez donc de miser automatiquement après avoir relancé préflop. La fréquence et le sizing dépendent du flop, de votre position, du nombre d’adversaires et de la qualité de votre équité. Une stratégie cohérente associe des mises pour value, des bluffs avec potentiel et des checks qui protègent votre range.</p>
+<h2>Pourquoi la fréquence de c-bet est-elle différente au PLO ?</h2>
+<p>Au PLO, chaque joueur reçoit quatre cartes privatives. Cela multiplie les combinaisons possibles et rend les flops connectés plus dangereux qu’ils n’en ont l’air. Un adversaire qui suit préflop peut avoir touché une paire, un tirage quinte, un tirage couleur ou plusieurs de ces possibilités à la fois.</p>
+<p>Votre décision ne dépend donc pas simplement de la force apparente de votre main. Une paire d’as peut être vulnérable sur un board dynamique, tandis qu’une main sans paire peut miser avec de bons bloqueurs et des tirages vers les nuts. L’analyse publiée par <a href="https://plo.com/continuation-betting-plo" rel="noopener noreferrer" target="_blank">PLO.com en 2026</a> souligne l’importance de comparer avantage de range et avantage de nuts, et de réduire la fréquence en pot multiway.</p>
+<p>Commencez par distinguer trois questions : votre range touche-t-elle mieux le flop que celle de l’adversaire ? Avez-vous plus de combinaisons très fortes ? Votre main peut-elle poursuivre sur les turns probables ? Ces repères évitent de confondre « avoir relancé » avec « devoir miser ».</p>
+<h2>Évaluez les ranges, la position et le type de pot</h2>
+<p>Imaginez un open du bouton suivi par la grosse blind. Les ranges ne couvrent pas les mêmes mains : l’ouvreur conserve davantage de mains fortes sélectionnées préflop, tandis que la grosse blind peut détenir des connecteurs et des combinaisons basses qui s’accordent bien avec certains flops.</p>
+<p>Sur un as haut et peu connecté, l’ouvreur peut souvent représenter des mains fortes. Sur un flop bas et coordonné, la range de défense peut davantage contenir des quintes, des doubles paires et des tirages puissants. Ces tendances ne remplacent pas l’examen de vos cartes : elles indiquent seulement quel joueur peut posséder l’<strong>avantage de range</strong> ou l’<strong>avantage de nuts</strong>.</p>
+<p>La position change aussi la valeur du check. En position, vous pouvez souvent contrôler le pot et prendre une décision après avoir vu l’action adverse. Hors de position, miser sans plan pour les turns vous expose à des décisions plus difficiles. Pour structurer cette lecture théorique, <a href="https://vincentcoachpoker.com/blog/gto-poker/">le GTO au poker</a> fournit un cadre de réflexion, à adapter aux ranges réellement jouées.</p>
+<h2>Lisez la texture du flop avant de choisir votre fréquence</h2>
+<p>Sur A♠-7♦-2♣, le flop est haut et peu connecté. Si votre range préflop contient de nombreux as forts et que l’adversaire a peu de mains qui ont touché, une petite mise peut faire pression à moindre coût. Ne transformez pas pour autant chaque main faible en bluff : les bloqueurs et les possibilités de poursuivre comptent.</p>
+<p>Sur 8♠-7♦-6♣, la situation change. Les mains de défense peuvent contenir davantage de quintes, de doubles paires et de tirages combinés. Avec une simple paire d’as et peu de cartes d’amélioration, checker est souvent plus prudent que miser pour « protéger » sa main.</p>
+<p>Un tableau de fréquences consulté en 2026 par SolvePoker analyse un spot précis, un pot relancé simple entre le bouton et la grosse blind en 6-max à 100 grosses blindes. Dans ce modèle, le bouton mise sur 52,3 % des flops après un check, mais ce résultat ne constitue pas un taux universel : il dépend de la situation et des paramètres du solve. <a href="https://solvepoker.app/plo-cbet-frequencies" rel="noopener noreferrer" target="_blank">Les fréquences par texture</a> montrent aussi pourquoi classer les boards aide à décider.</p>
+<p>Les flops monotones, les boards très connectés et les cartes appariées demandent une lecture précise des combinaisons possibles. Sur un flop monotone, la présence d’une carte de la couleur dominante et de cartes de soutien peut modifier la valeur de votre mise. Sur un board apparié, observez plutôt quelles ranges contiennent les brelans et les fulls les plus crédibles.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-02268084-c433-406a-a6db-bf0b90bfc1c8-img-1.webp" alt="Joueur observant le flop et les jetons avant de décider s’il mise à la table de poker." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" /> 
+<h2>Associez le sizing à votre range, pas seulement à votre main</h2>
+<p>Sur un flop sec qui favorise votre range, une mise modeste permet souvent de miser plusieurs catégories de mains sans gonfler le pot. Elle peut inclure des mains fortes, des mains moyennes et quelques bluffs sélectionnés. Sur un board très dynamique, une stratégie plus sélective évite d’exposer trop de mains faibles à une relance.</p>
+<p>Choisissez votre taille en fonction du board, des stacks et des mains que vous voulez représenter. Ne misez pas gros uniquement parce que vous avez une main forte, ni petit uniquement parce que vous bluffez : un sizing lisible donne à l’adversaire une information inutile. Les conseils de <a href="https://www.pokerstars.fr/exit/" rel="noopener noreferrer" target="_blank">PokerStars Learn sur les c-bets</a> rappellent que texture, position et taille doivent guider le choix plutôt qu’une mise automatique.</p>
+<p>Gardez aussi en tête la <strong>valeur de vos bloqueurs</strong>. Une main qui bloque les nuts adverses ou possède un bon tirage de secours se prête mieux à certains bluffs qu’une main sans amélioration possible. À l’inverse, une main moyenne qui a de la valeur à l’abattage gagne souvent à checker plutôt qu’à transformer sa valeur en bluff.</p>
+<h2>Réduisez les c-bets en pot multiway</h2>
+<p>Dès qu’un troisième joueur voit le flop, la probabilité qu’un adversaire ait une main ou un tirage solide augmente. Une mise de continuation qui aurait du sens en heads-up perd alors une partie de son efficacité. Réduisez vos bluffs et misez principalement avec des mains de value ou des tirages capables de poursuivre.</p>
+<p>Par exemple, avec top paire sur un flop sec, miser en heads-up peut obtenir des calls de mains moins bonnes. Face à deux adversaires, il devient plus difficile de protéger cette paire et de faire coucher tout le monde. La prudence ne signifie pas checker toutes vos mains fortes : elle consiste à sélectionner celles qui supportent une relance ou plusieurs streets de pression.</p>
+<p>Contre des joueurs qui paient trop souvent, retirez les bluffs faibles et privilégiez les mises de value. Face à des adversaires qui abandonnent trop, ajoutez des bluffs avec une équité ou des bloqueurs utiles. C’est un ajustement d’exploitation, pas une raison d’oublier votre stratégie de base.</p>
+<h2>Préparez votre plan avant de miser</h2>
+<p>Avant de miser, décidez quelles turns vous permettent de continuer, lesquelles vous feront ralentir et comment vous réagirez à une relance. Cette préparation évite de miser au flop sans savoir quoi faire ensuite. Elle aide aussi à garder dans votre range des mains capables de checker sans abandonner le coup.</p>
+<p>Un plan de jeu clair relie les décisions préflop, la sélection des flops et les actions prévues sur les streets suivantes. Pour formaliser cette méthode, <a href="https://vincentcoachpoker.com/blog/elaborer-un-plan-de-jeu-au-poker/">élaborer un plan de jeu au poker</a> permet de transformer les principes en critères concrets à revoir après vos sessions.</p>
+<p>Après une session, notez quelques mains où vous avez c-bet, puis vérifiez la texture, la position, le nombre de joueurs et les options de turn. Pour chaque main, demandez-vous si vous aviez un avantage de range, une raison de miser pour value ou un tirage pertinent. Ce suivi révèle plus facilement les mises automatiques et les checks trop prudents.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/DV4o2jeRlbc?rel=0&amp;playsinline=1" title="TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)</figcaption></figure>
+<h2>Utilisez une checklist simple à chaque flop</h2>
+<p>À la table, reprenez les critères dans le même ordre. La <strong>position</strong> détermine qui agira après le flop. La texture indique quelles mains fortes et quels tirages sont disponibles. Le nombre d’adversaires aide à estimer si un bluff peut faire coucher suffisamment de mains.</p>
+<p>Terminez par votre main et votre plan : disposez-vous d’une <strong>équité de secours</strong>, d’un bloqueur utile ou d’une main de value ? Quelles cartes de turn vous permettront de miser à nouveau ? Si vous ne pouvez pas répondre clairement, checker conserve souvent davantage d’options.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-02268084-c433-406a-a6db-bf0b90bfc1c8-img-2.webp" alt="Checklist illustrée pour examiner la position, la texture du flop, les joueurs et le plan de turn avant une c-bet." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<section class="article-conclusion"><h2>À retenir pour équilibrer vos c-bets</h2><p><strong>Équilibrer vos mises de continuation au PLO</strong> consiste à les ajuster à vos ranges, à la texture du flop et au nombre d’adversaires. Misez plus volontiers lorsque votre range dispose d’un avantage clair, ralentissez sur les boards qui favorisent l’adversaire et choisissez un sizing cohérent avec les mains que vous représentez. Prévoyez aussi vos décisions sur les turns avant de miser.</p></section>
+<section class="brand-cta"><h2>Structurez vos décisions au poker</h2><p>Pour appliquer ces repères avec constance, il faut relier l’analyse des ranges, la lecture des adversaires et la préparation mentale. Un accompagnement personnalisé peut vous aider à transformer ces critères en décisions adaptées à votre format et à vos difficultés.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Notre mentorat La Salle du Temps associe suivi personnel, contenu structurant et communauté de joueurs. L’Équation 3D comprend le diagnostic des leaks, la détection des patterns adverses et une matrice décisionnelle du préflop à la river. L’accompagnement est adapté au format du joueur et accessible sur candidature, après un entretien. Les progrès dépendent de votre engagement et de l’application de la méthode. <a href="https://vincentcoachpoker.com/la-salle-du-temps/">Découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Qu’est-ce qu’un c-bet au PLO ?</h3><p>Un c-bet est une mise au flop effectuée par le joueur qui a pris l’initiative préflop. Au PLO, sa fréquence dépend notamment des ranges, de la texture et du nombre d’adversaires.</p><h3>Faut-il c-bet après chaque relance préflop ?</h3><p>Non, miser automatiquement rend votre stratégie prévisible et peut vous exposer à des relances sur les boards défavorables. Vérifiez d’abord votre avantage de range et les options de votre main.</p><h3>Quels flops favorisent souvent le c-bet ?</h3><p>Les flops hauts et peu connectés peuvent favoriser l’ouvreur si sa range contient davantage de mains fortes. Les boards bas et très coordonnés demandent généralement plus de sélection.</p><h3>Quelle taille choisir pour une c-bet ?</h3><p>Sur un board statique favorable, une mise modeste peut suffire à faire pression sans gonfler le pot. Sur un flop dynamique, choisissez soigneusement les mains qui supportent une mise plus importante.</p><h3>Comment progresser dans ses décisions de c-bet ?</h3><p>Revoyez vos mains en notant la position, la texture, le nombre d’adversaires et votre plan pour les turns. Notre Salle du Temps propose un mentorat personnalisé pour travailler les décisions et les difficultés propres à votre format.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
