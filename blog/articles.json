@@ -777,5 +777,17 @@
     },
     "revision": "1793344901911618",
     "operation_id": "8ce26ac6da95be32b76591c4a94366d200c337fb73e1f20926d14db01b6a6890"
+  },
+  "c1311909-07ff-4053-9304-2362c315ac4d": {
+    "slug": "comment-prendre-des-decisions-grace-aux-probabilites-au-poker",
+    "published_at": "2026-10-31T11:00:41.410Z",
+    "title": "Prendre de meilleures décisions au poker grâce aux probabilités",
+    "meta_description": "Apprenez comment prendre des decisions grace aux probabilites au poker et comparer l’équité, les cotes du pot et l’espérance de gain.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs manipulent des cartes et des jetons autour de tables dans une salle de poker intérieure."
+    },
+    "revision": "1793401879926763",
+    "operation_id": "6fec555d5a226c357dfffebf0340e70b895d1d28f0e7a9e9be02b05d4159215c"
   }
 }
