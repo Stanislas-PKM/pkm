@@ -801,5 +801,17 @@
     },
     "revision": "1793430712570278",
     "operation_id": "f1c969d587da23ab27220d789ca090ea9b548716182dd1631b7f9c6537097fce"
+  },
+  "3c92a143-9764-49e1-b4f4-8b235cf6b5f3": {
+    "slug": "comment-jouer-contre-un-joueur-qui-fait-tapis-tout-le-temps",
+    "published_at": "2026-11-01T13:04:58.619Z",
+    "title": "Comment réagir face à un joueur qui fait tapis sans cesse",
+    "meta_description": "Apprenez comment jouer contre un joueur qui fait tapis tout le temps : lisez sa range, calculez les cotes et ajustez vos calls au format.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Des joueurs sont assis autour d’une table de poker, certains manipulent des jetons et des cartes."
+    },
+    "revision": "1793497071220735",
+    "operation_id": "53acff07973f810c59009af7a7b556828a269b4eb3fdc1d40cc9ffa8e5ac28c6"
   }
 }
