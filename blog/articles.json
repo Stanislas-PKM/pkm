@@ -825,5 +825,17 @@
     },
     "revision": "1793524144031620",
     "operation_id": "ed8b961c3fb7dea18576f65920f408849acce8c4a148a0897d8e640965703f62"
+  },
+  "6084cfb9-e070-40c2-bd91-48b7c1281bd2": {
+    "slug": "play-deep-tables-or-not",
+    "published_at": "2026-11-02T13:03:57.622Z",
+    "title": "Table de jeu à creux profond : faut-il le choisir ?",
+    "meta_description": "Play deep tables or not : choisissez un creux profond ou peu profond selon vos accessoires, votre espace de jeu et l’usage quotidien recherché.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-6084cfb9-e070-40c2-bd91-48b7c1281bd2-img-0.webp",
+      "alt": "Table de jeu de rôle en bois avec une carte, des figurines et des dés dans un creux peu profond"
+    },
+    "revision": "1793582258491794",
+    "operation_id": "b6c6608076bd110606c53487349ea08298603a90e14bbbc3ea4755dfcdf8a31c"
   }
 }
