@@ -837,5 +837,17 @@
     },
     "revision": "1793582258491794",
     "operation_id": "b6c6608076bd110606c53487349ea08298603a90e14bbbc3ea4755dfcdf8a31c"
+  },
+  "5877bb47-7c0f-423c-9a52-f7c5853bc3fe": {
+    "slug": "5-conseils-pour-survivre-en-etant-short-stack-petit-tapis",
+    "published_at": "2026-11-02T21:05:01.514Z",
+    "title": "5 conseils pour survivre avec un short stack au poker",
+    "meta_description": "5 conseils pour survivre en etant short stack petit tapis : gérez vos blindes, choisissez vos mains et repérez les bons moments pour faire tapis.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs assis à des tables de poker, vus depuis le bord d’une table."
+    },
+    "revision": "1793611926925309",
+    "operation_id": "73bc2af5c4bcbe6ebb52320fe9bb59d823e2c348abc030d87e2e8d2186c50ccf"
   }
 }
