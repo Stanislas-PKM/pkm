@@ -861,5 +861,17 @@
     },
     "revision": "1793675828833968",
     "operation_id": "f11883f4bf34bbcbbfdd32cf58c5c750e535299c95d74576d17521adddd5759d"
+  },
+  "d33326e6-d4ab-4f20-ac47-0db1a5e719b7": {
+    "slug": "conseil-pour-battre-les-micro-limites",
+    "published_at": "2026-11-03T21:02:49.136Z",
+    "title": "Comment battre les micro-limites au poker avec méthode",
+    "meta_description": "Ce conseil pour battre les micro limites privilégie des ranges solides, la value, une bankroll maîtrisée et l’analyse régulière des mains.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure animée, avec des joueurs assis ou debout autour des tables."
+    },
+    "revision": "1793715122522145",
+    "operation_id": "dd567c52570364d815b0d4b8581baff17da0b87c7da90b6a0667546b51255aa0"
   }
 }
