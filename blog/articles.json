@@ -849,5 +849,17 @@
     },
     "revision": "1793611926925309",
     "operation_id": "73bc2af5c4bcbe6ebb52320fe9bb59d823e2c348abc030d87e2e8d2186c50ccf"
+  },
+  "151e689d-9924-4a3d-b29e-492e0dc406a3": {
+    "slug": "un-coaching-poker-ou-un-solveur-gto-pour-ameliorer-ses-decisions-postflop",
+    "published_at": "2026-11-03T13:01:55.632Z",
+    "title": "Coaching au poker postflop : choisir entre coach et solveur GTO",
+    "meta_description": "Pour le coaching poker postflop, comparez solveur et coach, analysez vos mains, comprenez vos erreurs et structurez votre progression.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne assise tient des jetons roses à une table de poker."
+    },
+    "revision": "1793675828833968",
+    "operation_id": "f11883f4bf34bbcbbfdd32cf58c5c750e535299c95d74576d17521adddd5759d"
   }
 }
