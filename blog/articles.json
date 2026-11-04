@@ -873,5 +873,17 @@
     },
     "revision": "1793715122522145",
     "operation_id": "dd567c52570364d815b0d4b8581baff17da0b87c7da90b6a0667546b51255aa0"
+  },
+  "0d8c6a0a-efea-4e5d-afbc-61657934c982": {
+    "slug": "comment-devenir-un-joueur-de-poker-professionnel",
+    "published_at": "2026-11-04T13:01:29.189Z",
+    "title": "Devenir un joueur de poker professionnel : les étapes",
+    "meta_description": "Devenir joueur de poker professionnel demande méthode, bankroll maîtrisée et résultats suivis. Évaluez les risques avant de vivre du poker.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure bondée, avec une personne au premier plan et plusieurs tables en arrière-plan."
+    },
+    "revision": "1793754940401782",
+    "operation_id": "9140c241a96f2b9e14a4b82cdf5eee94a0df1774d9b05e80783035c2889e3d2d"
   }
 }
