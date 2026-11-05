@@ -885,5 +885,17 @@
     },
     "revision": "1793754940401782",
     "operation_id": "9140c241a96f2b9e14a4b82cdf5eee94a0df1774d9b05e80783035c2889e3d2d"
+  },
+  "29d9238b-0073-4e2b-b55c-425dbe7b220a": {
+    "slug": "le-coaching-poker-aide-t-il-a-mieux-gerer-le-tilt-et-les-decisions-difficiles",
+    "published_at": "2026-11-05T07:03:35.582Z",
+    "title": "Coaching poker et tilt : mieux gérer les décisions difficiles",
+    "meta_description": "Coaching poker tilt : apprenez à repérer vos déclencheurs, mieux décider sous pression et construire des réflexes mentaux applicables à votre jeu.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne assise à une table de poker tient des jetons roses, avec une salle de jeu floue en arrière-plan."
+    },
+    "revision": "1793822415928664",
+    "operation_id": "a15b479ca78d74ebff7c98eae70911165f05f3ed0d74ecb3bd9b543c3f2b534c"
   }
 }
