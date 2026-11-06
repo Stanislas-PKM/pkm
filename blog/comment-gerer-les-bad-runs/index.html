@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Comment gérer les bad runs au poker sans céder au tilt · Vincent Coach Poker</title>
+<meta name="description" content="Apprenez à gérer les bad runs au poker : distinguez la variance des erreurs, protégez votre bankroll et gardez des décisions solides.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/comment-gerer-les-bad-runs/">
+<meta name="sorank-operation-id" content="11c3f50afe8c79bf06e52538cc30b332e66ee6ca7302317f5182b06ac16b7ad1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 6 novembre 2026</span>
+      <h1>Comment gérer les bad runs au poker sans céder au tilt</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Une personne tient des jetons de poker à une table, dans une salle de jeu intérieure." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Pour traverser un bad run, séparez la qualité de vos décisions des résultats à court terme. Vérifiez les mains, surveillez les signes de tilt, respectez vos limites de session et adaptez les enjeux à votre bankroll. Une mauvaise série ne prouve ni que vous jouez mal ni que la variance explique chaque perte : une revue méthodique aide à faire la différence.</div>
+<p>Vous perdez plusieurs coups de suite : faut-il continuer, descendre de limite ou arrêter la session ? Un bad run décrit une période de résultats défavorables, mais ne révèle pas, à lui seul, la qualité de votre jeu. Apprendre à <strong>gérer les bad runs au poker</strong>, c’est séparer les décisions, l’état émotionnel et l’exposition financière. Si vos émotions commencent à peser sur vos choix, notre ressource <a href="https://vincentcoachpoker.com/blog/le-coaching-poker-aide-t-il-a-mieux-gerer-le-tilt-et-les-decisions-difficiles/">Gérer le tilt et les décisions difficiles</a> remet ces facteurs au cœur de l’analyse.</p>
+<p>Vous ne contrôlez ni les cartes ni les résultats immédiats. En revanche, vous pouvez revoir vos mains, ajuster votre rythme et respecter une limite de perte définie à l’avance. Cette distinction évite deux réactions courantes : attribuer chaque perte à la chance ou changer de stratégie après quelques coups malheureux.</p>
+<h2>Variance ou erreur de jeu : comment faire la différence ?</h2>
+<p>Deux joueurs peuvent prendre la même décision avec une main similaire et obtenir des résultats différents. La <strong>variance au poker</strong> désigne les fluctuations autour des résultats attendus. Elle explique pourquoi une décision correcte peut perdre, mais ne permet pas de conclure que toutes vos pertes relèvent de la malchance.</p>
+<p>Pour analyser un coup, revenez aux informations disponibles au moment de décider : votre position, les mises, le profil adverse, les cartes communes et les probabilités estimées. Ne jugez pas votre choix uniquement à partir de la carte tombée à la river. Une décision peut être cohérente malgré une issue défavorable, ou contestable même si elle a remporté le pot.</p>
+<p>Une étude expérimentale publiée en 2024 a utilisé le Texas Hold’em pour examiner la pondération des probabilités et la prise de décision face à l’incertitude. Ce sujet rappelle l’intérêt de distinguer les chances évaluées avant le résultat de l’issue finalement observée. Pour approfondir cette notion, vous pouvez <a href="https://vincentcoachpoker.com/blog/comment-gerer-la-variance/">Comprendre et gérer la variance au poker</a>.</p>
+<p>Notez les coups qui vous semblent importants, puis analysez-les à froid. Si vous observez plusieurs fois la même erreur de sizing ou de sélection de mains, vous avez une piste de travail concrète. Si les décisions restent solides, la série de résultats ne suffit pas à invalider votre stratégie.</p>
+<h2>Revoir vos décisions plutôt que le seul résultat</h2>
+<p>Vous venez de perdre un gros pot avec la meilleure main au flop. Avant de conclure que votre jeu est mauvais, reconstituez le coup étape par étape. Demandez-vous quelles informations vous aviez, quelles options étaient disponibles et pourquoi vous avez choisi cette ligne.</p>
+<p>Une <strong>analyse des mains</strong> efficace sépare le raisonnement du résultat. Pour chaque coup revu, consignez la situation, votre décision, la raison qui la justifiait et la question qui reste ouverte. Si vous utilisez un logiciel de suivi ou un carnet, gardez vos notes courtes et factuelles. L’objectif est de repérer des tendances, pas de transformer chaque main perdue en preuve d’un problème.</p>
+<ul>
+<li>Repérez la décision qui engage le plus de jetons.</li>
+<li>Reconstituez votre lecture de la range adverse.</li>
+<li>Comparez votre choix à votre stratégie habituelle.</li>
+<li>Notez une correction précise à tester lors d’une prochaine session.</li>
+</ul>
+<p>Cette méthode réduit le <strong>biais du résultat</strong>, qui consiste à évaluer un choix seulement d’après ce qui s’est passé ensuite. Si une revue fait apparaître des erreurs répétées liées à la variance ou à vos estimations, notre accompagnement traite aussi les décisions à corriger, avec une analyse adaptée à votre jeu : <a href="https://vincentcoachpoker.com/blog/le-coaching-poker-aide-t-il-vraiment-a-reduire-les-erreurs-liees-a-la-variance/">Réduire les erreurs liées à la variance</a>.</p>
+
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-4563fbb2-01ac-4cb7-9680-90a380df7611-img-1.webp" alt="Un joueur examine des notes de poker et des cartes après une session." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<h2>Détecter le tilt avant qu’il ne s’installe</h2>
+<p>Le <strong>tilt poker</strong> ne se manifeste pas uniquement par la colère. Il peut aussi se traduire par des décisions précipitées, une envie de récupérer immédiatement ses pertes ou une difficulté à se concentrer. Ces signes comptent davantage que le montant perdu : ils indiquent que votre état émotionnel commence à modifier votre façon de jouer.</p>
+<p>Fixez un repère simple avant la session. Par exemple, dès que vous remarquez deux décisions consécutives prises pour vous refaire, interrompez le jeu et quittez la table quelques minutes. Si votre calme ne revient pas, arrêtez la session. Une pause n’efface pas les pertes, mais elle empêche de les transformer en décisions prises sous pression.</p>
+<p>Faites aussi la différence entre frustration et perte de contrôle. Être déçu après un coup est normal. Continuer à jouer alors que vous ne suivez plus votre stratégie est un signal d’arrêt. Pour les joueurs qui répètent ces schémas, nous travaillons aussi sur les déclencheurs émotionnels et les décisions difficiles, plutôt que de réduire le problème à un simple manque de volonté.</p>
+<h2>Protéger votre bankroll sans jouer dans la peur</h2>
+<p>Une <strong>gestion de bankroll</strong> claire vous aide à éviter qu’une mauvaise série vous force à prendre des risques supplémentaires. Définissez à l’avance le montant consacré au poker, les limites que cette somme vous permet de jouer et les conditions d’une éventuelle descente de limite. Séparez cet argent de celui destiné aux dépenses essentielles.</p>
+<p>Dans un article publié en 2020 dans le <a href="https://www.journalofexpertise.org/articles/volume3_issue2/JoE_3_2_Palomaki_etal.pdf" target="_blank" rel="noopener noreferrer">Journal of Expertise</a>, la gestion de bankroll est reliée à la compréhension de la variance statistique et du risque de ruine. En pratique, le montant nécessaire dépend notamment du format, de la structure des parties et de vos résultats estimés. Un seuil universel ne convient donc pas à tous les joueurs.</p>
+<p>Établissez vos règles avant de jouer, quand vous pouvez réfléchir calmement. Par exemple, prévoyez le niveau auquel vous descendrez si votre capital passe sous un seuil fixé pour votre format. Respectez ce choix même si vous pensez que la mauvaise série va s’arrêter. La variance ne suit pas un calendrier, et une bankroll prévue pour absorber des fluctuations ne rend pas chaque perte acceptable.</p>
+<p>Si vos pertes dépassent le budget que vous pouvez consacrer au jeu, suspendez les sessions. Ne tentez pas de récupérer l’argent perdu avec des mises plus élevées. La priorité devient alors de protéger vos finances et votre équilibre, plutôt que de prolonger le jeu.</p>
+<h2>Adopter une routine qui reste la même en downswing</h2>
+<p>Avant une session, vérifiez votre état de concentration et choisissez une limite compatible avec votre bankroll. Pendant le jeu, ralentissez après un gros pot et éloignez-vous si vous ne prenez plus le temps d’examiner les décisions. Après la session, consignez quelques mains à revoir, puis séparez cette analyse de votre résultat financier.</p>
+<p>La <strong>taille de l’échantillon</strong> compte également. En tournoi, les résultats peuvent varier fortement selon le nombre de participants et la structure des gains. Un modèle de tournois mis à jour le 17 septembre 2026 par Poker Academy montre que, dans ses hypothèses, un joueur avec un ROI de 20 % peut finir perdant après 1 000 tournois dans environ un cas sur cinq, selon le <a href="https://poker.academy/blog/post/variance-in-tournament-poker" target="_blank" rel="noopener noreferrer">modèle de Poker Academy</a>. Il s’agit d’une simulation, pas de résultats observés chez des joueurs réels. Elle illustre pourquoi une série de tournois ne suffit pas, à elle seule, à mesurer votre niveau.</p>
+<p>Gardez une routine courte et répétable : jouez dans de bonnes conditions, arrêtez-vous lorsque votre concentration baisse, puis évaluez quelques décisions à froid. Si votre jeu stagne malgré cette démarche, cherchez des erreurs récurrentes plutôt que de multiplier les heures de jeu. Un accompagnement structuré peut alors vous aider à organiser le diagnostic et le travail technique.</p>
+
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-4563fbb2-01ac-4cb7-9680-90a380df7611-img-2.webp" alt="Infographie présentant quatre étapes pour garder une routine disciplinée au poker." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<section class="article-conclusion"><h2>La bonne réponse face à une mauvaise série</h2><p>Pour <strong>gérer un bad run</strong>, ne cherchez pas à prévoir quand les résultats vont s’inverser. Distinguez la variance des erreurs par une revue méthodique, surveillez les signes de tilt et respectez vos règles de bankroll. Si votre état émotionnel dégrade vos décisions, arrêtez la session. Cette discipline vous permet de travailler ce qui dépend de vous sans confondre résultat immédiat et qualité de jeu.</p></section>
+<section class="brand-cta"><h2>Découvrir l’accompagnement poker</h2><p>Lorsque les mauvais résultats s’accumulent, il devient difficile de savoir si vous devez corriger votre jeu, votre gestion émotionnelle ou votre méthode de travail. Une analyse extérieure et structurée peut clarifier ces points et vous aider à transformer les mains difficiles en pistes de progression adaptées à votre format.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Dans La Salle du Temps, nous associons suivi personnel, contenu structuré, préparation mentale et travail sur les décisions, les leaks et la lecture des adversaires. L’accompagnement est adapté aux problématiques du joueur et commence par une candidature suivie d’un entretien. Les places sont limitées. <a href="https://vincentcoachpoker.com/la-salle-du-temps/">Découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Combien de temps dure un bad run au poker ?</h3><p>Il n’existe pas de durée fixe, car les résultats dépendent du format, du volume joué et de la variance. Évaluez vos décisions sur une série de mains ou de tournois, plutôt que d’attendre une date précise pour que la situation change.</p><h3>Comment savoir si je subis la variance ou si je joue mal ?</h3><p>Reconstituez les décisions importantes en vous appuyant sur les informations disponibles au moment du coup. Des erreurs récurrentes dans plusieurs mains indiquent un axe de travail, tandis qu’une issue défavorable ne suffit pas à prouver une mauvaise décision.</p><h3>Faut-il arrêter de jouer pendant un downswing ?</h3><p>Arrêtez la session si la frustration modifie vos décisions ou si vous ne suivez plus votre stratégie. Si vous restez concentré et respectez vos limites, vous pouvez continuer sans chercher à vous refaire.</p><h3>Dois-je baisser de limite après une mauvaise série ?</h3><p>Appliquez les règles de bankroll que vous avez fixées avant la session. Si votre capital passe sous le seuil prévu pour votre limite, descendez de niveau plutôt que d’augmenter le risque pour récupérer vos pertes.</p><h3>Un accompagnement peut-il aider à traverser un bad run ?</h3><p>Un accompagnement peut structurer l’analyse des mains, du tilt et des erreurs de jeu. La Salle du Temps associe suivi personnel, contenu structuré et préparation mentale, avec un accès sur candidature après un entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

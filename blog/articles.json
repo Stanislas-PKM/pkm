@@ -909,5 +909,17 @@
     },
     "revision": "1793848146852881",
     "operation_id": "077fa7fa5848d628af737604348ab1ae7a20579d478ff24845cc24d188741320"
+  },
+  "4563fbb2-01ac-4cb7-9680-90a380df7611": {
+    "slug": "comment-gerer-les-bad-runs",
+    "published_at": "2026-11-06T07:00:36.109Z",
+    "title": "Comment gérer les bad runs au poker sans céder au tilt",
+    "meta_description": "Apprenez à gérer les bad runs au poker : distinguez la variance des erreurs, protégez votre bankroll et gardez des décisions solides.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne tient des jetons de poker à une table, dans une salle de jeu intérieure."
+    },
+    "revision": "1793908021389427",
+    "operation_id": "11c3f50afe8c79bf06e52538cc30b332e66ee6ca7302317f5182b06ac16b7ad1"
   }
 }
