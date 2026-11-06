@@ -921,5 +921,17 @@
     },
     "revision": "1793908021389427",
     "operation_id": "11c3f50afe8c79bf06e52538cc30b332e66ee6ca7302317f5182b06ac16b7ad1"
+  },
+  "b2c1e52e-4710-41ba-a8c3-e72bdc0f5b5c": {
+    "slug": "quel-type-de-poker-est-fait-pour-vous",
+    "published_at": "2026-11-06T15:03:04.030Z",
+    "title": "Quel type de poker est fait pour vous selon votre profil",
+    "meta_description": "Quel type de poker est fait pour vous ? Comparez cash game, tournois, Sit and Go et tables selon votre temps et votre tempérament.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Une salle de poker animée, avec plusieurs tables et des joueurs réunis sous des lumières."
+    },
+    "revision": "1793934274126407",
+    "operation_id": "3586263925721df6fcf482a985747808f64a5d3ea8e8d2af599294027ff36d3b"
   }
 }
