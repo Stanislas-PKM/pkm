@@ -933,5 +933,17 @@
     },
     "revision": "1793934274126407",
     "operation_id": "3586263925721df6fcf482a985747808f64a5d3ea8e8d2af599294027ff36d3b"
+  },
+  "380db520-26c2-452e-b8e6-a996e054b51f": {
+    "slug": "quels-temoignages-permettent-d-evaluer-un-mentorat-poker-serieusement",
+    "published_at": "2026-11-07T07:00:53.165Z",
+    "title": "Comment évaluer les témoignages d’un mentorat de poker ?",
+    "meta_description": "Les témoignages mentorat poker éclairent votre choix s’ils précisent le niveau de départ, la durée, les progrès mesurés et le contexte.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Des joueurs manipulent des jetons et des cartes autour d’une table dans une salle de poker."
+    },
+    "revision": "1793994947120676",
+    "operation_id": "2824cc2b31194ef0321c852d952cf9c63f84881bd53fb973a5d08c3d915aa6c7"
   }
 }
