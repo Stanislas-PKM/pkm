@@ -969,5 +969,17 @@
     },
     "revision": "1794084178702950",
     "operation_id": "67359e430621b1595b52dde73b100d567a6fcbc059ca92a989e1bef3702082c2"
+  },
+  "bf713ccb-6eb5-4eb0-952a-ac6a24a616cd": {
+    "slug": "comment-un-accompagnement-poker-s-adapte-t-il-au-cashgame-ou-aux-tournois",
+    "published_at": "2026-11-08T15:02:04.466Z",
+    "title": "Comment adapter un accompagnement poker au CashGame ou en tournoi",
+    "meta_description": "L’accompagnement poker CashGame tournoi : travail à adapter, différences stratégiques et critères pour choisir un suivi selon votre format.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Salle de poker intérieure animée, des joueurs sont assis ou debout autour de tables."
+    },
+    "revision": "1794107906467437",
+    "operation_id": "5cd41b6371c5ac1d1277e195f6191b24b30ddfd352a7231f7dd693caa187722a"
   }
 }
