@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Gérer les swings au poker : bankroll, mental et méthode · Vincent Coach Poker</title>
+<meta name="description" content="Conseils pour gerer les swings au poker : distinguez variance et erreur, protégez votre bankroll et gardez des décisions solides.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/gerer-les-swings-au-poker/">
+<meta name="sorank-operation-id" content="67359e430621b1595b52dde73b100d567a6fcbc059ca92a989e1bef3702082c2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 8 novembre 2026</span>
+      <h1>Gérer les swings au poker&nbsp;: bankroll, mental et méthode</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker fréquentée, avec une personne assise au premier plan et d’autres joueurs autour des tables." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Pour traverser les swings, séparez les résultats de la qualité de vos décisions. Une bankroll adaptée, un suivi régulier des mains et des règles claires contre le tilt limitent les réactions coûteuses. L’objectif n’est pas d’éliminer la variance, mais de continuer à jouer dans de bonnes conditions, ou de faire une pause quand ce n’est plus le cas.</div>
+<p>Vous perdez plusieurs sessions de suite, et chaque nouvelle main semble confirmer que rien ne fonctionne. Avant de changer votre stratégie ou vos limites, distinguez la malchance d’une erreur qui se répète. Pour <strong>mieux gérer les swings au poker</strong>, gardez des repères objectifs et consultez notre méthode pour <a href="https://vincentcoachpoker.com/blog/comment-gerer-les-bad-runs/">gérer les bad runs au poker</a>.</p>
+<p>La variance fait partie du jeu : elle peut masquer temporairement la qualité de vos décisions. Mais une période perdante ne prouve pas, à elle seule, que vous jouez bien ou mal. La bonne réponse combine une bankroll protégée, une analyse des mains et une gestion émotionnelle qui vous empêche de poursuivre les pertes. Les conseils ci-dessous valent pour le cash game comme pour les tournois, avec des ajustements selon le format.</p>
+<h2>Variance ou leak : que révèlent vos résultats ?</h2>
+<p>Imaginez une session où vous engagez vos jetons avec une main favorite, puis perdez à la river. Le résultat est négatif, mais la décision peut rester correcte. À l’inverse, gagner un gros pot ne valide pas automatiquement la ligne choisie. La <strong>variance au poker</strong> désigne ces fluctuations entre le résultat attendu sur le long terme et ce qui arrive sur un échantillon limité.</p>
+<p>Pour évaluer un downswing, séparez trois éléments : vos décisions, les cartes distribuées et les réactions provoquées par la perte. Une mauvaise série peut mêler variance et erreurs, notamment si la fatigue ou la frustration modifie votre jeu. En 2023, une étude consacrée à une simulation de vidéo poker a examiné comment la volatilité s’associe à des fluctuations de résultats. Elle éclaire le mécanisme général, sans mesurer directement les swings du poker Texas Hold’em. <a href="https://akjournals.com/downloadpdf/journals/2006/aop/article-10.1556-2006.2023.00048/article-10.1556-2006.2023.00048.pdf" rel="noopener noreferrer" target="_blank">L’étude publiée en 2023</a> rappelle l’intérêt de ne pas confondre une séquence courte avec une tendance durable.</p>
+<p>Ne posez donc pas de diagnostic à partir d’une seule main spectaculaire. Constituez plutôt un échantillon de décisions et recherchez des motifs répétés : appels trop larges, mises précipitées ou abandon d’une stratégie éprouvée. Pour structurer cette analyse, vous pouvez aussi <a href="https://vincentcoachpoker.com/blog/comment-gerer-la-variance/">comprendre et gérer la variance au poker</a>.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Personne assise à une table de poker tenant des jetons roses, dans un espace de jeu intérieur." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<h2>Protégez votre bankroll avant le prochain downswing</h2>
+<p>Quand les pertes s’accumulent, la question pratique est simple : combien pouvez-vous encore jouer sans toucher à votre budget de vie ? La bankroll doit rester distincte de l’argent consacré au loyer, aux factures et aux dépenses courantes. Une ressource statistique publiée en juillet 2026 décrit aussi la bankroll comme une somme réservée au poker, séparée des autres engagements financiers. <a href="https://www.statology.org/variance-bankroll-management-and-the-law-of-large-numbers-in-texas-hold-em/" rel="noopener noreferrer" target="_blank">Son analyse de la bankroll</a> souligne que cette séparation aide à limiter le risque qu’une mauvaise série mette fin à votre capacité de jouer.</p>
+<p>Fixez vos limites avant de vous asseoir : montant disponible, mise maximale et seuil auquel vous descendez de limite ou arrêtez la session. Ces seuils dépendent du format, du niveau de variance et de votre tolérance au risque. Il n’existe pas un nombre de buy-ins universel qui convienne à tous les joueurs. En tournoi, les résultats peuvent être particulièrement irréguliers ; en cash game, la taille de l’échantillon et votre taux de gain comptent également.</p>
+<p>Une analyse publiée en novembre 2026 a examiné des historiques de joueurs gagnants en cash game. Dans les données mesurées sur GGPoker, 29 % des 201 joueurs suivis étaient encore en perte après 50 000 mains. Cet échantillon ne donne pas une probabilité valable pour chaque joueur ou chaque limite, mais illustre qu’une longue période négative n’exclut pas automatiquement un avantage à long terme. <a href="https://www.pokalab.com/learn/poker-variance" rel="noopener noreferrer" target="_blank">Les mesures de Pokerlab</a> distinguent ainsi les résultats observés des projections théoriques.</p>
+<p>Si vous ne pouvez pas respecter vos seuils sans remettre de l’argent destiné à d’autres dépenses, arrêtez de jouer et réévaluez le budget. Une bankroll ne rend pas les pertes agréables, mais elle évite de transformer un mauvais run en problème financier plus large.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-42147a81-95bd-4e91-a78e-3390cd0498ca-img-2.webp" alt="Infographie checklist en trois étapes : séparer le budget, fixer ses limites et faire une pause." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<h2>Suivez les décisions, pas seulement la courbe de gains</h2>
+<p>Après une session, notez les mains qui vous ont réellement posé une question stratégique. Pour chacune, consignez la situation, votre raisonnement et l’information qui vous manquait. Revenez ensuite sur ces décisions à tête reposée. Cette routine aide à distinguer un résultat défavorable d’un schéma de jeu à corriger.</p>
+<p>Évitez de modifier plusieurs éléments à la fois. Si vous changez de limite, de stratégie et de durée de session au même moment, il devient difficile de comprendre ce qui améliore ou détériore vos décisions. Choisissez une hypothèse précise, étudiez un groupe de mains semblables, puis vérifiez si le problème se répète.</p>
+<p>Une vidéo consacrée aux pots 3-bet peut fournir un exemple d’analyse d’une situation technique. Elle ne remplace toutefois pas l’examen de vos propres mains ni l’évaluation de votre jeu dans son ensemble.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/DV4o2jeRlbc?rel=0&amp;playsinline=1" title="TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)</figcaption></figure>
+<h2>Prévenez le tilt quand la frustration monte</h2>
+<p>Le tilt ne commence pas toujours par une explosion de colère. Il peut se traduire par des décisions prises trop vite, des relances plus larges ou l’envie de récupérer immédiatement les pertes. Repérez vos signaux personnels : tension, précipitation, difficulté à vous concentrer ou envie de jouer plus cher.</p>
+<p>Décidez à l’avance de votre réponse à ces signaux. Vous pouvez vous lever quelques minutes, fermer les tables ou mettre fin à la session. Ne cherchez pas à vous refaire en prolongeant le jeu : cette réaction remplace une décision réfléchie par une poursuite des pertes. Pour travailler ce type de situation, notre accompagnement aborde aussi la façon de <a href="https://vincentcoachpoker.com/blog/le-coaching-poker-aide-t-il-a-mieux-gerer-le-tilt-et-les-decisions-difficiles/">gérer le tilt et les décisions difficiles</a>.</p>
+<p>Si le poker commence à affecter votre sommeil, vos finances ou vos relations, faites une pause et demandez du soutien adapté. La priorité est de protéger votre équilibre, pas de finir une session ou de compenser une perte.</p>
+<h2>Utilisez les simulateurs comme des repères, pas des prédictions</h2>
+<p>Un simulateur peut montrer à quoi ressemblent différentes séquences de résultats avec des hypothèses données. Il ne prédit pas votre prochain downswing et ne confirme pas votre taux de gain réel. Ses résultats dépendent notamment des paramètres choisis, du format et du volume simulé. Comparez plusieurs scénarios plutôt que de retenir la courbe la plus rassurante.</p>
+<p>Si vous souhaitez explorer ces variations, vous pouvez <a href="https://vincentcoachpoker.com/blog/poker-variance-simulator/">simuler la variance au poker</a>. Servez-vous de l’exercice pour préparer votre gestion de bankroll et vos réactions face aux pertes, sans remplacer l’étude des mains réellement jouées.</p>
+<h2>Quand demander un regard extérieur sur votre jeu ?</h2>
+<p>Si vous ne savez plus si vous subissez la variance ou répétez un leak, faites analyser un échantillon de mains. Un regard extérieur peut vous aider à séparer les erreurs techniques des réactions émotionnelles, puis à organiser le travail par priorité. Choisissez un accompagnement qui s’intéresse à vos décisions concrètes et à vos difficultés, plutôt qu’à une simple courbe de résultats.</p>
+<p>Chez nous, l’accompagnement de La Salle du Temps associe suivi personnel, méthode de travail et préparation mentale. Il est adapté au format et aux besoins du joueur, avec un accès sur candidature et après un entretien. Il ne remplace ni une bankroll adaptée ni une discipline personnelle, mais permet de travailler les décisions et les difficultés qui alimentent les périodes de stagnation.</p>
+<section class="article-conclusion"><h2>Des repères solides pour traverser les swings</h2><p>Pour <strong>gérer les fluctuations au poker</strong>, séparez votre budget de jeu de vos dépenses courantes, puis définissez à l’avance vos limites de session et de mise. Évaluez vos décisions sur un ensemble de mains, surveillez les signes de tilt et interrompez le jeu si vous perdez votre capacité à réfléchir sereinement. La variance reste présente, mais des règles concrètes vous aident à éviter qu’elle dicte vos choix.</p></section>
+<section class="brand-cta"><h2>Un accompagnement pour progresser avec méthode</h2><p>Un downswing devient plus difficile à interpréter lorsque l’analyse technique, la bankroll et les émotions s’entremêlent. Pour les joueurs qui souhaitent structurer leur progression, nous proposons un mentorat avec suivi personnel, contenu de travail et communauté. La démarche commence par une candidature et un entretien afin d’évaluer si l’accompagnement correspond à votre situation.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>La Salle du Temps inclut une méthode de prise de décision fondée sur les probabilités et une préparation mentale adaptées au format de jeu. Le suivi porte sur vos décisions et vos axes de progression, sans promettre un résultat financier identique pour chaque joueur. Pour en savoir plus sur le fonctionnement et vérifier si cette approche vous convient, vous pouvez <a href="https://vincentcoachpoker.com/la-salle-du-temps/">découvrir la Salle du Temps</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Comment savoir si je traverse un downswing ou si je joue mal ?</h3><p>Revoyez un échantillon de mains et cherchez des erreurs qui se répètent, plutôt que de juger votre niveau sur le résultat d’une seule session. Si vous doutez, faites examiner vos décisions par une personne compétente.</p><h3>Faut-il baisser de limite pendant un downswing ?</h3><p>Appliquez le seuil fixé dans votre plan de bankroll avant de jouer. Si votre réserve passe sous ce seuil, descendre de limite ou arrêter est plus cohérent que poursuivre les pertes.</p><h3>Comment éviter le tilt après une mauvaise session ?</h3><p>Identifiez vos signaux de frustration et décidez à l’avance de la pause qui s’ensuit. Si vous ne parvenez plus à prendre des décisions réfléchies, arrêtez la session.</p><h3>Un simulateur peut-il annoncer la durée de mon downswing ?</h3><p>Non, il illustre des scénarios à partir des paramètres choisis. Il ne prédit pas votre prochaine séquence ni ne vérifie votre niveau réel.</p><h3>Un coaching peut-il aider à mieux gérer les swings ?</h3><p>Un accompagnement peut apporter une structure pour examiner les décisions, la variance et les réactions émotionnelles. La Salle du Temps associe suivi personnel et préparation mentale, avec un accès après candidature et entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

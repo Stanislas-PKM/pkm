@@ -957,5 +957,17 @@
     },
     "revision": "1794020736011205",
     "operation_id": "2af95bd6b9686f6322f39f60b4546eacd58cc121d5f95bf688568ed6644c4665"
+  },
+  "42147a81-95bd-4e91-a78e-3390cd0498ca": {
+    "slug": "gerer-les-swings-au-poker",
+    "published_at": "2026-11-08T07:07:05.579Z",
+    "title": "Gérer les swings au poker : bankroll, mental et méthode",
+    "meta_description": "Conseils pour gerer les swings au poker : distinguez variance et erreur, protégez votre bankroll et gardez des décisions solides.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker fréquentée, avec une personne assise au premier plan et d’autres joueurs autour des tables."
+    },
+    "revision": "1794084178702950",
+    "operation_id": "67359e430621b1595b52dde73b100d567a6fcbc059ca92a989e1bef3702082c2"
   }
 }
