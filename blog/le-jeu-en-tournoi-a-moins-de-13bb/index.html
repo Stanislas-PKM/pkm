@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Comment jouer un tournoi de poker avec moins de 13 BB · Vincent Coach Poker</title>
+<meta name="description" content="Le jeu en tournoi a moins de 13bb : adaptez vos décisions à la position, au tapis effectif, aux antes et à l’ICM, sans range universelle.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/le-jeu-en-tournoi-a-moins-de-13bb/">
+<meta name="sorank-operation-id" content="2753a9aced195546620ccf1403ab3ee9a6144f0644699a4647402dc353480d09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 9 novembre 2026</span>
+      <h1>Comment jouer un tournoi de poker avec moins de 13 BB</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-7be71820-d768-4ba0-aada-ee9333c77c0d-img-0.webp" alt="Illustration de quelques jetons de poker et de deux cartes fermées, évoquant un tapis court." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Avec moins de 13 BB, chaque décision préflop engage une part importante de votre tapis. Le push-fold est un repère, pas une règle automatique : votre position, les actions précédentes, les antes et le contexte du tournoi modifient les ranges. Distinguez aussi les situations où vous pouvez ouvrir de celles où un adversaire a déjà relancé.</div>
+<p>Que faire lorsque votre tapis ne permet presque plus de jouer après le flop ? Avec moins de 13 blindes, un petit open peut vous engager sans vous donner de décision simple face à un tapis adverse. Il faut donc penser à l’avance à ce que vous ferez contre une relance ou un shove. Pour travailler les réflexes propres à ces situations, vous pouvez aussi consulter nos conseils pour <a href="https://vincentcoachpoker.com/blog/5-conseils-pour-survivre-en-etant-short-stack-petit-tapis/">survivre avec un petit tapis au poker</a>.</p>
+<p>Le repère des 13 BB ne transforme pas chaque main en décision automatique. Un article pédagogique de 2022 de <a href="https://www.pokerstars.com/poker/learn/strategies/push-or-fold/" rel="noopener noreferrer" target="_blank">PokerStars Learn</a> conseille d’envisager le push-fold à 12 BB ou moins, notamment lorsqu’un petit relanceur vous exposerait à un tapis adverse. La décision reste liée à la position, aux joueurs derrière vous et aux enjeux du tournoi.</p>
+<h2>Que signifie jouer avec moins de 13 BB ?</h2>
+<p>Imaginez que vous ayez 12 BB au cutoff et que tous les joueurs aient passé jusqu’à vous. Votre tapis correspond à douze fois la grosse blinde, mais la taille du pot, les antes et les joueurs encore à parler comptent aussi. Vous êtes dans un autre type de décision qu’avec 12 BB face à une relance et un tapis plus profond derrière.</p>
+<p>Le <strong>push-fold</strong> désigne le choix de faire tapis ou de passer dans certaines situations préflop. Ce cadre est utile lorsque les options de relance puis de jeu postflop deviennent limitées. Il ne signifie pas que toute main jouable doit partir à tapis, ni que vous devez abandonner systématiquement les autres lignes.</p>
+<p>Un tableau de ranges constitue un point de départ seulement si ses hypothèses correspondent à votre situation. La page de stratégie de tournoi de <a href="https://www.pokerstrategy.com/strategy/mtt/middle-late-phases/" rel="noopener noreferrer" target="_blank">PokerStrategy</a>, par exemple, associe ses repères push-fold aux joueurs encore à parler et à leur tapis. Une grille qui ne précise pas les mêmes conditions ne fournit pas nécessairement la bonne réponse pour votre main.</p>
+
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-7be71820-d768-4ba0-aada-ee9333c77c0d-img-1.webp" alt="Scène illustrée d’un joueur tenant ses cartes avec des jetons devant lui à une table de poker." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<h2>Pourquoi la position change-t-elle votre range de push ?</h2>
+<p>Lorsque tout le monde passe avant vous, le nombre de joueurs derrière vous influence directement le risque qu’un adversaire ait une main pour suivre. En début de parole, plusieurs joueurs restent à parler. Au bouton, il n’en reste que deux : le contexte n’est pas le même, même si votre tapis est identique.</p>
+<p>Un shove peut gagner les blindes et les antes sans abattage, mais vous engage sur l’ensemble de votre tapis si vous êtes payé. Un petit open conserve parfois d’autres options, mais peut aussi vous placer face à une décision difficile contre un shove. Pour étudier ce choix précis, nous détaillons <a href="https://vincentcoachpoker.com/blog/open-shove-poker/">la stratégie d’open shove au poker</a>.</p>
+<p>Un autre point essentiel est l’action avant vous. Une main adaptée à une ouverture lorsque tout le monde a passé n’est pas automatiquement adaptée à un reshove face à une relance. Dans le second cas, il faut tenir compte de la range de l’ouvreur et des joueurs susceptibles de suivre derrière vous.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/WDqAdTGVKjk?rel=0&amp;playsinline=1" title="All In vs Joueur Agressif - Pot à 800$ 🤯 #poker" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>All In vs Joueur Agressif - Pot à 800$ 🤯 #poker</figcaption></figure>
+<h2>Comment ajuster selon les antes et le tapis effectif ?</h2>
+<p>Les antes augmentent le pot que vous pouvez récupérer en faisant passer les autres joueurs. Elles peuvent donc modifier l’intérêt d’une ouverture à tapis. Comparez toujours les blindes et les antes à la taille du pot visé, plutôt que de vous fier au seul nombre de BB inscrit devant vous.</p>
+<p>Le <strong>tapis effectif</strong> correspond au maximum que deux joueurs peuvent réellement engager l’un contre l’autre. Si vous avez 12 BB et que le joueur susceptible de vous suivre en a 7, les décisions qui les opposent ne se jouent pas sur 12 BB. Les autres adversaires présents et leurs tapis peuvent aussi modifier les risques de l’action.</p>
+<p>Avant d’appliquer une range, vérifiez si elle tient compte des antes, du nombre de joueurs et de l’action précédente. Ces détails changent les hypothèses du spot. Nous abordons également le cadre général de <a href="https://vincentcoachpoker.com/blog/strategie-de-tournoi/">la stratégie de tournoi</a> pour replacer les décisions courtes dans la dynamique d’ensemble.</p>
+
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-7be71820-d768-4ba0-aada-ee9333c77c0d-img-2.webp" alt="Infographie en trois étapes : vérifier la position, l’action précédente et les antes avec le contexte ICM." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<h2>À la bulle, pourquoi l’ICM peut-il changer la décision ?</h2>
+<p>En jetons, on compare les résultats des actions sans distinguer leur valeur selon la place finale. L’ICM ajoute l’effet des paliers de gains et du risque d’élimination. À la bulle, un tapis moyen peut donc être moins enclin à prendre un risque qu’en début de tournoi, tandis qu’un gros tapis peut exercer une pression différente.</p>
+<p>Ne confondez pas ces deux lectures. Les ranges calculées en équité de jetons ne répondent pas forcément à la même question que celles qui tiennent compte des gains. Dans un modèle heads-up simplifié, <a href="https://pdcpoker.ag/strategy/push-fold-chart/" rel="noopener noreferrer" target="_blank">un calcul d’équilibre</a> peut préciser ses hypothèses, comme les positions et l’absence d’antes ; ces résultats ne valent pas automatiquement pour une table complète ou une situation de bulle.</p>
+<p>Lorsque les paliers influencent fortement votre risque, nous expliquons aussi comment <a href="https://vincentcoachpoker.com/blog/jouer-la-gagne-dans-les-situations-impliquant-licm/">jouer la gagne dans les situations d’ICM</a>. Ce cadre aide à distinguer la pression des gains d’une simple décision de push-fold.</p>
+<h2>Quelle routine appliquer avant de suivre une range ?</h2>
+<p>À chaque décision, posez-vous les questions dans le même ordre. Combien de BB possède votre tapis effectif ? Qui a déjà agi ? Combien de joueurs restent à parler ? Quel montant d’antes entre dans le pot ? Enfin, êtes-vous loin des paliers ou dans une phase où l’ICM pèse davantage ?</p>
+<p>Ensuite, comparez votre main à une range qui correspond à ces paramètres. Si votre tableau ne distingue pas la position ou les antes, traitez-le comme un repère approximatif, pas comme une réponse précise. Notez les mains limites après la session : ce sont de bons exemples à revoir pour comprendre quelles hypothèses ont réellement fait basculer votre choix.</p>
+<p>Un accompagnement adapté aux tournois peut vous aider à organiser ce travail autour de vos propres décisions. Dans notre approche, le format de jeu et les difficultés du joueur orientent le suivi ; le temps de travail recommandé est en moyenne d’une heure par jour, soit 7 à 10 heures par semaine.</p>
+
+<!-- [IMAGE_SLOT: id=img_04] -->
+<section class="article-conclusion"><h2>Retenir les bons repères sous 13 BB</h2><p>Avec un <strong>tapis inférieur à 13 BB</strong>, partez de votre position, du tapis effectif et des actions déjà engagées. Ajoutez les antes et le contexte ICM, puis vérifiez que votre tableau correspond bien à ces conditions. Le push-fold éclaire certaines décisions, mais une range n’a de sens que pour le spot auquel elle s’applique.</p></section>
+<section class="brand-cta"><h2>Découvrir un accompagnement adapté au tournoi</h2><p>Pour progresser avec un petit tapis, mémoriser une grille ne suffit pas toujours : il faut aussi comprendre les variables du spot et revoir ses décisions. Un travail structuré peut vous aider à repérer les erreurs récurrentes et à construire une méthode de réflexion applicable en tournoi.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Nous proposons La Salle du Temps, un mentorat avec suivi personnalisé, contenu de travail et communauté. L’accompagnement peut être adapté aux tournois et à vos problématiques ; l’accès se fait sur candidature, après un entretien. Pour en savoir plus sur son fonctionnement, <a href="https://vincentcoachpoker.com/la-salle-du-temps/">découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Faut-il toujours faire tapis avec moins de 13 BB ?</h3><p>Non. Le push-fold est un repère dans certaines situations, surtout lorsque vous êtes le premier à entrer dans le pot. La position et les actions précédentes peuvent modifier la décision.</p><h3>Peut-on encore relancer sans faire tapis avec un petit tapis ?</h3><p>Parfois, selon le spot et la stratégie envisagée. Avant de relancer, réfléchissez à votre réponse face à un shove et vérifiez que votre ligne ne vous engage pas sans plan.</p><h3>Pourquoi les ranges changent-elles selon la position ?</h3><p>Le nombre de joueurs encore à parler varie selon votre siège. Plus il y a de joueurs derrière vous, plus le risque d’être payé par une main forte doit entrer dans votre décision.</p><h3>Les antes élargissent-elles toujours une range de push ?</h3><p>Elles augmentent le pot à gagner sans abattage, mais ne suffisent pas à déterminer une range. Le tapis effectif, l’action précédente et les joueurs derrière vous comptent également.</p><h3>La Salle du Temps accompagne-t-elle les joueurs de tournoi ?</h3><p>Oui, l’accompagnement peut être adapté au format tournoi et aux besoins du joueur. Il comprend un suivi personnalisé, et l’accès se fait après une candidature et un entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

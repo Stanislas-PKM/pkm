@@ -993,5 +993,17 @@
     },
     "revision": "1794174132359947",
     "operation_id": "37ec6dc5854e92f271f852c0d5404a3564f0f3386be059b07f983a03b3ba4c8c"
+  },
+  "7be71820-d768-4ba0-aada-ee9333c77c0d": {
+    "slug": "le-jeu-en-tournoi-a-moins-de-13bb",
+    "published_at": "2026-11-09T17:06:13.589Z",
+    "title": "Comment jouer un tournoi de poker avec moins de 13 BB",
+    "meta_description": "Le jeu en tournoi a moins de 13bb : adaptez vos décisions à la position, au tapis effectif, aux antes et à l’ICM, sans range universelle.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-7be71820-d768-4ba0-aada-ee9333c77c0d-img-0.webp",
+      "alt": "Illustration de quelques jetons de poker et de deux cartes fermées, évoquant un tapis court."
+    },
+    "revision": "1794200831348304",
+    "operation_id": "2753a9aced195546620ccf1403ab3ee9a6144f0644699a4647402dc353480d09"
   }
 }
