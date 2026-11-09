@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Quiz poker : construire un plan de jeu au poker efficace · Vincent Coach Poker</title>
+<meta name="description" content="Testez votre plan de jeu au poker avec des situations concrètes : préflop, postflop, adversaires et analyse des décisions.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/quiz-le-plan-de-jeu-au-poker/">
+<meta name="sorank-operation-id" content="37ec6dc5854e92f271f852c0d5404a3564f0f3386be059b07f983a03b3ba4c8c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 9 novembre 2026</span>
+      <h1>Quiz poker&nbsp;: construire un plan de jeu au poker efficace</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Personne assise tenant des jetons de poker roses à une table, avec d’autres personnes en arrière-plan flou." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Un plan de jeu au poker relie vos mains de départ, votre position, les actions adverses et vos choix postflop. Un quiz utile vérifie votre raisonnement dans des situations concrètes, pas seulement votre mémoire des ranges. En corrigeant chaque réponse, vous pouvez repérer les décisions à retravailler et adapter votre stratégie à votre format.</div>
+<p>Vous avez remporté un pot, mais votre décision était-elle bonne pour autant ? Un résultat favorable ne suffit pas à juger un coup. Pour progresser, il faut pouvoir expliquer ce que vous cherchiez à faire et ce qui aurait changé votre décision. Vous pouvez commencer par <a href="https://vincentcoachpoker.com/blog/elaborer-un-plan-de-jeu-au-poker/">élaborer un plan de jeu au poker</a> qui donne un fil conducteur à vos actions, sans vous enfermer dans une stratégie automatique.</p>
+<p>Un quiz sur le plan de jeu poker est intéressant s’il vous place face à des choix réalistes : ouvrir une main, répondre à une mise ou revoir votre plan à la turn. L’objectif n’est pas de deviner une réponse universelle. Il s’agit de vérifier si vous tenez compte de votre position, des ranges possibles, de la taille du pot et du profil adverse avant d’agir.</p>
+<h2>Que doit contenir un plan de jeu au poker ?</h2>
+<p>Imaginez que vous recevez une main correcte au cutoff, après plusieurs joueurs qui se sont couchés. Votre décision dépend de plus que vos deux cartes : votre plan doit aussi considérer votre position, les tapis effectifs, les joueurs encore à parler et les habitudes de la table. Ces éléments déterminent quelles mains vous pouvez jouer et comment vous répondrez aux actions adverses.</p>
+<p>Un plan utile s’organise en repères plutôt qu’en règles rigides. Les <strong>ranges préflop</strong> donnent une base selon la position et les actions précédentes. Après le flop, vous comparez le tableau aux mains que vous pouvez représenter, puis vous choisissez une action et une taille de mise cohérentes. Les cartes suivantes peuvent modifier cette analyse, votre plan doit donc pouvoir évoluer.</p>
+<p>Le <a href="https://worldpokerfederation.org/fr/poker/comment-jouer-a-poker/strategie/guide-strategique-poker/" rel="noopener noreferrer" target="_blank">guide stratégique de poker</a> de la World Poker Federation traite notamment de position, d’équité et de cotes du pot. Ces repères aident à structurer une décision, mais leur application dépend de la situation et des actions déjà jouées.</p>
+<h2>Les repères à examiner avant de choisir une action</h2>
+<p>Avant de miser, suivre ou vous coucher, posez-vous quelques questions dans le même ordre. D’abord, quelle est votre position et quelles actions ont précédé votre tour ? Ensuite, quelles mains plausibles votre adversaire peut-il avoir ? Enfin, quelle réponse cherchez-vous à obtenir avec votre action ?</p>
+<p>La <strong>position</strong> indique qui agit avant ou après les autres, et donc combien d’informations vous avez déjà reçues. Les <strong>ranges adverses</strong> vous évitent de raisonner comme si l’adversaire détenait une main précise. Les cotes du pot et votre équité aident ensuite à évaluer un éventuel call. Si vous choisissez de miser, demandez-vous quelles mains moins bonnes paieront ou quelles mains meilleures pourraient passer.</p>
+<p>Ces repères ne remplacent pas l’adaptation. Un adversaire qui suit souvent peut justifier moins de bluffs, tandis qu’une mise inhabituelle peut modifier votre lecture. Notez les comportements observés, mais distinguez les indices répétés d’une impression tirée d’un seul coup. Pour réviser vos bases, vous pouvez <a href="https://vincentcoachpoker.com/blog/quizz-1-selection-des-mains-preflop/">tester ses connaissances préflop avec un quiz</a>.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker intérieure fréquentée, avec une personne assise au premier plan et plusieurs personnes autour des tables." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<h2>Mini-quiz : votre raisonnement tient-il dans ces cinq situations ?</h2>
+<p>Répondez sans chercher une formule magique. Pour chaque situation, choisissez le raisonnement qui vous semble le plus solide, puis lisez les explications après les questions.</p>
+<ol>
+<li><p>Au cutoff, tout le monde s’est couché et vous avez une main jouable. Quel premier repère vérifiez-vous ? A) Votre range d’ouverture depuis cette position. B) La dernière main que vous avez gagnée. C) Le fait que vous n’ayez pas encore joué de pot.</p></li>
+<li><p>Vous avez relancé avant le flop, misé sur le flop et été suivi. À la turn, une carte change la texture du tableau. Que faire ? A) Miser automatiquement. B) Reconsidérer les ranges, le tableau et les réponses possibles. C) Abandonner automatiquement le coup.</p></li>
+<li><p>À la river, un adversaire mise et vous envisagez de suivre. Quels éléments sont les plus pertinents ? A) Les cotes du pot et les mains plausibles de l’adversaire. B) Le résultat de votre dernière main. C) La valeur absolue de votre main, sans autre contexte.</p></li>
+<li><p>Après un gros pot perdu, vous sentez la frustration monter. Quelle décision sert le mieux votre plan ? A) Augmenter immédiatement les mises. B) Faire une pause et retrouver votre routine de décision. C) Jouer davantage de mains pour récupérer.</p></li>
+<li><p>En tournoi, vous approchez de la bulle avec un tapis court. Quel facteur devez-vous ajouter à votre analyse ? A) La pression des paliers et la situation des tapis. B) La seule stratégie habituelle de cash game. C) La règle consistant à passer toutes les mains.</p></li>
+</ol>
+<p><strong>Corrigé :</strong> A, B, A, B, A. La première réponse tient compte de la position ; la deuxième évite de miser mécaniquement ; la troisième compare la situation du pot à la range adverse. Les deux dernières rappellent que votre état mental et la structure du tournoi influencent le plan.</p>
+<p>Un point par réponse correcte donne une indication, pas une mesure complète de votre niveau. Si vous avez hésité, écrivez les informations qui manquaient et le raisonnement qui vous a conduit à choisir. Un quiz pertinent présente des décisions situées et permet de comprendre pourquoi une réponse est préférable. La page de PokerPuzzle propose notamment des <a href="https://pokerpuzzle.online/fr/apprendre" rel="noopener noreferrer" target="_blank">quiz par situations</a>, plutôt que de limiter l’entraînement à la mémorisation de termes.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-3f34d2fb-f113-4786-bbae-ce381acd5f5c-img-2.webp" alt="Infographie en checklist présentant quatre repères pour décider au poker, de la position à la révision du coup." style="display:block;max-width:100%;height:auto;margin:0 auto" loading="lazy" />
+<h2>Comment transformer une erreur de quiz en exercice utile ?</h2>
+<p>Après une réponse incorrecte, ne vous contentez pas de mémoriser la solution. Reconstituez la main et identifiez la première information que vous avez négligée : position, taille des tapis, action précédente, texture du tableau ou profil adverse. Puis formulez une règle de travail applicable à une situation semblable.</p>
+<p>Par exemple, si vous avez suivi une mise à la river sans estimer les mains adverses, votre exercice peut consister à lister leurs combinaisons plausibles avant de décider. Si vous avez continué à miser sans considérer la turn, revoyez les cartes qui renforcent ou affaiblissent les ranges en présence. Cette <strong>analyse de mains</strong> transforme un quiz en répétition ciblée, plutôt qu’en simple score.</p>
+<p>Quand les mêmes erreurs reviennent malgré vos révisions, une méthode plus structurée peut vous aider à les isoler. Nous abordons aussi des situations plus complexes dans notre page pour <a href="https://vincentcoachpoker.com/blog/strategies-de-poker-avancees/">découvrir des stratégies de poker avancées</a>.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/DV4o2jeRlbc?rel=0&amp;playsinline=1" title="TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>TU JOUES MAL TES POTS 3-BET ! Voici MA MÉTHODE SECRÈTE (en 4 étapes simples)</figcaption></figure>
+<h2>Adapter votre stratégie au format joué</h2>
+<p>En cash game, les jetons correspondent directement à une valeur monétaire, tandis qu’en tournoi, les tapis et les paliers influencent les décisions. Les repères techniques restent utiles dans les deux formats, mais leur poids n’est pas toujours identique. Un même spot peut donc appeler des choix différents selon le contexte.</p>
+<p>En tournoi, tenez compte de votre tapis, des joueurs susceptibles d’être éliminés et de la proximité des paliers. En cash game, vérifiez notamment les profondeurs de tapis et les montants engagés dans le coup. Dans les deux cas, la <strong>gestion de bankroll</strong> et la maîtrise de vos émotions contribuent à maintenir des décisions cohérentes avec vos limites.</p>
+<p>Pour travailler des situations propres aux tournois, vous pouvez <a href="https://vincentcoachpoker.com/blog/strategie-de-tournoi/">approfondir la stratégie de tournoi</a>. Comparez ensuite vos réponses au quiz avec les mains réellement jouées, en conservant les informations propres à votre format.</p>
+<section class="article-conclusion"><h2>Retenir l’essentiel pour mieux décider</h2><p>Un plan de jeu solide associe ranges, position, lecture des adversaires et réévaluation à chaque nouvelle carte. Utilisez le quiz pour repérer un raisonnement à améliorer, puis révisez des mains comparables et vérifiez si vous appliquez le même principe à la table. La qualité de la décision compte davantage que le résultat immédiat du coup.</p></section>
+<section class="brand-cta"><h2>Structurer votre progression avec un accompagnement</h2><p>Un quiz révèle parfois un point faible, mais les mêmes hésitations peuvent réapparaître dans des contextes différents. Si vous souhaitez relier l’étude des ranges, la lecture des adversaires et vos décisions du préflop à la river, un suivi adapté à votre jeu peut donner un cadre régulier à ce travail.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;max-width:100%;height:auto;aspect-ratio:1440/810;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Dans La Salle du Temps, nous proposons un mentorat avec suivi personnel, contenu structurant et communauté de joueurs. Notre méthode, l’Équation 3D, associe le diagnostic des leaks, l’analyse des archétypes adverses et une matrice décisionnelle. L’accompagnement est adapté au cash game, aux tournois ou à d’autres formats. L’accès se fait sur candidature et après un entretien. Pour en savoir plus sur ce cadre de progression, <a href="https://vincentcoachpoker.com/la-salle-du-temps/">Découvrir La Salle du Temps</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Un plan de jeu est-il une suite de règles fixes ?</h3><p>Non, il fournit des repères pour décider selon la position, les ranges et les actions adverses. Vous devez le réévaluer à mesure que le tableau et la situation évoluent.</p><h3>Un quiz suffit-il pour améliorer sa stratégie ?</h3><p>Un quiz aide à repérer des hésitations et à tester votre raisonnement. Pour progresser, analysez aussi les mains jouées et appliquez les corrections dans des situations similaires.</p><h3>Faut-il mémoriser des ranges préflop ?</h3><p>Les ranges donnent une base de décision selon la position et les actions précédentes. Il faut ensuite les adapter au contexte plutôt que les appliquer sans réflexion.</p><h3>Le plan de jeu change-t-il entre cash game et tournoi ?</h3><p>Oui, certaines considérations diffèrent, notamment la structure des tapis et la pression des paliers en tournoi. Gardez les mêmes principes d’analyse, mais ajustez-les au format.</p><h3>Un accompagnement peut-il aider à structurer sa progression ?</h3><p>La Salle du Temps associe un suivi personnel, du contenu et une communauté de joueurs autour d’une méthode adaptée au format et aux problématiques du participant. L’accès se fait sur candidature, après un entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

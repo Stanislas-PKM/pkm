@@ -981,5 +981,17 @@
     },
     "revision": "1794107906467437",
     "operation_id": "5cd41b6371c5ac1d1277e195f6191b24b30ddfd352a7231f7dd693caa187722a"
+  },
+  "3f34d2fb-f113-4786-bbae-ce381acd5f5c": {
+    "slug": "quiz-le-plan-de-jeu-au-poker",
+    "published_at": "2026-11-09T09:01:11.356Z",
+    "title": "Quiz poker : construire un plan de jeu au poker efficace",
+    "meta_description": "Testez votre plan de jeu au poker avec des situations concrètes : préflop, postflop, adversaires et analyse des décisions.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Personne assise tenant des jetons de poker roses à une table, avec d’autres personnes en arrière-plan flou."
+    },
+    "revision": "1794174132359947",
+    "operation_id": "37ec6dc5854e92f271f852c0d5404a3564f0f3386be059b07f983a03b3ba4c8c"
   }
 }
