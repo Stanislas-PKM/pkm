@@ -1041,5 +1041,17 @@
     },
     "revision": "1794348238267630",
     "operation_id": "e632d443dc217b91e392d9329947c5870136a9e5120ce6a55c69753682bd113c"
+  },
+  "8d880f2c-ba41-423a-87c4-bb002674ce05": {
+    "slug": "sizings-speciaux-et-stack-sizes-en-cash-game-live-highlights-110",
+    "published_at": "2026-11-11T17:04:45.787Z",
+    "title": "Tailles de tapis en cash game live : bien choisir ses sizings",
+    "meta_description": "Comprenez les stack sizes cash game live, le tapis effectif et les sizings adaptés aux pots disputés à plusieurs ou en tête-à-tête.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure animée, une personne au premier plan et plusieurs tables occupées en arrière-plan."
+    },
+    "revision": "1794374339091449",
+    "operation_id": "e5f5a00a44b784e2c443f1b1fc6f147b565cb04ef788f15ad25ecb0845cbff9c"
   }
 }
