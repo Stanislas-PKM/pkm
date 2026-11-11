@@ -1029,5 +1029,17 @@
     },
     "revision": "1794287128876934",
     "operation_id": "91af395918d4f8773d587469855f1f15c43c3c257f358383f8d3f26d78058747"
+  },
+  "93cc7767-0892-47b3-b21b-6d76b85c1322": {
+    "slug": "les-differents-niveaux-de-buy-in-au-poker",
+    "published_at": "2026-11-11T09:04:10.374Z",
+    "title": "Les différents niveaux de buy-in au poker : cash game et MTT",
+    "meta_description": "Les differents niveaux de buy in au poker : distinguez cash game et tournoi et choisissez une entrée cohérente avec votre budget.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp",
+      "alt": "Une personne assise à une table de poker tient des jetons roses, avec une salle de jeu en arrière-plan flou."
+    },
+    "revision": "1794348238267630",
+    "operation_id": "e632d443dc217b91e392d9329947c5870136a9e5120ce6a55c69753682bd113c"
   }
 }
