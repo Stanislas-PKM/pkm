@@ -1065,5 +1065,17 @@
     },
     "revision": "1794434188707146",
     "operation_id": "b9242b1c24bf000716f8eed2b8be9032a73520ae1c1c2f3d6c4c045110e5994f"
+  },
+  "09cb3274-2517-4e41-93c4-3ec426ebfef4": {
+    "slug": "les-5-raisons-de-relancer-une-main-preflop",
+    "published_at": "2026-11-12T17:09:49.455Z",
+    "title": "Les 5 raisons de relancer une main préflop au poker",
+    "meta_description": "Comprenez les 5 raisons de relancer une main preflop, entre valeur, fold equity, position et contrôle du coup, pour choisir une relance adaptée.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure bondée, une personne en chemise noire au premier plan et plusieurs personnes autour des tables."
+    },
+    "revision": "1794460332042601",
+    "operation_id": "ad308b6c75fcd6069219d1285bbd06a59e604837f6348e6d457eeb340c08855f"
   }
 }
