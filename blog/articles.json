@@ -1077,5 +1077,17 @@
     },
     "revision": "1794460332042601",
     "operation_id": "ad308b6c75fcd6069219d1285bbd06a59e604837f6348e6d457eeb340c08855f"
+  },
+  "8e81a7bb-d6bc-4bfb-801d-2f45a6b99080": {
+    "slug": "le-check-raise-light-en-plo",
+    "published_at": "2026-11-12T19:04:49.543Z",
+    "title": "Le check-raise léger au PLO : quand bluffer avec méthode",
+    "meta_description": "Le check raise light en plo repose sur le flop, les bloqueurs et le profil adverse. Sachez quand relancer et quand abandonner.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker bondée avec un joueur assis au premier plan."
+    },
+    "revision": "1794467769492718",
+    "operation_id": "45476d1e55eaf2e22f7399d03ba995a96b925566e63c5d9edf26fffdc9638d89"
   }
 }
