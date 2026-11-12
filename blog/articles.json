@@ -1053,5 +1053,17 @@
     },
     "revision": "1794374339091449",
     "operation_id": "e5f5a00a44b784e2c443f1b1fc6f147b565cb04ef788f15ad25ecb0845cbff9c"
+  },
+  "2f02ec26-2056-453c-ba20-74b516c96886": {
+    "slug": "stake-poker",
+    "published_at": "2026-11-12T09:01:04.783Z",
+    "title": "Le stake au poker : comprendre les limites, blindes et buy-in",
+    "meta_description": "Stake poker : comprenez les limites, les blindes et le buy-in pour choisir des enjeux adaptés à votre bankroll et à votre expérience.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée, avec une personne assise au premier plan et plusieurs tables occupées en arrière-plan."
+    },
+    "revision": "1794434188707146",
+    "operation_id": "b9242b1c24bf000716f8eed2b8be9032a73520ae1c1c2f3d6c4c045110e5994f"
   }
 }
