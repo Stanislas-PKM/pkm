@@ -1089,5 +1089,17 @@
     },
     "revision": "1794467769492718",
     "operation_id": "45476d1e55eaf2e22f7399d03ba995a96b925566e63c5d9edf26fffdc9638d89"
+  },
+  "f9bae86f-13d3-469c-a3e0-b9f91a06ae35": {
+    "slug": "poker-slow-play",
+    "published_at": "2026-11-13T11:01:21.206Z",
+    "title": "Le slow play au poker : quand sous-jouer une main forte ?",
+    "meta_description": "Le poker slow play masque une main forte pour inciter l’adversaire à miser, mais le board et le risque de tirage déterminent quand l’utiliser.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Une salle de poker animée avec plusieurs joueurs autour des tables."
+    },
+    "revision": "1794524720575328",
+    "operation_id": "6975e891b7db726259deec639b8b5ff61ae9ecd7d947bb21fd51d50fb58f5084"
   }
 }
