@@ -1113,5 +1113,17 @@
     },
     "revision": "1794553603622706",
     "operation_id": "2608b25d1801ce8204c0b470b213f1ad71f0e47330137bd3e77c447050691352"
+  },
+  "67350776-abeb-4074-b3f3-7540300746e3": {
+    "slug": "coaching-poker-tournoi",
+    "published_at": "2026-11-14T11:04:19.032Z",
+    "title": "Coaching poker en tournoi : progresser avec une méthode",
+    "meta_description": "Le coaching poker tournoi aide à structurer vos décisions, revoir vos mains et choisir un accompagnement adapté à vos objectifs de jeu.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Joueur assis au premier plan dans une salle de poker intérieure animée, avec d’autres tables en arrière-plan."
+    },
+    "revision": "1794611377074466",
+    "operation_id": "8326a1ecde7960ecedc209a2402ef37a79ba7d462c13c301473c34231bc67035"
   }
 }
