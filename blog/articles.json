@@ -1125,5 +1125,17 @@
     },
     "revision": "1794611377074466",
     "operation_id": "8326a1ecde7960ecedc209a2402ef37a79ba7d462c13c301473c34231bc67035"
+  },
+  "14b38a9f-cdaf-4733-8143-95a07dcf79c3": {
+    "slug": "optimiser-son-gain-horaire-en-tournoi",
+    "published_at": "2026-11-14T19:01:01.443Z",
+    "title": "Optimiser son gain horaire au poker en tournoi durablement",
+    "meta_description": "Le gain horaire au poker se calcule avec les gains nets et les heures jouées. Mesurez le ROI, comparez les tournois et tenez compte de la variance.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Joueur assis au premier plan dans une salle de poker fréquentée, une main levée."
+    },
+    "revision": "1794640138897218",
+    "operation_id": "e9290b1ec21c1c3ec57c80b248b306d943805d71934594551129e7f1cb603974"
   }
 }
