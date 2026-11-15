@@ -1137,5 +1137,17 @@
     },
     "revision": "1794640138897218",
     "operation_id": "e9290b1ec21c1c3ec57c80b248b306d943805d71934594551129e7f1cb603974"
+  },
+  "f143ab36-875c-4662-850c-5a15602103f9": {
+    "slug": "comment-jouer-contre-un-joueur-agressif",
+    "published_at": "2026-11-15T11:01:01.483Z",
+    "title": "Comment jouer contre un joueur agressif sans subir sa pression",
+    "meta_description": "Comment jouer contre un joueur agressif : repérez son profil, défendez selon votre position et ajustez vos calls à la profondeur des tapis.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker bondée, une personne assise au premier plan à une table, plusieurs autres personnes autour."
+    },
+    "revision": "1794697816217570",
+    "operation_id": "5b1d400f90a7f8f842f61643fb30e6d82c63cb57dd081f55c7c53e454a7f1c6d"
   }
 }
