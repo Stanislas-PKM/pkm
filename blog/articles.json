@@ -1149,5 +1149,17 @@
     },
     "revision": "1794697816217570",
     "operation_id": "5b1d400f90a7f8f842f61643fb30e6d82c63cb57dd081f55c7c53e454a7f1c6d"
+  },
+  "66e861ee-0ccc-4cec-bf24-a53474da7216": {
+    "slug": "la-lecture-dun-call-au-bouton-en-cg-live-highlights-144",
+    "published_at": "2026-11-15T19:01:05.325Z",
+    "title": "Comment analyser un call au bouton au poker en CG Live #144",
+    "meta_description": "Pour le call au bouton poker, évaluez la main CG Live Highlights 144 avec la position, les cotes du pot et les actions réellement connues.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée avec une personne assise au premier plan à une table"
+    },
+    "revision": "1794726673449911",
+    "operation_id": "b73db6a3a40ff94441a857496d67efb6620b35681f2129cda100ff5492193e38"
   }
 }
