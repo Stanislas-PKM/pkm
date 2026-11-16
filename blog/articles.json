@@ -1161,5 +1161,17 @@
     },
     "revision": "1794726673449911",
     "operation_id": "b73db6a3a40ff94441a857496d67efb6620b35681f2129cda100ff5492193e38"
+  },
+  "7f832c2e-a890-44e2-87b2-cbb28645db73": {
+    "slug": "overbet",
+    "published_at": "2026-11-16T11:01:05.383Z",
+    "title": "Overbet au poker : définition, calcul et usages stratégiques",
+    "meta_description": "Overbet au poker : comprenez son calcul, ses usages stratégiques et les erreurs à éviter avant de miser plus que le pot, afin de mieux décider.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée, une personne au premier plan et plusieurs tables en arrière-plan."
+    },
+    "revision": "1794784500217855",
+    "operation_id": "e45dd4d5940114f7303be46c6d2eff1f3e6002e08bfa0034023879a6f75fe93e"
   }
 }
