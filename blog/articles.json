@@ -1185,5 +1185,17 @@
     },
     "revision": "1794820658272938",
     "operation_id": "a5b81391eee1718abe278cc112f955545c29b6d72c308a0c6207b8a60ac014ad"
+  },
+  "c563859b-e878-4546-84bb-759c3c1b4351": {
+    "slug": "le-jeu-serre-aggressif-en-holdem-nl-shorthanded",
+    "published_at": "2026-11-17T13:02:14.719Z",
+    "title": "Jeu serré-agressif en Hold’em NL shorthanded : méthode",
+    "meta_description": "Le jeu serre aggressif en holdem nl shorthanded : repères de position, 3-bet et décisions postflop pour mieux calibrer vos mises.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Joueurs installés autour d’une table de poker avec des cartes et des jetons."
+    },
+    "revision": "1794878531049708",
+    "operation_id": "a04098559fa7a75a94e16403285d4b2ede9c623a61960eeed057079bb3c3d08b"
   }
 }
