@@ -1221,5 +1221,17 @@
     },
     "revision": "1794964739815607",
     "operation_id": "7dc51bf64c6f612938875414d332efa52f6da14447d35a39b50c5617af686885"
+  },
+  "21587c0f-3262-4394-a811-61ae9be00d60": {
+    "slug": "quand-relancer-au-poker",
+    "published_at": "2026-11-18T21:03:51.508Z",
+    "title": "Quand relancer au poker : repères clairs du préflop à la river",
+    "meta_description": "Sachez quand relancer au poker, du préflop à la river : évaluez la position, l’action adverse, le pot et les tapis avant de miser davantage.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs assis ou debout autour de tables dans une salle de poker animée."
+    },
+    "revision": "1794993373008224",
+    "operation_id": "57fede986865a70af33970d1eb6c60609ed5785d54bda35f15aff051aff2e700"
   }
 }
