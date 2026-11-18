@@ -1209,5 +1209,17 @@
     },
     "revision": "1794907252512613",
     "operation_id": "9998938c0ca3a9bdb3965d81da6b6b85f03ea29d23fcb0bd4ef4da9410f4cfcb"
+  },
+  "a408460e-ac4e-42ce-a373-bef7b4957cc2": {
+    "slug": "coaching-poker-joueur-perdant",
+    "published_at": "2026-11-18T13:00:29.843Z",
+    "title": "Coaching poker pour joueur perdant : bâtir une méthode solide",
+    "meta_description": "Le coaching poker joueur perdant aide à analyser vos décisions, corriger vos leaks et progresser sans confondre variance et niveau de jeu.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Un joueur assis à une table dans une salle de poker animée, la main levée."
+    },
+    "revision": "1794964739815607",
+    "operation_id": "7dc51bf64c6f612938875414d332efa52f6da14447d35a39b50c5617af686885"
   }
 }
