@@ -1245,5 +1245,17 @@
     },
     "revision": "1795050617329311",
     "operation_id": "78ef91d8fed893bce49b605356b7fff5b73a198c47bcbb89bd69799e4a891a37"
+  },
+  "62578187-8abb-495c-aabd-0d3b59b2595d": {
+    "slug": "gutshot",
+    "published_at": "2026-11-19T21:01:08.704Z",
+    "title": "Gutshot au poker : définition, cotes et conseils de jeu",
+    "meta_description": "Comprenez le gutshot au poker, ses outs et ses probabilités pour évaluer un tirage intérieur et décider si un call au flop est rentable.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée, avec un joueur assis au premier plan et d’autres tables en arrière-plan."
+    },
+    "revision": "1795079378370458",
+    "operation_id": "1627c80b3d33cb99d2e413ea10ae084eed55feffc9c835431c2d5dda095a7620"
   }
 }
