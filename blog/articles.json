@@ -1233,5 +1233,17 @@
     },
     "revision": "1794993373008224",
     "operation_id": "57fede986865a70af33970d1eb6c60609ed5785d54bda35f15aff051aff2e700"
+  },
+  "c55d9d11-eee7-4466-b660-0c8098d9086a": {
+    "slug": "comment-battre-les-parties-en-cash-game-live-no-limit-holdem-a-1-et-2",
+    "published_at": "2026-11-19T13:07:43.323Z",
+    "title": "Stratégie cash game live 1/2 : jouer mieux aux tables",
+    "meta_description": "Stratégie cash game live 1/2 : ajustez vos ranges, misez pour la value et adaptez-vous aux profils, au rake et aux tapis effectifs.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure animée, avec une personne assise au premier plan et des tables occupées en arrière-plan."
+    },
+    "revision": "1795050617329311",
+    "operation_id": "78ef91d8fed893bce49b605356b7fff5b73a198c47bcbb89bd69799e4a891a37"
   }
 }
