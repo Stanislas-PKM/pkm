@@ -1269,5 +1269,17 @@
     },
     "revision": "1795144007426575",
     "operation_id": "5d018a4c567693581634f65632ae8b1db7a2eac93d05f8404706e3f4d487a768"
+  },
+  "6f111d2b-f2c1-4ded-834f-5896116943ca": {
+    "slug": "comment-battre-vos-adversaire-en-cash-game-online",
+    "published_at": "2026-11-21T07:05:10.674Z",
+    "title": "Comment battre vos adversaires au cash game en ligne",
+    "meta_description": "Pour battre ses adversaires au cash game, ajustez vos ranges, lisez les profils et adaptez vos mises à la position et au board.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs sont réunis autour d’une table de poker avec des cartes et des jetons."
+    },
+    "revision": "1795208512473069",
+    "operation_id": "622a83caa37691db5ea894ac8697a230e95ac1be561c2620ca4b57fae8c9fba7"
   }
 }
