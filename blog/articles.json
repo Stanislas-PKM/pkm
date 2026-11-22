@@ -1305,5 +1305,17 @@
     },
     "revision": "1795291526463487",
     "operation_id": "0195f7b6f44e3ebbc5ef8519546f254d638510e0f1e590f64a6354ca660181c6"
+  },
+  "c492e32f-c559-41f0-9579-67533e6e010c": {
+    "slug": "joueur-poker-pro",
+    "published_at": "2026-11-22T15:00:10.793Z",
+    "title": "Devenir joueur de poker professionnel : méthode et revenus",
+    "meta_description": "Devenir joueur poker pro demande discipline, méthode et gestion de la variance. Évaluez vos compétences, vos revenus possibles et les risques.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Salle de poker animée, vue depuis le bord d’une table où plusieurs joueurs manipulent cartes et jetons."
+    },
+    "revision": "1795316730662342",
+    "operation_id": "a3ecfad78bef3819e2f7670cdd3626ca160e35ac56bf2cf17acdd1b097e3035f"
   }
 }
