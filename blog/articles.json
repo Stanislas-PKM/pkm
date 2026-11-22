@@ -1293,5 +1293,17 @@
     },
     "revision": "1795230372492669",
     "operation_id": "f9fecfd5c8211fa4acd17b9783d28a53fa32f34e8fe6407a4e644c659ab7014a"
+  },
+  "8943cceb-402f-4ee0-95a0-cd52e9652fbe": {
+    "slug": "quiz-special-big-blind-vs-bouton-debutant",
+    "published_at": "2026-11-22T07:00:29.565Z",
+    "title": "Quiz débutant : bouton contre grosse blind au poker",
+    "meta_description": "Testez vos réflexes avec ce quiz special big blind vs bouton debutant : ranges, défense de grosse blind, cotes du pot et décisions postflop expliquées.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée, avec une personne assise à une table au premier plan et d’autres joueurs en arrière-plan."
+    },
+    "revision": "1795291526463487",
+    "operation_id": "0195f7b6f44e3ebbc5ef8519546f254d638510e0f1e590f64a6354ca660181c6"
   }
 }
