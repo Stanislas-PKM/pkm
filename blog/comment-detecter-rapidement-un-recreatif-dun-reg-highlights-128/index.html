@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Comment détecter rapidement un joueur récréatif au poker · Vincent Coach Poker</title>
+<meta name="description" content="Apprenez à détecter un joueur récréatif au poker en observant ses mises, ses décisions préflop et ses showdowns, sans conclure sur une main.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/comment-detecter-rapidement-un-recreatif-dun-reg-highlights-128/">
+<meta name="sorank-operation-id" content="bf91d2b99db3daabe18eac11f8959447b49040b44d01c1efb6fc62bcc58e89b0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 23 novembre 2026</span>
+      <h1>Comment détecter rapidement un joueur récréatif au poker</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp" alt="Des joueurs assis autour d’une table de poker manipulent des jetons et des cartes dans une salle intérieure." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Pour détecter un joueur récréatif au poker, observez la répétition de ses choix préflop, de ses mises et de ses décisions au showdown. Un limp isolé, un tapis ou un tell ne suffit pas : distinguez les habitudes durables des écarts ponctuels, puis adaptez votre stratégie au profil réellement observé.</div>
+<p>Une décision inhabituelle suffit-elle à classer un adversaire ? Non : un joueur régulier peut varier son jeu, et un joueur de loisir peut prendre une ligne solide. Pour compléter votre lecture des profils, notre article sur <a href="https://vincentcoachpoker.com/blog/comment-jouer-contre-un-joueur-agressif/">repérer et jouer contre un joueur agressif</a> détaille un archétype qui ne se confond pas automatiquement avec le statut récréatif.</p>
+<p>Pour <strong>détecter un joueur récréatif au poker</strong>, cherchez donc des indices répétés plutôt qu’une « recette » fondée sur un geste ou une main. Le statut du joueur n’est pas directement visible à la table. Vous pouvez toutefois repérer des habitudes de jeu, noter le contexte dans lequel elles apparaissent, puis vérifier si elles se reproduisent.</p>
+<h2>Qu’est-ce qui distingue réellement un récréatif d’un régulier ?</h2>
+<p>La différence tient surtout à la relation au jeu et à la régularité des décisions. Un joueur récréatif joue souvent pour le loisir, sans forcément étudier ses résultats ni suivre une stratégie structurée. Un régulier joue plus fréquemment et s’appuie généralement sur des repères de stratégie, de position et de mise. Ce sont des tendances, pas des définitions absolues.</p>
+<p>Une étude en ligne menée en 2012 auprès de 354 joueurs examinait les différences de compétences techniques et de caractéristiques émotionnelles entre joueurs expérimentés et inexpérimentés. Elle ne propose pas un signe visuel universel permettant de reconnaître un joueur récréatif. La <a href="https://pubmed.ncbi.nlm.nih.gov/22581243/" target="_blank" rel="noopener noreferrer">recherche sur l’expérience au poker</a> invite plutôt à considérer plusieurs dimensions du jeu.</p>
+<p>À la table, demandez-vous moins « qui est cette personne ? » que « quelles décisions répète-t-elle ? ». Un joueur qui limp souvent, paie plusieurs mises avec des mains marginales ou choisit des tailles incohérentes avec la situation fournit des indices exploitables. Mais une seule main atypique ne permet pas de conclure.</p>
+<h2>En ligne, observez les décisions qui se répètent</h2>
+<p>Commencez par suivre les choix préflop. Un joueur qui entre dans beaucoup de coups en payant plutôt qu’en relançant, notamment hors position, montre un schéma différent d’un joueur qui sélectionne ses mains et relance régulièrement. Regardez aussi s’il abandonne souvent face à une relance ou s’il paie sans tenir compte de la position.</p>
+<p>Après le flop, notez si les mises semblent liées au tableau et à la séquence du coup. Des mises très similaires avec des mains fortes et faibles, des calls fréquents avec des mains marginales ou des tapis disproportionnés méritent d’être consignés. Ce sont des tendances à confirmer, pas des preuves isolées.</p>
+<p>Si l’adversaire fait tapis dans des situations variées, distinguez l’agression systématique d’un tapis justifié par le pot ou la profondeur des tapis. Pour approfondir ce cas précis, vous pouvez consulter notre analyse sur <a href="https://vincentcoachpoker.com/blog/comment-jouer-contre-un-joueur-qui-fait-tapis-tout-le-temps/">jouer contre un joueur qui fait tapis très souvent</a>.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Une personne en noir est assise au premier plan d’une salle de poker, entourée d’autres personnes près des tables." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+<h2>À une table live, séparez les tells des habitudes</h2>
+<p>Un joueur regarde ses cartes, hésite, puis paie une grosse mise. Cette scène seule ne révèle ni son niveau ni la force de sa main. Comparez plutôt son comportement à son propre rythme habituel et aux actions réalisées dans des situations similaires.</p>
+<p>Les indices utiles sont souvent dans les décisions visibles : fréquence des limps, montant des mises, réaction aux relances et mains montrées à l’abattage. La posture ou l’expression du visage sont plus ambiguës. Une étude qualitative de Nottingham Trent, qui comparait trois joueurs professionnels, un semi-professionnel et cinq joueurs récréatifs, portait sur des profils de joueurs, pas sur un test universel de tells. Son échantillon restreint rappelle l’intérêt de ne pas tirer de règle générale à partir d’un signe isolé.</p>
+<p>Consignez mentalement les faits sans interpréter trop vite : « a payé trois mises avec une paire faible » est une observation. « Ne comprend pas le jeu » est une conclusion qui dépasse ce que cette main permet d’affirmer.</p>
+<h2>Combien d’observations faut-il pour se faire une idée ?</h2>
+<p>Il n’existe pas de nombre magique valable pour tous les indices. Une seule main donne une information limitée, surtout si le joueur n’a pas eu beaucoup d’occasions de prendre la décision observée. Pour évaluer une tendance, attendez plusieurs situations comparables et séparez les actions préflop, les calls postflop et les mises à l’abattage.</p>
+<p>En ligne, les historiques et les statistiques peuvent rendre les répétitions plus visibles, mais leur interprétation dépend des opportunités réellement rencontrées. Une étude publiée en 2022 sur l’activité de poker en ligne s’appuyait sur des données de jeu observées dans le temps. La <a href="https://link.springer.com/content/pdf/10.1007/s10899-022-10147-1.pdf" target="_blank" rel="noopener noreferrer">recherche sur l’activité en ligne</a> illustre l’intérêt d’observer des comportements répétés plutôt que de juger une action isolée.</p>
+<p>En live, vous disposez souvent de moins d’observations. Notez donc quelques informations simples : position, action préflop, taille des mises et main montrée. Évitez de traiter des statistiques comme VPIP ou PFR comme des verdicts sans tenir compte du nombre d’occasions et du contexte.</p>
+<h2>Comment ajuster votre jeu sans vous enfermer dans une étiquette ?</h2>
+<p>Une fois un profil provisoire établi, choisissez un ajustement lié aux faits observés. Si le joueur paie trop souvent préflop, privilégiez des relances pour la valeur avec de bonnes mains. S’il abandonne facilement face aux mises, sélectionnez vos bluffs dans des situations cohérentes plutôt que de miser automatiquement.</p>
+<p>Ne confondez pas joueur récréatif et joueur passif. Un joueur de loisir peut miser gros, bluffer ou jouer très agressivement. De même, un régulier peut adopter un style large et agressif. Pour comprendre ce style dans un contexte de petites limites, vous pouvez approfondir notre approche pour <a href="https://vincentcoachpoker.com/blog/comment-jouer-tres-lag-en-micro-efficacement/">jouer très LAG en micro-limites</a>.</p>
+<p>Réévaluez votre lecture lorsque de nouvelles mains contredisent l’hypothèse initiale. Un profil sert à mieux formuler une stratégie, pas à remplacer l’analyse de la position, des tapis, du tableau et des actions de la main en cours.</p>
+<section class="article-conclusion"><h2>À retenir pour repérer un joueur récréatif</h2><p>Pour <strong>identifier un joueur récréatif au poker</strong>, privilégiez les habitudes répétées : sélection des mains, décisions préflop, réactions aux mises et mains montrées. En ligne comme en live, distinguez les observations des interprétations et adaptez votre stratégie aux actions constatées. Une étiquette reste provisoire, elle doit évoluer avec les nouvelles informations.</p></section>
+<section class="brand-cta"><h2>Structurez votre lecture des adversaires</h2><p>Repérer des tendances ne suffit pas toujours pour savoir comment les exploiter. Il faut relier les actions observées à la position, aux probabilités et à la dynamique du coup, sans transformer une impression en certitude.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;aspect-ratio:1440/810;margin:0 auto;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Dans notre mentorat La Salle du Temps, nous travaillons la détection des archétypes adverses, le diagnostic des leaks et la prise de décision du préflop à la river. L’accompagnement s’adapte au format de jeu et aux difficultés du joueur, avec un suivi personnalisé. L’accès se fait sur candidature et après un entretien. Pour en savoir plus sur cet accompagnement, vous pouvez <a href="https://vincentcoachpoker.com/blog/coaching-poker/">découvrir le coaching poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2>
+<h3>Un joueur récréatif est-il toujours débutant ?</h3>
+<p>Non. Le terme désigne surtout une pratique orientée vers le loisir, et non un niveau technique précis. Un joueur récréatif peut connaître les règles et prendre de bonnes décisions.</p>
+<h3>Un limp suffit-il pour repérer un joueur récréatif ?</h3>
+<p>Non, un limp isolé peut avoir plusieurs raisons selon la position et la situation. Cherchez plutôt à savoir si le joueur répète ce choix dans des contextes comparables.</p>
+<h3>Peut-on reconnaître un joueur récréatif grâce à un tell ?</h3>
+<p>Un geste ou une expression ne permet pas de déterminer son statut avec certitude. Comparez plutôt les comportements répétés à ses propres habitudes et aux décisions prises dans la main.</p>
+<h3>Comment repérer un joueur récréatif en ligne ?</h3>
+<p>Observez ses entrées dans les pots, ses relances, ses calls et ses tailles de mise. Interprétez les statistiques seulement en tenant compte des occasions observées et du contexte.</p>
+<h3>Comment progresser dans la lecture des adversaires ?</h3>
+<p>Notez les actions concrètes, puis vérifiez si elles se reproduisent avant d’ajuster votre stratégie. Notre mentorat La Salle du Temps travaille notamment la détection des profils et l’analyse des décisions.</p>
+</section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

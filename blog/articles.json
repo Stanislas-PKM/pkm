@@ -1329,5 +1329,17 @@
     },
     "revision": "1795377978489835",
     "operation_id": "84c8101eef41bf4dad9e4e77d22889545f0d65d64a0c35fa0855b90533f41cc9"
+  },
+  "2b2e4ce6-6f7a-4e5b-b4b5-3a664ee5ad4d": {
+    "slug": "comment-detecter-rapidement-un-recreatif-dun-reg-highlights-128",
+    "published_at": "2026-11-23T15:04:28.792Z",
+    "title": "Comment détecter rapidement un joueur récréatif au poker",
+    "meta_description": "Apprenez à détecter un joueur récréatif au poker en observant ses mises, ses décisions préflop et ses showdowns, sans conclure sur une main.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Des joueurs assis autour d’une table de poker manipulent des jetons et des cartes dans une salle intérieure."
+    },
+    "revision": "1795403316403664",
+    "operation_id": "bf91d2b99db3daabe18eac11f8959447b49040b44d01c1efb6fc62bcc58e89b0"
   }
 }
