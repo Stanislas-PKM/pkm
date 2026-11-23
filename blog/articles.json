@@ -1317,5 +1317,17 @@
     },
     "revision": "1795316730662342",
     "operation_id": "a3ecfad78bef3819e2f7670cdd3626ca160e35ac56bf2cf17acdd1b097e3035f"
+  },
+  "8eb52c05-58f1-4f5a-9190-a77bfd1b2621": {
+    "slug": "quelle-bankroll-pour-chaque-format",
+    "published_at": "2026-11-23T07:00:22.429Z",
+    "title": "Quelle bankroll prévoir selon chaque format de poker ?",
+    "meta_description": "Comprendre quelle bankroll pour chaque format : repères en buy-ins pour le cash game, les tournois et les sit and go, afin de limiter les risques.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée, avec un joueur au premier plan et des tables occupées en arrière-plan."
+    },
+    "revision": "1795377978489835",
+    "operation_id": "84c8101eef41bf4dad9e4e77d22889545f0d65d64a0c35fa0855b90533f41cc9"
   }
 }
