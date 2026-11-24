@@ -1341,5 +1341,17 @@
     },
     "revision": "1795403316403664",
     "operation_id": "bf91d2b99db3daabe18eac11f8959447b49040b44d01c1efb6fc62bcc58e89b0"
+  },
+  "8461dcaa-91a1-4aae-99fa-b21da82092d3": {
+    "slug": "les-differentes-variantes-poker-guide-complet",
+    "published_at": "2026-11-24T07:05:19.573Z",
+    "title": "Les différentes variantes du poker : règles et guide complet",
+    "meta_description": "Les differentes variantes poker guide complet : règles du Hold’em, de l’Omaha et du Stud pour comparer les jeux et choisir votre format.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs sont réunis autour de tables de poker dans une salle intérieure."
+    },
+    "revision": "1795464681785195",
+    "operation_id": "c61fe8de661140c857306be3405730dd4796537387193bd1813717d8515347bb"
   }
 }
