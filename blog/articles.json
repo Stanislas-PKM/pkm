@@ -1353,5 +1353,17 @@
     },
     "revision": "1795464681785195",
     "operation_id": "c61fe8de661140c857306be3405730dd4796537387193bd1813717d8515347bb"
+  },
+  "2d739e56-01f0-46a3-b14c-087edb5f0429": {
+    "slug": "joueur-de-poker-gagnant",
+    "published_at": "2026-11-24T17:02:05.706Z",
+    "title": "Joueur de poker gagnant : les clés d’une rentabilité durable",
+    "meta_description": "Comprenez ce qui distingue un joueur de poker gagnant : décisions solides, suivi des résultats et gestion de la variance pour progresser durablement.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure bondée, avec une personne assise au premier plan à une table."
+    },
+    "revision": "1795497118631896",
+    "operation_id": "ab52b1861a18a6af54fbfbaebcb645e7d9d2feca4d3bcb7837a02581d020c927"
   }
 }
