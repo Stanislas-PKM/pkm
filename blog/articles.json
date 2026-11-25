@@ -1365,5 +1365,17 @@
     },
     "revision": "1795497118631896",
     "operation_id": "ab52b1861a18a6af54fbfbaebcb645e7d9d2feca4d3bcb7837a02581d020c927"
+  },
+  "c09d4e0e-548a-419c-9d59-fc3cbdbe27e9": {
+    "slug": "spin-and-go-les-conseils-dun-pro",
+    "published_at": "2026-11-25T09:03:08.665Z",
+    "title": "Spin and Go : conseils d’un pro pour progresser au poker",
+    "meta_description": "spin and go les conseils dun pro : apprenez à choisir vos mains, ajuster vos décisions aux tapis et gérer la variance sans jouer au feeling.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs manipulent des cartes et des jetons autour de tables dans une salle de poker éclairée."
+    },
+    "revision": "1795560459395417",
+    "operation_id": "cd41fc435f2aa3d2a6ea09abf1f917a05396046dc4b88971cef26a879a78167b"
   }
 }

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Spin and Go : conseils d’un pro pour progresser au poker · Vincent Coach Poker</title>
+<meta name="description" content="spin and go les conseils dun pro : apprenez à choisir vos mains, ajuster vos décisions aux tapis et gérer la variance sans jouer au feeling.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/spin-and-go-les-conseils-dun-pro/">
+<meta name="sorank-operation-id" content="cd41fc435f2aa3d2a6ea09abf1f917a05396046dc4b88971cef26a879a78167b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 25 novembre 2026</span>
+      <h1>Spin and Go&nbsp;: conseils d’un pro pour progresser au poker</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp" alt="Plusieurs joueurs manipulent des cartes et des jetons autour de tables dans une salle de poker éclairée." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Un Spin &amp; Go se joue en adaptant vos décisions à trois joueurs, à votre position et aux tapis effectifs. Construisez des ranges préflop, utilisez les charts push-fold comme repères, puis observez les réactions adverses après le flop. Pour progresser, évaluez vos décisions sur un échantillon de parties, sans confondre résultats et qualité de jeu.</div>
+<p>Faut-il pousser dès que votre tapis baisse, ou chaque décision dépend-elle de la situation ? Dans ce format rapide, une erreur préflop peut peser lourd, mais un réflexe appris sans contexte peut aussi vous coûter des jetons. Pour revoir les repères du format, consultez <a href="https://vincentcoachpoker.com/blog/sit-n-go-poker/">les bases du sit and go</a>.</p>
+<p>Les <strong>conseils de pro</strong> pour le Spin and Go commencent par une idée simple : choisissez votre action selon la position, les tapis et les profils présents. Un plan utile ne se limite pas à une grille de mains. Il relie les décisions préflop au jeu postflop, puis distingue les erreurs stratégiques des fluctuations normales du format.</p>
+<h2>Pourquoi le Spin &amp; Go se joue différemment à trois ?</h2>
+<p>Imaginez que vous soyez au bouton avec un tapis inférieur à celui de vos deux adversaires. Votre éventail d’actions dépend alors de votre position, des blindes et de la taille du tapis effectif, pas seulement de vos cartes.</p>
+<p>À trois joueurs, le bouton agit avant les blindes préflop, puis après elles sur les rues suivantes. Cette position change la valeur des mains et la façon de mettre la pression. Quand un joueur est éliminé, le jeu passe en duel, avec d’autres positions et des ranges à réajuster.</p>
+<p>Les charts Nash offrent un point de départ pour les situations de tapis courts. Le guide de <a href="https://www.pokerstars.com/poker/learn/strategies/spin-go-nash-push-fold/" rel="noopener noreferrer" target="_blank">PokerStars Learn</a> les présente comme une base pour le push-fold à 6 grosses blindes ou moins, et comme un repère possible jusqu’à 13 grosses blindes. Ce sont des références théoriques, pas une consigne de pousser automatiquement chaque main dans cette zone.</p>
+<h2>Préflop : adaptez vos actions au tapis effectif</h2>
+<p>À 12 grosses blindes, deux situations qui se ressemblent peuvent appeler des décisions différentes. Votre position, l’action précédente et le profil du joueur en blindes modifient la valeur d’un shove ou d’une relance plus petite.</p>
+<p>Commencez par définir une <strong>range de shove</strong> pour chaque position et profondeur de tapis que vous rencontrez souvent. Étudiez aussi les mains avec lesquelles vous pouvez relancer ou compléter plutôt que d’engager tout votre tapis. En passant d’une profondeur confortable à un tapis court, vos options se réduisent, mais le seuil ne se résume pas à un chiffre valable partout.</p>
+<p>Avant de pousser, demandez-vous ce que vous gagnez si les adversaires passent et ce qui se passe lorsqu’ils paient. Un shove peut remporter les blindes sans confrontation, mais un call adverse change fortement l’équité requise. Face à une relance déjà engagée, votre décision n’est plus celle d’un premier entrant dans le pot.</p>
+<p>Pour réviser vos décisions dans leur contexte, <a href="https://vincentcoachpoker.com/blog/strategie-de-tournoi/">la stratégie de tournoi</a> peut compléter vos repères préflop. L’objectif est de relier la théorie à la position et aux actions réellement observées, plutôt que d’appliquer une grille sans adaptation.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Une personne assise à une table de poker tient des jetons roses, avec une salle de jeu floue en arrière-plan." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+<h2>Postflop : observez les profils avant de miser</h2>
+<p>Vous avez relancé préflop et votre adversaire paie. Avant de miser au flop, examinez la texture du tableau, votre position et les actions précédentes. Une mise automatique donne à l’adversaire une occasion de continuer avec une range parfois plus forte que la vôtre.</p>
+<p>La <strong>lecture des profils</strong> commence par des observations concrètes : un joueur paie-t-il souvent les relances, abandonne-t-il face aux mises, ou relance-t-il surtout avec des mains fortes ? Quelques tendances fiables orientent vos choix, mais une seule main ne suffit pas à établir un comportement régulier.</p>
+<p>Choisissez une mise parce qu’elle sert un objectif précis, par exemple obtenir de la valeur d’une main moins forte ou faire passer des mains qui conservent une équité. Si vous ne savez pas quelles mains moins bonnes vont payer, vérifiez si un check conserve mieux la valeur de votre main et limite le pot.</p>
+<p>Après la session, notez les mains où votre décision dépendait d’une lecture incertaine. Une revue de mains permet de comparer votre raisonnement à l’action disponible, sans juger uniquement le résultat final. La vidéo ci-dessous aborde des erreurs générales au poker, mais ne constitue pas un cours spécifique au Spin &amp; Go.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/y5KChAltCgw?rel=0&amp;playsinline=1" title="Les Erreurs QUI TE RUINENT au Poker (Un Pro Explique Tout)" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>Les Erreurs QUI TE RUINENT au Poker (Un Pro Explique Tout)</figcaption></figure>
+<h2>Multiplicateurs et variance : séparez jeu et résultats</h2>
+<p>Deux sessions de qualité comparable peuvent se terminer avec des résultats très différents. Les multiplicateurs modifient les gains possibles, tandis que les cartes et les confrontations créent leurs propres fluctuations.</p>
+<p>Une analyse mise à jour le 27 octobre 2026 estime que, dans le modèle de Spin à 15 dollars étudié, les multiplicateurs de 120x, 240x et 3 600x ont ensemble une fréquence de 0,016 %, soit environ un événement sur 6 250 parties, selon <a href="https://www.pokerlistings.com/poker-strategies/sit-and-go/how-to-make-a-profit-playing-spin-and-gos-a-statistical-deep-dive" rel="noopener noreferrer" target="_blank">l’analyse statistique de PokerListings</a>. Ces chiffres décrivent ce modèle particulier, pas nécessairement la structure de chaque salle.</p>
+<p>Pour évaluer votre jeu, séparez la <strong>qualité des décisions</strong> du résultat financier d’une poignée de parties. Conservez les mains importantes et relevez les situations récurrentes : position, profondeur, action préflop et réponse de l’adversaire. Consultez aussi nos conseils pour <a href="https://vincentcoachpoker.com/blog/comment-gerer-la-variance/">gérer la variance au poker</a> et garder une méthode pendant les périodes difficiles.</p>
+<p>Évitez de modifier vos ranges après une seule série de pertes. Vérifiez d’abord si vos décisions ont changé, puis comparez un échantillon plus large. Le suivi de l’EV en jetons peut compléter l’observation des résultats, sans remplacer l’analyse des mains ni l’étude des situations.</p>
+<h2>Bankroll et progression : choisissez des repères durables</h2>
+<p>Si une série de pertes vous pousse à monter ou descendre de limite sans plan, fixez vos règles avant de jouer. Déterminez le buy-in maximal que vous acceptez de risquer, les conditions qui déclenchent une baisse de limite et le budget réservé au poker.</p>
+<p>Un mémoire universitaire de 2016 consacré à la bankroll en sit and go souligne l’importance de facteurs comme les frais, le nombre d’adversaires et la structure des paiements dans l’analyse du risque. Les caractéristiques exactes d’un Spin &amp; Go diffèrent selon le jeu proposé, mais ce cadre rappelle pourquoi la gestion de bankroll ne se réduit pas à un nombre universel de buy-ins.</p>
+<p>Choisissez un niveau où les pertes restent compatibles avec votre budget et où vous pouvez continuer à prendre des décisions réfléchies. Pour structurer ce choix, lisez <a href="https://vincentcoachpoker.com/blog/quelle-bankroll-pour-chaque-format/">la bankroll adaptée à chaque format</a>. Fixez aussi une règle de revue régulière, par exemple après un bloc de sessions, plutôt que de réagir à chaque résultat isolé.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Une personne assise à une table de poker lève une main, tandis que d’autres joueurs sont visibles dans la salle." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+<p>Pour progresser, transformez chaque erreur répétée en question de travail. Notez la situation, votre raisonnement et une alternative à tester, puis revenez à cette main après la session. Cette routine donne un repère concret sans attribuer chaque victoire à votre niveau ni chaque défaite à la variance.</p>
+<section class="article-conclusion"><h2>Les repères essentiels pour jouer les Spin &amp; Go</h2><p>Une stratégie solide associe ranges préflop, adaptation aux tapis, observation des adversaires et contrôle de la bankroll. Utilisez les charts comme points de départ, puis tenez compte de la position et des actions déjà engagées. Enfin, évaluez vos décisions sur la durée : le résultat d’une partie ne suffit pas à mesurer la qualité de votre jeu.</p></section>
+<section class="brand-cta"><h2>Un accompagnement pour structurer votre jeu</h2><p>Lorsque les tapis raccourcissent, il devient utile de revoir vos décisions et de distinguer vos erreurs des fluctuations. Dans La Salle du Temps, nous relions le diagnostic des leaks, la lecture des profils et une méthode de décision fondée sur les probabilités, avec un suivi humain adapté aux besoins du joueur.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;aspect-ratio:1440/810;margin:0 auto;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Notre mentorat couvre le CashGame, les tournois et d’autres formats, mais sa présentation ne cite pas explicitement le Spin &amp; Go : vérifiez ce point lors de l’entretien. Vincent Bellepaume rapporte avoir généré plus de 100 000 € de profit aux tables en 2025 ; ce résultat personnel ne garantit pas vos résultats futurs. Pour vérifier si cet accompagnement correspond à votre besoin, vous pouvez <a href="https://vincentcoachpoker.com/la-salle-du-temps/">découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Quelle est la priorité au début d’un Spin &amp; Go ?</h3><p>Commencez par situer votre position et comparer les tapis effectifs. Ces deux repères permettent de choisir une action préflop cohérente avant d’évaluer votre main isolément.</p><h3>Faut-il toujours faire tapis avec un petit tapis ?</h3><p>Non, le push-fold est un repère utile dans certaines situations de tapis courts, pas une règle automatique. La position, les actions précédentes et les adversaires peuvent changer la décision.</p><h3>Comment progresser au jeu postflop ?</h3><p>Observez les tendances concrètes de vos adversaires et réfléchissez à l’objectif de chaque mise. Après la session, revoyez les mains où votre décision reposait sur une lecture incertaine.</p><h3>Comment savoir si je progresse malgré la variance ?</h3><p>Suivez vos décisions et vos résultats sur un échantillon assez large, puis repérez les erreurs qui reviennent. Évitez de conclure à partir d’une seule partie ou d’une courte série.</p><h3>La Salle du Temps accompagne-t-elle les joueurs de Spin &amp; Go ?</h3><p>Notre mentorat adapte l’accompagnement au format de jeu et couvre le CashGame, les tournois et d’autres formats. Le Spin &amp; Go n’est pas nommé explicitement dans sa présentation, donc demandez confirmation lors de l’entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
