@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Set mining au poker : les clés pour jouer les petites paires · Vincent Coach Poker</title>
+<meta name="description" content="Set mining poker : évaluez la chance de flopper un brelan, le coût du call, les tapis effectifs et les cotes implicites avant de suivre préflop.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/les-cles-du-setmining/">
+<meta name="sorank-operation-id" content="dc6b4586444f6cdd684dac031e45797d706f447389b6851b5e3dbc419d1d6b4d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 25 novembre 2026</span>
+      <h1>Set mining au poker&nbsp;: les clés pour jouer les petites paires</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp" alt="Joueurs assis à plusieurs tables dans une salle de poker, certains manipulent des jetons et des cartes." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Le set mining consiste à suivre une relance préflop avec une paire servie, surtout pour toucher un brelan au flop. Comme vous le manquerez souvent, la décision dépend du prix du call, des tapis effectifs et de la possibilité de gagner davantage après le flop. Un call spéculatif ne devient pas automatiquement rentable parce qu’un brelan serait puissant.</div>
+<p>Vous avez une petite paire et faites face à une relance : payer pour chercher un brelan ou économiser vos jetons ? La réponse dépend moins de la force apparente de votre main que du prix à payer et de ce que vous pourrez gagner ensuite. Si vous jouez souvent des pots avec beaucoup de jetons derrière, <a href="https://vincentcoachpoker.com/blog/play-deep-tables-or-not/">Jouer avec des tapis profonds</a> aide à comprendre pourquoi la profondeur change la valeur de ces mains.</p>
+<p>Le <strong>set mining au poker</strong> désigne un call préflop motivé principalement par l’espoir de trouver un brelan au flop. La probabilité de réussite est limitée : l’article de stratégie de <a href="https://www.888poker.com/magazine/strategy/advanced/set-mining" target="_blank" rel="noopener noreferrer">888poker Magazine</a> l’évalue à environ 11,8 % avec une paire en main. Il faut donc estimer les gains possibles quand vous touchez, mais aussi les situations où votre adversaire ne paiera pas ou où votre brelan sera battu.</p>
+<h2>Qu’est-ce que le set mining au poker ?</h2>
+<p>Imaginez que vous déteniez deux cartes de même valeur, comme une paire de six. Un adversaire relance et vous envisagez de suivre pour voir le flop. Si votre décision repose surtout sur l’idée de former un brelan, vous faites du <strong>set mining</strong>.</p>
+<p>Le plan est simple à décrire, mais il ne signifie pas qu’il faut abandonner systématiquement lorsque le flop ne contient pas votre troisième carte. Une paire moyenne peut conserver de la valeur dans certains contextes, selon le tableau, la position et l’action. À l’inverse, une petite paire qui manque le flop offre souvent peu de raisons de continuer face à une mise importante.</p>
+<p>Il est donc utile de distinguer un call de set mining pur d’un call où votre paire possède aussi une valeur autonome. Cette différence compte particulièrement pour les <strong>petites paires</strong> : leur potentiel de brelan est réel, mais elles ne justifient pas à elles seules un suivi à n’importe quel prix.</p>
+<h2>Quelle est la probabilité de flopper un brelan ?</h2>
+<p>Avec une paire servie, il reste deux cartes de votre rang parmi les cartes inconnues. Vous trouvez un brelan ou mieux au flop dans environ 11,8 % des cas, soit approximativement une fois sur 8,5. La ressource de <a href="https://www.pokernews.com/strategy/10-hold-em-tips-03-25344.htm" target="_blank" rel="noopener noreferrer">PokerNews sur les probabilités</a> rappelle aussi que cette fréquence inclut les mains encore plus fortes, comme un full ou un carré.</p>
+<p>En pratique, cela signifie que vous manquerez le flop dans la grande majorité des tentatives. Si le call préflop coûte cher et que les mises suivantes seront difficiles à éviter, les brelans occasionnels ne suffisent pas forcément à compenser les échecs. Le calcul doit porter sur l’ensemble des tentatives, pas seulement sur les coups où vous touchez.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-6404ddaf-1f4f-4885-bc88-547c5c377aa5-img-1.webp" alt="Illustration d’une paire servie qui trouve une troisième carte de même rang au flop." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+
+<h2>Comment les cotes implicites changent-elles le calcul ?</h2>
+<p>Les <strong>cotes implicites</strong> désignent les gains supplémentaires que vous estimez pouvoir obtenir dans les tours suivants si votre main s’améliore. Pour un set mining, elles expliquent pourquoi un call peut parfois se défendre même lorsque le pot actuel ne rémunère pas suffisamment le risque de manquer le flop.</p>
+<p>Ce gain futur n’est toutefois pas garanti. Vous pouvez toucher sans que l’adversaire ait une main assez forte pour payer, ou trouver un tableau qui ralentit l’action. Une paire servie cachée peut être difficile à repérer, mais l’effet de surprise ne vaut que si votre adversaire dispose de jetons et est susceptible de continuer.</p>
+<p>La profondeur à considérer est celle des <strong>tapis effectifs</strong>, c’est-à-dire le montant que vous et votre adversaire pouvez réellement engager l’un contre l’autre. Des tapis plus profonds laissent davantage de place aux gains postflop ; ils ne compensent pas un adversaire qui abandonne toujours face à une forte résistance. Pour relier ces décisions aux autres choix préflop et postflop, consultez notre <a href="https://vincentcoachpoker.com/blog/cash-game-poker/">Stratégie en cash game au poker</a>.</p>
+<h2>Quand les petites paires ne justifient-elles pas un call ?</h2>
+<p>Supposons qu’une relance coûte cher par rapport aux tapis qui restent. Vous risquez alors d’investir une part importante de votre stack avant même de voir le flop, tandis que les gains supplémentaires possibles sont limités. Dans ce cas, la profondeur ne soutient pas assez le plan de set mining.</p>
+<p>La taille de la relance compte également. Face à un 3-bet important, un call avec une petite paire ne se justifie pas simplement parce qu’un brelan peut rapporter gros. Évaluez le montant à ajouter, les jetons encore derrière et la probabilité réaliste d’être payé si vous touchez.</p>
+<p>Enfin, tenez compte des <strong>risques inversés</strong>. Même un brelan peut perdre contre un brelan supérieur, ou se retrouver en difficulté sur un tableau qui complète une quinte ou une couleur. Ces scénarios ne rendent pas chaque call mauvais, mais ils réduisent les gains que vous pouvez raisonnablement espérer.</p>
+<h2>Quelle méthode appliquer avant de suivre ?</h2>
+<p>Avant d’investir, vérifiez quelques éléments concrets plutôt que d’appliquer une règle fixe à toutes les paires. La méthode de décision présentée par <a href="https://pokercoaching.com/blog/odds-of-flopping-poker-hands/" target="_blank" rel="noopener noreferrer">PokerCoaching sur les cotes</a> rappelle que la fréquence de toucher ne suffit pas : il faut aussi estimer les gains possibles et le contexte de la main.</p>
+<ol>
+<li><strong>Prix du call</strong> : comparez le montant à payer au pot et aux jetons encore disponibles.</li>
+<li><strong>Tapis effectifs</strong> : vérifiez qu’il reste assez de profondeur pour gagner après le flop.</li>
+<li><strong>Adversaire</strong> : estimez s’il continuera avec des mains moins fortes quand vous toucherez.</li>
+<li><strong>Plan après le flop</strong> : décidez à l’avance si vous abandonnez généralement lorsque vous manquez.</li>
+</ol>
+<p>Cette vérification transforme une intuition en décision structurée. Si vous souhaitez travailler les <strong>choix préflop</strong> avec les probabilités, les ranges et la lecture des adversaires, nos <a href="https://vincentcoachpoker.com/blog/strategies-de-poker-avancees/">Stratégies avancées au poker</a> abordent ces éléments dans une perspective plus large.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-6404ddaf-1f4f-4885-bc88-547c5c377aa5-img-2.webp" alt="Infographie en quatre points pour évaluer le call, les tapis, l’adversaire et le plan postflop." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+
+<section class="article-conclusion"><h2>Retenir les critères qui comptent</h2><p>Le set mining avec une petite paire repose sur un équilibre entre le coût du call et les gains possibles quand vous touchez. La probabilité de flopper un brelan est faible, alors examinez les tapis effectifs, le profil adverse et les risques du tableau avant de suivre. Si ces éléments ne soutiennent pas le plan, passer reste une décision cohérente.</p></section>
+<section class="brand-cta"><h2>Faire progresser vos décisions préflop</h2><p>Évaluer une paire servie demande de combiner probabilités, profondeur des tapis et lecture de l’adversaire. Si vous souhaitez structurer davantage vos décisions et corriger les automatismes qui vous coûtent des jetons, un accompagnement adapté à votre format peut vous aider à travailler ces situations dans leur contexte.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;aspect-ratio:1440/810;margin:0 auto;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>La Salle du Temps associe suivi personnel, contenu structurant et communauté de joueurs. La méthode est adaptée à vos besoins et à votre format, avec un travail sur les décisions et les probabilités. L’accès se fait sur candidature, après un entretien. <a href="https://vincentcoachpoker.com/la-salle-du-temps/">Découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Que signifie set mining au poker ?</h3><p>C’est le fait de suivre préflop avec une paire servie principalement pour tenter de toucher un brelan au flop. La décision dépend aussi du coût du call et des gains futurs possibles.</p><h3>Le set mining concerne-t-il seulement les petites paires ?</h3><p>Les petites paires s’y prêtent souvent, car elles manquent généralement le flop sans améliorer leur valeur. Une paire moyenne peut aussi avoir d’autres raisons de continuer, selon la situation.</p><h3>Pourquoi les tapis effectifs sont-ils importants ?</h3><p>Ils limitent le montant que vous pouvez gagner ou perdre contre un adversaire. Si les tapis derrière sont courts, les gains possibles après avoir touché un brelan diminuent.</p><h3>Faut-il toujours abandonner quand on manque le brelan ?</h3><p>Non, pas nécessairement. Une paire peut parfois garder une valeur suffisante, mais il faut tenir compte du tableau, de l’action et de la mise adverse.</p><h3>Comment apprendre à mieux choisir ses calls préflop ?</h3><p>Travaillez le prix du call, les tapis effectifs, le profil adverse et votre plan postflop. La Salle du Temps propose un accompagnement personnalisé pour structurer les décisions et travailler les probabilités selon votre format.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
