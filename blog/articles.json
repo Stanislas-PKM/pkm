@@ -1401,5 +1401,17 @@
     },
     "revision": "1795645573727835",
     "operation_id": "ab1374ef06fe191bb7e212c40353f6a99332fe5cd92500c6d0e3d1e433eb7b04"
+  },
+  "4dfb8136-91ed-4bc9-828f-4d682ad87b6d": {
+    "slug": "le-processus-de-reflexion-au-poker",
+    "published_at": "2026-11-26T17:02:54.959Z",
+    "title": "Le processus de réflexion au poker pour mieux décider",
+    "meta_description": "Comprenez le processus de reflexion au poker : évaluez les ranges, les probabilités et les actions adverses avant chaque décision.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/4a83639a-43eb-4917-997e-e8a8f4948b91.webp",
+      "alt": "Plusieurs joueurs sont assis à des tables de poker et manipulent des jetons et des cartes."
+    },
+    "revision": "1795669675134564",
+    "operation_id": "aa7f6b13abdd8192b007b9bbcf6bd2da0d7d5c1ee3851a4aa7703a29bcca15fa"
   }
 }
