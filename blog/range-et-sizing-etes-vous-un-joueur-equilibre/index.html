@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>Ranges et sizings au poker : êtes-vous un joueur équilibré ? · Vincent Coach Poker</title>
+<meta name="description" content="Maîtrisez les ranges et sizings au poker : équilibrez value et bluffs, choisissez vos mises selon le board, la position et l’action.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/range-et-sizing-etes-vous-un-joueur-equilibre/">
+<meta name="sorank-operation-id" content="ab1374ef06fe191bb7e212c40353f6a99332fe5cd92500c6d0e3d1e433eb7b04">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 26 novembre 2026</span>
+      <h1>Ranges et sizings au poker&nbsp;: êtes-vous un joueur équilibré&nbsp;?</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker intérieure fréquentée, avec un joueur assis à une table au premier plan." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Un joueur équilibré construit ses décisions à partir de toute sa range, et non de la force apparente de sa seule main. Il choisit un sizing cohérent avec le board, la position et les mains de value ou de bluff disponibles, puis adapte ses fréquences sans confondre équilibre théorique et jeu exploitant.</div>
+<p>Être équilibré, est-ce miser autant de bluffs que de mains fortes ? Non. Un jeu cohérent répartit ses combinaisons entre les actions possibles et varie parfois leur fréquence, sans laisser le sizing révéler systématiquement la main. Pour replacer cette logique dans son cadre, consultez <a href="https://vincentcoachpoker.com/blog/gto-poker/">les stratégies GTO au poker</a>.</p>
+<p>Les <strong>ranges et sizings au poker</strong> se répondent : la taille choisie détermine quelles mains peuvent miser et à quelle fréquence. Pour savoir si votre stratégie est cohérente, observez donc vos décisions comme un ensemble. Votre value, vos bluffs, vos checks et vos mises doivent former une ligne crédible jusqu’à la river.</p>
+<h2>Une range équilibrée ne se résume pas à une proportion fixe</h2>
+<p>Votre main exacte suffit-elle à décider de miser ? Pas toujours. Une <strong>range équilibrée</strong> regroupe les mains avec lesquelles vous pouvez arriver à une situation donnée, compte tenu des actions précédentes. L’équilibre consiste à répartir ces mains entre les options sans créer de schéma trop facile à lire.</p>
+<p>Une mise doit donc pouvoir contenir des mains fortes pour la <strong>value</strong> et des bluffs capables de représenter ces mains. Les checks peuvent, eux aussi, conserver des mains fortes. Si toutes vos mains fortes misent et que vos checks sont toujours faibles, un adversaire attentif peut attaquer vos checks et se coucher plus facilement face à vos mises.</p>
+<p>Un travail universitaire hébergé par le MIT en 2018 décrit l’équilibrage comme le choix de mains représentées dans une situation afin de rendre la stratégie plus difficile à exploiter. Il souligne ainsi l’intérêt de raisonner sur les mains possibles, plutôt que sur une main isolée, dans <a href="https://math.mit.edu/~apost/courses/18.204_2018/Jingyu_Li_paper.pdf" target="_blank" rel="noopener noreferrer">ce travail universitaire de 2018</a>.</p>
+<p>Les fréquences ne sont pas nécessairement uniformes : une main peut miser souvent, parfois ou rarement selon le spot. Les ranges préflop doivent aussi tenir compte des positions et des actions adverses. Pour structurer ces repères en six-max, consultez <a href="https://vincentcoachpoker.com/blog/range-poker-6-max/">les ranges au poker en 6-max</a>.</p>
+<h2>Le sizing détermine le prix du bluff et de la défense</h2>
+<p>Supposons que le pot soit de 100 et que vous misiez 50 à la river. Un bluff sans équité doit faire coucher votre adversaire plus d’un tiers du temps pour atteindre son seuil de rentabilité : vous risquez 50 pour tenter de gagner 100. Ce calcul concerne le bluff seul, pas la proportion de bluffs à inclure dans toute votre range de mise.</p>
+<p>Dans un modèle simplifié de river à deux joueurs, sans égalité ni rake, une range qui rend l’adversaire indifférent à suivre avec une mise de 50 dans 100 contient 25 % de bluffs et 75 % de mains de value. Ce ratio change avec la taille de mise : une mise plus grosse autorise une part de bluffs plus élevée dans la range théorique, mais expose aussi davantage de jetons lorsque votre adversaire suit.</p>
+<p>Le prix offert au joueur qui fait face à la mise est une autre mesure. Ici, il doit ajouter 50 pour disputer un pot final de 200, ce qui représente 25 % du pot final. Cela ne signifie pas qu’il doive suivre automatiquement avec 25 % de ses mains : sa décision dépend de l’équité de sa main contre la range adverse.</p>
+<p>Un support de cours de Berkeley de 2025 rappelle que les stratégies mixtes font partie des modèles d’équilibre. À la table, une fréquence exacte est difficile à reproduire ; retenir des repères simples vaut mieux que prétendre suivre chaque pourcentage à la décimale près, comme l’explique ce <a href="https://poker.studentorg.berkeley.edu/public/lecture_slides/Lecture2_F25_Stat198.pdf" target="_blank" rel="noopener noreferrer">support de cours de Berkeley</a>.</p>
+<h2>Board, position et actions précédentes orientent la taille</h2>
+<p>Sur un flop A♠ 7♦ 2♣, le relanceur préflop peut détenir davantage de grosses paires et de mains fortes que le défenseur. Une petite mise peut alors convenir à une partie large de sa range, sans engager beaucoup de jetons. Ce n’est pas une règle automatique : les ranges exactes, la position et les actions précédentes changent le spot.</p>
+<p>Sur un tableau connecté, comme 9♥ 8♥ 6♦, davantage de tirages et de combinaisons fortes sont possibles. Une mise plus importante peut faire payer les tirages et construire un pot avec les mains fortes, mais elle demande aussi une range adaptée. Un gros sizing avec uniquement des mains fortes devient lisible ; un gros sizing avec trop de bluffs coûte cher lorsqu’il est suivi.</p>
+<p>La position compte également. En position, vous agissez après votre adversaire sur les streets suivantes, ce qui facilite la réalisation de votre équité. Hors de position, un plan qui grossit trop vite le pot peut vous laisser avec des décisions difficiles. Le <strong>SPR</strong>, soit le rapport entre le tapis restant et le pot, aide à prévoir ce que le sizing du flop implique pour le turn et la river.</p>
+<p>Pour vérifier votre plan, demandez-vous avant de miser : quelles mains moins bonnes peuvent suivre, quels tirages dois-je faire payer et quelles cartes modifieront ma décision ? Une mise n’a pas seulement pour but de faire grossir le pot ; elle doit aussi préparer les actions possibles aux streets suivantes.</p>
+<h2>Un exemple concret pour tester la cohérence de votre range</h2>
+<p>Imaginez une mise à la river dans un pot de 100. Avant de choisir votre montant, identifiez les mains de value qui peuvent être suivies par moins bien, puis les bluffs disponibles dans votre ligne. Écartez les mains qui ne font pas coucher suffisamment souvent l’adversaire ou qui bloquent les mains qu’il pourrait abandonner.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/f7000a19-205f-47d1-8c25-a18f069e6966.webp" alt="Personne assise à une table de poker tenant des jetons roses, dans une salle de jeu intérieure floutée." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+
+<p>Comparez ensuite vos options. Une mise de 50 dans 100 ne demande pas la même proportion de bluffs qu’une mise pot. Si vous misez 50, le repère théorique du modèle simplifié est une range composée d’un quart de bluffs et de trois quarts de value lorsque vous cherchez à rendre le call adverse indifférent. Vos mains réelles, leur équité et les cartes bloquées peuvent justifier un écart.</p>
+<p>Les tailles autorisées dans une analyse influencent aussi la stratégie obtenue. Une recherche publiée en 2012 par l’Université de l’Alberta étudie l’abstraction des actions de mise dans une version simplifiée du poker. Elle rappelle que les résultats d’un modèle dépendent des tailles disponibles dans son arbre, comme le détaille cette <a href="https://poker.cs.ualberta.ca/publications/AAAI12-betsizing.pdf" target="_blank" rel="noopener noreferrer">recherche sur les tailles de mise</a>.</p>
+<p>Pour transformer ce contrôle en habitude, notez après une main les combinaisons de value, les bluffs retenus et la raison du sizing. Si vous ne pouvez pas expliquer pourquoi une main mise ou check, votre range mérite une nouvelle vérification.</p>
+<h2>Un contrôle pratique avant chaque mise</h2>
+<p>Avant d’engager des jetons, passez en revue quatre éléments. Cette routine ne remplace pas une analyse complète, mais elle révèle rapidement les mises guidées uniquement par la force de votre main.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-6fbdae96-e818-44d9-ac74-86f5aab9f998-img-2.webp" alt="Infographie en quatre étapes : range adverse, tableau et position, value et bluffs, puis plan pour le turn et la river." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+
+<ol>
+<li><strong>Range adverse :</strong> quelles mains fortes, moyennes et faibles peuvent arriver ici après les actions précédentes ?</li>
+<li><strong>Tableau et position :</strong> qui détient davantage de mains très fortes, et qui agira en dernier aux prochaines streets ?</li>
+<li><strong>Value et bluffs :</strong> quelles mains moins bonnes peuvent suivre, et quels bluffs ont une raison crédible de miser ?</li>
+<li><strong>Plan de mise :</strong> si vous êtes suivi, quels turns et rivers poursuivrez-vous, et lesquels vous feront ralentir ?</li>
+</ol>
+<p>Adaptez ensuite le plan aux tendances observées chez vos adversaires. Si un joueur suit trop souvent, privilégiez davantage la value et réduisez les bluffs qui dépendent de sa capacité à folder. Si un joueur se couche trop souvent, les bluffs deviennent plus intéressants, à condition que votre ligne reste crédible.</p>
+<p>Pour travailler cette logique dans une partie en direct, examinez aussi la profondeur des tapis et les montants inhabituels. Nos repères sur <a href="https://vincentcoachpoker.com/blog/sizings-speciaux-et-stack-sizes-en-cash-game-live-highlights-110/">les sizings spéciaux et les stack sizes en cash game live</a> portent sur ces situations.</p>
+<section class="article-conclusion"><h2>Jugez l’équilibre sur toute la ligne</h2><p>Un joueur équilibré ne cherche pas un ratio universel ni un sizing unique. Il relie sa range, le tableau, la position et le prix imposé à l’adversaire, puis vérifie que ses mains de value et ses bluffs racontent la même histoire. Pour progresser, choisissez un spot récurrent, notez vos combinaisons et comparez vos décisions sur plusieurs streets.</p></section>
+<section class="brand-cta"><h2>Faire progresser votre jeu avec un accompagnement structuré</h2><p>Quand les ranges, les fréquences et les sizings restent difficiles à relier dans une main complète, un regard extérieur peut aider à repérer les erreurs récurrentes. L’important est de transformer les concepts en décisions adaptées à votre format et à vos situations de jeu.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;aspect-ratio:1440/810;margin:0 auto;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>Notre mentorat La Salle du Temps combine suivi personnel, contenu structurant et communauté de joueurs. Vincent Bellepaume indique avoir réalisé plus de 100 000 € de profit aux tables en 2025, après un parcours commencé en micro-limites NL2 et NL5 ; ce résultat individuel ne constitue pas une promesse. L’accès se fait sur candidature et après un entretien. Pour présenter vos objectifs et vérifier si cet accompagnement vous correspond, <a href="https://vincentcoachpoker.com">découvrez notre accompagnement en poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Que signifie jouer une range équilibrée au poker ?</h3><p>Cela signifie répartir vos mains entre les actions de façon à ne pas révéler systématiquement leur force. Une range peut inclure des mains de value et des bluffs, ainsi que des mains fortes dans certaines lignes de check.</p><h3>Faut-il bluffer autant que miser pour la value ?</h3><p>Non, la proportion dépend notamment de la taille de mise et de la situation. À la river, une mise de 50 dans un pot de 100 donne un repère théorique de 25 % de bluffs dans un modèle simplifié où l’adversaire est rendu indifférent au call.</p><h3>Comment choisir un sizing au poker ?</h3><p>Évaluez les ranges, le tableau, la position et le plan pour les streets suivantes. Le montant doit servir votre stratégie globale, pas simplement refléter la force de votre main.</p><h3>Un joueur débutant doit-il appliquer exactement les fréquences GTO ?</h3><p>Non, mieux vaut commencer par comprendre la logique derrière les fréquences et les sizings. Une stratégie simplifiée et cohérente est plus utile que des pourcentages mémorisés sans contexte.</p><h3>Comment un coaching peut-il aider à équilibrer ses ranges ?</h3><p>La Salle du Temps associe un suivi personnel à une méthode de décision qui couvre les ranges préflop, les concepts postflop et l’analyse des adversaires. L’accompagnement est accessible après candidature et entretien.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

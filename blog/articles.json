@@ -1389,5 +1389,17 @@
     },
     "revision": "1795583817302177",
     "operation_id": "dc6b4586444f6cdd684dac031e45797d706f447389b6851b5e3dbc419d1d6b4d"
+  },
+  "6fbdae96-e818-44d9-ac74-86f5aab9f998": {
+    "slug": "range-et-sizing-etes-vous-un-joueur-equilibre",
+    "published_at": "2026-11-26T09:03:15.248Z",
+    "title": "Ranges et sizings au poker : êtes-vous un joueur équilibré ?",
+    "meta_description": "Maîtrisez les ranges et sizings au poker : équilibrez value et bluffs, choisissez vos mises selon le board, la position et l’action.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure fréquentée, avec un joueur assis à une table au premier plan."
+    },
+    "revision": "1795645573727835",
+    "operation_id": "ab1374ef06fe191bb7e212c40353f6a99332fe5cd92500c6d0e3d1e433eb7b04"
   }
 }
