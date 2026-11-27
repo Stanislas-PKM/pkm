@@ -1425,5 +1425,17 @@
     },
     "revision": "1795733063733002",
     "operation_id": "6c01c3e3bfe0b1cf1453ad6e17a21df9545696b6d09e7ecd7b542c56e34f70a4"
+  },
+  "f1e08997-3714-4338-87a1-b25475f0df8b": {
+    "slug": "pourquoi-vous-perdez-trop-souvent-contre-les-fishs-calling-stations",
+    "published_at": "2026-11-27T17:02:42.365Z",
+    "title": "Pourquoi perdez-vous contre une calling station au poker ?",
+    "meta_description": "Face à une calling station poker, misez pour la value, réduisez les bluffs et adaptez chaque street sans confondre variance et erreur stratégique.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker intérieure animée, avec une personne au premier plan et plusieurs tables occupées."
+    },
+    "revision": "1795756562866213",
+    "operation_id": "aa94e5e52499fc2c85f30e91c9f922c69e8a373536e2dbef7836add2c2a81b6e"
   }
 }
