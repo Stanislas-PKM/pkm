@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT7XVET5W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CPT7XVET5W');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<title>10 statistiques du HUD au poker à interpréter avec méthode · Vincent Coach Poker</title>
+<meta name="description" content="Lisez les statistiques HUD poker : VPIP, PFR, 3-bet et tendances postflop, puis adaptez vos décisions selon la qualité de l’échantillon.">
+<link rel="canonical" href="https://vincentcoachpoker.com/blog/10-statistiques-de-poker-cruciales-a-inclure-dans-votre-hud-et-comment-les-utiliser/">
+<meta name="sorank-operation-id" content="0094f01562c0d0c128e15ee684742867b423b9408ec79b5136f951323224e705">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=3">
+<style>
+  .post-list { display: grid; gap: 1.5rem; margin-top: 3.5rem; }
+  .post-card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .post-card:hover { border-color: var(--gold-dim); transform: translateY(-2px); }
+  .post-card h2 {
+    font-size: 1.45rem;
+    color: var(--ivory);
+    margin: .35rem 0 .6rem;
+  }
+  .post-card p { color: var(--muted); margin: 0; }
+  .post-date {
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .post-empty { color: var(--muted); margin-top: 3rem; }
+  .blog-head {
+    max-width: 840px;
+    margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+    background: var(--card);
+    border: 1px solid var(--gold-dim);
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 44px rgba(200, 165, 95, .10);
+  }
+  .blog-head img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 8;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .blog-head-text { padding: 2rem 1.8rem 2.5rem; }
+  .blog-head-text h1 { font-size: clamp(2.1rem, 4.2vw, 3rem); margin: 0; }
+  .blog-head-text .lead { margin: .8rem auto 0; max-width: 46ch; }
+  .post-header { max-width: 760px; margin-inline: auto; }
+  .post-header h1 { font-size: clamp(2rem, 4.5vw, 3rem); max-width: none; margin-inline: 0; text-align: left; }
+  .post-cover {
+    width: 100%;
+    max-width: 760px;
+    margin: 2.5rem auto 0;
+  }
+  .post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .prose img { max-width: 100%; height: auto; border-radius: 8px; }
+  .prose h3 { font-size: 1.2rem; margin-top: 2rem; }
+  .prose a { color: var(--gold); }
+  .prose ul, .prose ol { padding-left: 1.3rem; }
+  .prose li { margin-bottom: .4rem; }
+  .prose blockquote {
+    border-left: 2px solid var(--gold-dim);
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.8rem 0;
+    font-size: .95rem;
+  }
+  .prose th, .prose td {
+    padding: .75rem 1rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose th {
+    color: var(--ivory);
+    font-family: var(--sans);
+    font-size: .78rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    background: rgba(200, 165, 95, .07);
+  }
+  .prose td { color: var(--body); }
+  .prose tbody tr:nth-child(even) { background: rgba(255, 255, 255, .025); }
+  @media (max-width: 700px) {
+    .prose table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">Vincent Coach Poker</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/mon-parcours/">Mon parcours</a></li>
+      <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+      <li><a href="/temoignages/">Témoignages</a></li>
+      <li><a href="/blog/">Articles</a></li>
+      <li><a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="post-header">
+      <span class="post-date">Publié le 28 novembre 2026</span>
+      <h1>10 statistiques du HUD au poker à interpréter avec méthode</h1>
+    </div>
+    <div class="post-cover"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp" alt="Salle de poker animée avec des joueurs autour des tables." loading="lazy"></div>
+  </section>
+  <article class="section wrap prose">
+<div class="resume"><strong>Résumé :</strong> Les statistiques d’un HUD décrivent les actions et les tendances d’un adversaire, mais leur intérêt dépend du contexte et du nombre d’occasions observées. VPIP, PFR et 3-bet éclairent le jeu préflop ; les fréquences de showdown et de mise complètent la lecture postflop. Croisez ces indicateurs avant de modifier votre stratégie.</div>
+<p>Combien de mains faut-il pour qu’un chiffre change votre décision ? Un HUD donne rapidement des repères, mais une fréquence isolée ne raconte jamais toute la main. Pour <a href="https://vincentcoachpoker.com/blog/comment-prendre-des-decisions-grace-aux-probabilites-au-poker/">prendre des décisions grâce aux probabilités au poker</a>, commencez par identifier ce que mesure réellement chaque indicateur, puis examinez les occasions où l’adversaire pouvait agir.</p>
+<p>Les <strong>statistiques du HUD au poker</strong> servent surtout à formuler des hypothèses sur les ranges et les habitudes d’un joueur. Elles gagnent en utilité lorsqu’on les associe à sa position, au format, à la profondeur des tapis et aux actions observées pendant la main.</p>
+<h2>Que vous apprennent les 3 statistiques préflop ?</h2>
+<p>Avant le flop, distinguez la fréquence à laquelle un joueur entre dans le pot de celle à laquelle il relance. Ensemble, ces mesures esquissent son style ; le 3-bet affine ensuite votre lecture lorsqu’une ouverture est déjà présente.</p>
+<p>Les définitions de <a href="https://docs.pokertracker.com/pt4/tutorials/the-hud/basic-hud-guide/" rel="noopener noreferrer" target="_blank">la documentation PokerTracker</a> distinguent notamment les entrées volontaires dans le pot, les relances préflop et les 3-bets effectués lorsqu’une occasion se présente. Ce dernier dénominateur compte : un pourcentage ne correspond pas toujours au nombre total de mains distribuées.</p>
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/28fd99c5-79cd-4bb6-be53-9b0d0b7d738b.webp" alt="Personne assise à une table près d’un grand affichage numérique présentant des valeurs." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+<h3>1. VPIP : combien de mains le joueur joue-t-il ?</h3>
+<p>Le <strong>VPIP poker</strong> mesure la fréquence à laquelle un joueur investit volontairement de l’argent avant le flop, en payant ou en relançant. Une grosse blinde simplement checkée sans relance ne traduit pas une entrée volontaire. Un VPIP élevé indique une participation large, pas nécessairement une stratégie agressive.</p>
+<p>Utilisez-le pour estimer la largeur générale d’une range. Puis regardez les mains montrées et les positions : un joueur peut s’engager davantage au bouton qu’en début de parole, sans que son chiffre global le révèle.</p>
+<h3>2. PFR : à quelle fréquence le joueur relance-t-il ?</h3>
+<p>Le <strong>PFR poker</strong> comptabilise les relances préflop, dont les ouvertures et les sur-relances. Il est donc inférieur ou égal au VPIP. L’écart entre les deux aide à repérer les joueurs qui entrent souvent dans les pots en payant plutôt qu’en relançant.</p>
+<p>Comparez ces chiffres avant de qualifier un adversaire. Un VPIP large associé à un PFR sensiblement plus bas suggère davantage de calls ou de limps. Un écart réduit indique plutôt que le joueur relance la plupart des mains auxquelles il participe.</p>
+<h3>3. 3-bet : quelle pression exerce-t-il face à une ouverture ?</h3>
+<p>Le 3-bet mesure la fréquence à laquelle un joueur sur-relance après une ouverture, parmi les occasions pertinentes. Il aide à ajuster votre range d’ouverture et votre défense face à une sur-relance. Une lecture globale ne précise toutefois pas si l’adversaire agit en position, hors position ou contre un profil particulier.</p>
+<p>Une fréquence inhabituelle mérite attention, mais vérifiez combien de fois le joueur a réellement pu 3-bet. Quelques occurrences peuvent produire un pourcentage spectaculaire sans révéler une tendance stable.</p>
+<h2>Comment croiser les 3 indicateurs de showdown ?</h2>
+<p>Un adversaire arrive souvent à l’abattage, mais y gagne-t-il aussi souvent ? Le WTSD, le W$SD et le WWSF répondent à des questions différentes. Lus ensemble, ils aident à distinguer la ténacité, les résultats au showdown et la capacité à remporter des pots après le flop.</p>
+<p>La <a href="https://drivehud.com/knowledge-base/what-are-the-hud-stat-definitions/" rel="noopener noreferrer" target="_blank">base d’aide de DriveHUD</a> répertorie des statistiques de showdown et des mesures détaillées par situation. Ce principe de segmentation évite de confondre un indicateur général avec une tendance observée dans un type précis de pot ou après une action donnée.</p>
+<h3>4. WTSD : à quelle fréquence le joueur va-t-il au showdown ?</h3>
+<p>Le <strong>WTSD</strong> rapporte les mains arrivées au showdown aux mains où le joueur a vu le flop. Il donne un indice sur sa propension à poursuivre après le flop, mais ne prouve pas à lui seul qu’il paie trop. Interprétez-le avec le VPIP et les actions observées.</p>
+<p>Si un joueur atteint souvent l’abattage, privilégiez les mains de valeur et soyez sélectif avec les bluffs. S’il y va rarement, observez à quelles étapes il abandonne avant d’augmenter votre pression.</p>
+<h3>5. W$SD : que gagne-t-il quand les cartes sont révélées ?</h3>
+<p>Le <strong>W$SD</strong> mesure la fréquence des showdowns remportés parmi ceux auxquels le joueur a participé. Un chiffre élevé peut simplement refléter une sélection stricte des mains avant de continuer. Un chiffre plus faible ne suffit pas à conclure qu’il paie trop ou bluffe trop.</p>
+<p>Lisez-le avec le WTSD. Une arrivée fréquente au showdown combinée à peu de victoires invite à examiner les calls ; une arrivée rare avec beaucoup de victoires peut signaler une sélection plus prudente. Dans les deux cas, vérifiez les positions et les mains réellement jouées.</p>
+<h3>6. WWSF : gagne-t-il des pots après avoir vu le flop ?</h3>
+<p>Le <strong>WWSF</strong> indique à quelle fréquence un joueur remporte le pot après avoir vu le flop, que la main se termine ou non à l’abattage. Il éclaire son activité postflop sans mesurer directement son agressivité ni la qualité de ses décisions.</p>
+<p>Croisez-le avec le WTSD et le W$SD. Un WWSF élevé accompagné de peu de showdowns peut refléter des pots remportés avant l’abattage. Les lignes jouées, le nombre d’adversaires et la texture du tableau donnent le contexte manquant.</p>
+<h2>À quoi servent les 4 statistiques de situation ?</h2>
+<p>Imaginez que vous ouvrez préflop et qu’un adversaire vous sur-relance. Ses tendances dans cette situation sont plus utiles qu’une moyenne générale. Il en va de même pour le squeeze et les mises de continuation, qui ne se présentent que dans des configurations précises.</p>
+<h3>7. Fold to 3-bet après une relance : abandonne-t-il son ouverture ?</h3>
+<p>Cette statistique mesure la fréquence à laquelle le relanceur initial se couche face à un 3-bet. Vérifiez que le HUD affiche bien la réponse après une relance, et non un indicateur général de fold face à un 3-bet. Les occasions sont moins fréquentes que les mains ordinaires.</p>
+<p>Si l’adversaire abandonne souvent dans ce spot, vous pouvez examiner si une ouverture suivie d’un 3-bet serait pertinente. Tenez compte de la position, de la taille des mises et de la range que représente sa relance initiale.</p>
+<h3>8. Squeeze préflop : sur-relance-t-il après une relance et un call ?</h3>
+<p>Un squeeze est une sur-relance après une ouverture et au moins un call. La statistique indique la fréquence de cette action parmi ses occasions. Elle peut guider vos calls préflop, mais son faible nombre de situations rend les premières observations particulièrement fragiles.</p>
+<p>Face à une tendance marquée, réévaluez la force de votre range de call et la possibilité de poursuivre après la sur-relance. Ne transformez pas quelques occurrences en règle générale sur le joueur.</p>
+<h3>9. Flop C-bet : mise-t-il après avoir relancé préflop ?</h3>
+<p>Le <strong>Flop C-bet</strong> mesure la fréquence à laquelle le dernier relanceur préflop mise au flop lorsqu’il en a l’occasion. Il décrit une action dans un contexte précis, pas une volonté constante de miser. La position et la structure du pot influencent la lecture.</p>
+<p>Pour l’interpréter, séparez si possible les pots à relance simple des pots 3-bettés, ainsi que les situations en position et hors position. Un taux global peut regrouper des décisions très différentes.</p>
+<h3>10. Fold to Flop C-bet : abandonne-t-il face à une mise de continuation ?</h3>
+<p>Cette statistique mesure à quelle fréquence un joueur se couche face à un C-bet au flop. Elle donne une piste pour choisir entre miser, contrôler le pot ou continuer avec une main faible. La taille de la mise et le type de pot modifient fortement le contexte.</p>
+<p>Avant d’augmenter vos bluffs, vérifiez si les folds concernent des pots semblables à celui que vous jouez. Face à un joueur qui paie souvent, misez plus volontiers pour la valeur et réduisez les bluffs sans équité.</p>
+<h2>Comment juger la fiabilité d’un échantillon ?</h2>
+<p>Pourquoi un 3-bet mérite-t-il plus de prudence qu’un VPIP observé sur le même nombre de mains ? Parce que le joueur ne peut pas 3-bet à chaque donne. Pour juger un chiffre, regardez d’abord combien d’occasions alimentent son calcul.</p>
+<p>Le nombre total de mains renseigne sur l’étendue de l’historique ; le nombre d’<strong>occurrences observées</strong> renseigne sur la statistique elle-même. Une tendance rare comme le squeeze se construit lentement. N’utilisez pas une seule limite de mains comme seuil universel pour toutes les lignes du HUD.</p>
+<p>La <a href="https://fr.poker-hud.com/aide.php" rel="noopener noreferrer" target="_blank">page d’aide Poker HUD</a> définit notamment le VPIP, le PFR, le WTSD et le WWSF. Ces définitions rappellent que chaque fréquence correspond à une action différente ; le volume pertinent dépend donc des occasions propres à cette action.</p>
+<p>Les statistiques globales masquent aussi les écarts de position, de format et de profondeur. Un joueur de tournoi avec un tapis court ne prend pas les mêmes décisions qu’un joueur en cash game profond. Si une lecture vous semble surprenante, comparez d’abord des situations équivalentes.</p>
+<p>Pour <a href="https://vincentcoachpoker.com/blog/comment-detecter-rapidement-un-recreatif-dun-reg-highlights-128/">détecter rapidement un joueur récréatif ou un reg</a>, nous croisons les indicateurs du HUD avec les actions constatées et les notes de jeu. Cette lecture évite de réduire un adversaire à une étiquette fondée sur un seul pourcentage.</p>
+
+<img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/article-5882a763-5b58-47f6-b14d-da12b6b37d0f-img-2.webp" alt="Infographie en quatre étapes pour interpréter une statistique de HUD : repérer, vérifier les occasions, croiser les indices et ajuster la décision." style="display:block;width:auto;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;margin:0 auto;object-fit:contain" loading="lazy" />
+<h2>Comment passer du chiffre à une décision réfléchie ?</h2>
+<p>À la table, une statistique devient utile quand elle éclaire une décision concrète. Commencez par définir la situation, puis cherchez l’indicateur correspondant et vérifiez le nombre d’occasions. Enfin, reliez le chiffre à votre range, à la position et aux actions déjà vues.</p>
+<p>Une note précise complète le HUD : par exemple, un joueur a payé plusieurs fois hors position, ou a abandonné après une mise au turn. Pour approfondir <a href="https://vincentcoachpoker.com/blog/le-processus-de-reflexion-au-poker/">le processus de réflexion au poker</a>, nous vous conseillons de formuler une hypothèse, puis de la confronter aux informations disponibles plutôt que de suivre mécaniquement un chiffre.</p>
+<figure class="sorank-youtube-embed"><iframe src="https://www.youtube.com/embed/68aSOJE7Fhk?rel=0&amp;playsinline=1" title="L’importance des notes à table ! #cashgamepoker #poker #casino" width="560" height="315" style="width:100%;aspect-ratio:16/9;height:auto;border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><figcaption>L’importance des notes à table ! #cashgamepoker #poker #casino</figcaption></figure>
+<p>Si vous voulez progresser sur cette méthode, nous travaillons aussi la lecture des adversaires, les probabilités et l’application des décisions à votre propre format de jeu.</p>
+<section class="article-conclusion"><h2>À retenir sur les statistiques de HUD</h2><p>Les <strong>statistiques de HUD au poker</strong> sont des indices, pas des verdicts. VPIP et PFR décrivent l’activité préflop ; WTSD, W$SD et WWSF précisent des tendances postflop, tandis que les statistiques de situation répondent à des questions ciblées. Vérifiez toujours les occasions, la position et le format avant d’adapter votre jeu.</p></section>
+<section class="brand-cta"><h2>Faites évoluer votre méthode de jeu</h2><p>Lire un HUD demande plus que mémoriser des chiffres : il faut relier les tendances adverses aux probabilités, aux ranges et à vos propres décisions. Notre accompagnement s’adresse aux joueurs qui souhaitent structurer cette réflexion en cash game, en tournoi ou dans un autre format.</p><div class="article-homepage-screenshot" style="margin:40px 0;text-align:center"><img src="https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/article-images/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/homepage/6f0ce77a-92ef-5ff1-b1f8-8e62e493a9b8/d57d57df-d5d7-4140-b2a0-f67e971ba092.webp" width="1440" height="810" style="display:block;width:100%;height:auto;max-width:100%;max-width:min(100%,800px);max-height:520px;aspect-ratio:1440/810;margin:0 auto;object-fit:contain" loading="lazy" decoding="async" alt="vincentcoachpoker.com"></div><p>La Salle du Temps associe suivi personnel, contenu de travail et communauté, avec une méthode adaptée au format et aux difficultés de chaque joueur. L’accès se fait sur candidature et après un entretien. Pour découvrir le fonctionnement de cet accompagnement humain, vous pouvez <a href="https://vincentcoachpoker.com/la-salle-du-temps/">découvrir l’accompagnement poker</a>.</p></section>
+<section class="article-faq"><h2>Questions fréquemment posées</h2><h3>Quelles statistiques afficher en priorité sur un HUD ?</h3><p>Commencez par VPIP, PFR et 3-bet, puis ajoutez les indicateurs postflop utiles à vos décisions. Gardez à l’écran les statistiques que vous savez interpréter.</p><h3>Quelle est la différence entre VPIP et PFR ?</h3><p>Le VPIP mesure les mises volontaires préflop, qu’il s’agisse de payer ou de relancer. Le PFR ne compte que les relances, ce qui permet de comparer l’activité et l’agressivité préflop.</p><h3>Pourquoi vérifier les occasions plutôt que le nombre de mains ?</h3><p>Une statistique ne peut évoluer que lorsque le joueur rencontre la situation correspondante. Les occasions sont fréquentes pour le VPIP, mais beaucoup plus rares pour un squeeze ou un fold face à un 3-bet.</p><h3>Le même repère s’applique-t-il au cash game et aux tournois ?</h3><p>Non, les positions, les profondeurs de tapis et les conditions de jeu changent les ranges et les décisions. Comparez les statistiques dans des formats et des situations semblables.</p><h3>Comment travailler l’interprétation de son HUD ?</h3><p>Associez les chiffres à des notes de jeu et à une réflexion structurée sur vos décisions. Dans La Salle du Temps, nous adaptons l’accompagnement au format et aux besoins du joueur.</p></section>
+  </article>
+  <section class="section wrap center">
+    <a class="btn" href="https://www.youtube.com/@vincentcoachpoker" target="_blank" rel="noopener">Découvrir la chaîne YouTube</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="/">Vincent Coach Poker</a>
+        <p>Ma mission, aider les joueurs de poker à générer un revenu régulier et durable aux tables grâce à la méthode de L'Équation 3D.</p>
+      </div>
+      <div>
+        <h3>Réseaux</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@vincentcoachpoker" rel="noopener">YouTube</a></li>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Liens</h3>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/mon-parcours/">Mon parcours</a></li>
+          <li><a href="/la-salle-du-temps/">La Salle du Temps</a></li>
+          <li><a href="/temoignages/">Témoignages</a></li>
+          <li><a href="/blog/">Articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vincent Coach Poker</span>
+      <span class="footer-legal">
+        <a href="/cgv/">CGV</a> · <a href="/mentions-legales/">Mentions légales</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    nav.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

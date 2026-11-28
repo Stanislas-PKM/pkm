@@ -1437,5 +1437,17 @@
     },
     "revision": "1795756562866213",
     "operation_id": "aa94e5e52499fc2c85f30e91c9f922c69e8a373536e2dbef7836add2c2a81b6e"
+  },
+  "5882a763-5b58-47f6-b14d-da12b6b37d0f": {
+    "slug": "10-statistiques-de-poker-cruciales-a-inclure-dans-votre-hud-et-comment-les-utiliser",
+    "published_at": "2026-11-28T12:35:18.257Z",
+    "title": "10 statistiques du HUD au poker à interpréter avec méthode",
+    "meta_description": "Lisez les statistiques HUD poker : VPIP, PFR, 3-bet et tendances postflop, puis adaptez vos décisions selon la qualité de l’échantillon.",
+    "featured_image": {
+      "url": "https://vjkhwddoclptfmqwvfsf.supabase.co/storage/v1/object/public/image-gallery-public/profiles/528829f8-f103-485c-92f6-2e7ffa1cfb7b/assets/06dc38f9-020e-495d-b50f-211b317ba6b6.webp",
+      "alt": "Salle de poker animée avec des joueurs autour des tables."
+    },
+    "revision": "1795869072241257",
+    "operation_id": "0094f01562c0d0c128e15ee684742867b423b9408ec79b5136f951323224e705"
   }
 }
